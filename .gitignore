@@ -41,3 +41,10 @@ venv/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# ---------- 论文排版 / 投稿打包脚本：与实验复现无关，且依赖未入库的手稿 ----------
+src/build_docx.py
+src/postprocess_docx.py
+src/build_s1_pdf.py
+src/build_submission_archive.py
+src/make_mdpi_ref.py
