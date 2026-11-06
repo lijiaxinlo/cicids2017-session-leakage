@@ -99,7 +99,7 @@ Bot 从 0.605 掉到 **0.000**，且每个种子都如此：**449 条 Bot 测试
 ## 六、快速开始
 
 ```bash
-git clone https://github.com/<your-id>/cicids2017-session-leakage.git
+git clone https://github.com/lijiaxinlo/cicids2017-session-leakage.git
 cd cicids2017-session-leakage
 pip install -r requirements.txt
 ```
