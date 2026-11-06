@@ -1,0 +1,139 @@
+{
+  "note": "论文附录素材：15 类 -> 12 类的指标变化归因",
+  "dropped": {
+    "Web Attack-Sql Injection": {
+      "recall": 0.166667,
+      "f1": 0.285714,
+      "support": 6
+    },
+    "Infiltration": {
+      "recall": 0.727273,
+      "f1": 0.842105,
+      "support": 11
+    },
+    "Heartbleed": {
+      "recall": 0.666667,
+      "f1": 0.8,
+      "support": 3
+    }
+  },
+  "macro_15class_measured": {
+    "precision": 0.935071,
+    "recall": 0.824857,
+    "f1": 0.85502
+  },
+  "macro_12class_predicted_from_15": {
+    "precision": 0.918839,
+    "recall": 0.901021,
+    "f1": 0.908123
+  },
+  "macro_12class_measured": {
+    "precision": 0.918066,
+    "recall": 0.903428,
+    "f1": 0.909075
+  },
+  "delta_predicted_minus_measured": {
+    "precision": 0.000772,
+    "recall": -0.002407,
+    "f1": -0.000952
+  },
+  "per_class": [
+    {
+      "class": "BENIGN",
+      "recall_15class": 0.999298,
+      "f1_15class": 0.999111,
+      "recall_12class_mean": 0.9993,
+      "delta_recall": 2e-06
+    },
+    {
+      "class": "Bot",
+      "recall_15class": 0.744863,
+      "f1_15class": 0.810056,
+      "recall_12class_mean": 0.754795,
+      "delta_recall": 0.009932
+    },
+    {
+      "class": "DDoS",
+      "recall_15class": 0.999792,
+      "f1_15class": 0.999844,
+      "recall_12class_mean": 0.999719,
+      "delta_recall": -7.3e-05
+    },
+    {
+      "class": "DoS GoldenEye",
+      "recall_15class": 0.993195,
+      "f1_15class": 0.994645,
+      "recall_12class_mean": 0.995528,
+      "delta_recall": 0.002333
+    },
+    {
+      "class": "DoS Hulk",
+      "recall_15class": 0.996432,
+      "f1_15class": 0.997221,
+      "recall_12class_mean": 0.997258,
+      "delta_recall": 0.000825
+    },
+    {
+      "class": "DoS Slowhttptest",
+      "recall_15class": 0.996173,
+      "f1_15class": 0.992691,
+      "recall_12class_mean": 0.993495,
+      "delta_recall": -0.002679
+    },
+    {
+      "class": "DoS slowloris",
+      "recall_15class": 0.990718,
+      "f1_15class": 0.992868,
+      "recall_12class_mean": 0.989975,
+      "delta_recall": -0.000743
+    },
+    {
+      "class": "FTP-Patator",
+      "recall_15class": 0.997189,
+      "f1_15class": 0.998593,
+      "recall_12class_mean": 0.998651,
+      "delta_recall": 0.001461
+    },
+    {
+      "class": "PortScan",
+      "recall_15class": 0.988753,
+      "f1_15class": 0.989062,
+      "recall_12class_mean": 0.989106,
+      "delta_recall": 0.000353
+    },
+    {
+      "class": "SSH-Patator",
+      "recall_15class": 0.995859,
+      "f1_15class": 0.997925,
+      "recall_12class_mean": 0.996894,
+      "delta_recall": 0.001035
+    },
+    {
+      "class": "Web Attack-Brute Force",
+      "recall_15class": 0.814059,
+      "f1_15class": 0.772874,
+      "recall_12class_mean": 0.821315,
+      "delta_recall": 0.007256
+    },
+    {
+      "class": "Web Attack-XSS",
+      "recall_15class": 0.295918,
+      "f1_15class": 0.352584,
+      "recall_12class_mean": 0.305102,
+      "delta_recall": 0.009184
+    }
+  ],
+  "sum_recall_drift_kept_classes": 0.028887,
+  "web_attack_block_12class": {
+    "seed": 42,
+    "bruteforce_total": 441,
+    "bruteforce_correct": 366,
+    "bruteforce_as_xss": 69,
+    "bruteforce_as_other": 6,
+    "xss_total": 196,
+    "xss_correct": 60,
+    "xss_as_bruteforce": 129,
+    "xss_as_other": 7
+  },
+  "caveat": "旧 15 类结果使用 baseline_rf.py 的独立划分，12 类使用 results/splits/ 固定划分，两者划分不同，故预测值与实测值存在小幅残差（<0.01）属正常"
+}

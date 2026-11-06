@@ -1,0 +1,9 @@
+{
+  "purpose": "C2(val) 公平校准对照（RF 臂）",
+  "class_weight": "balanced_subsample",
+  "n_estimators": 100,
+  "val_protocol": "train-pool 内分层 10% 切分，random_state=seed，与 train_deep.py L215-218 逐位一致；fit 只用 90%",
+  "sklearn": "1.9.1",
+  "python": "3.13.14",
+  "per_seed": []
+}

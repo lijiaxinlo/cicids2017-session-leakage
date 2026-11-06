@@ -1,0 +1,341 @@
+{
+  "model": "lstm",
+  "class_scheme": "12class",
+  "command": "python src/train_deep.py --model lstm --seed 44 --epochs 30 --batch-size 256 --norm gn --patience 5 --save-proba --save-ckpt",
+  "seed": 44,
+  "device": "cuda",
+  "n_params": {
+    "total": 208204,
+    "trainable": 208204
+  },
+  "config": {
+    "epochs": 30,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "dropout": 0.3,
+    "norm": "gn",
+    "norm_note": "三个深度 baseline 统一使用 GroupNorm（无 running stats），BatchNorm 在预实验中存在间歇性 loss 背离，仅作诊断对照",
+    "patience": 5,
+    "val_frac": 0.1,
+    "loss": "CrossEntropyLoss",
+    "optimizer": "Adam",
+    "input_shape": "(B, 1, 78)",
+    "sample_train": null
+  },
+  "leakage_checks": {
+    "val_in_test": 0,
+    "fit_in_test": 0,
+    "val_outside_train_pool": 0,
+    "fit_val_overlap": 0,
+    "passed": true
+  },
+  "n_fit": 1588059,
+  "n_val": 176452,
+  "n_test": 756219,
+  "n_features": 78,
+  "split_protocol": "固定划分 results/splits/；验证集从训练池内切 10%（seed=种子）",
+  "scaler_path": "results\\cache\\scaler.npz",
+  "scaler_fit_on": "仅训练集（fit_idx）",
+  "best_epoch": 10,
+  "best_val_macro_f1": 0.753019,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.239481,
+      "val_loss": 0.086743,
+      "gap_val_minus_train": -0.152738,
+      "val_macro_f1": 0.548149,
+      "val_macro_recall": 0.543543,
+      "train_sec": 100.8,
+      "val_sec": 6.2,
+      "peak_gpu_mb": 376.4,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.081211,
+      "val_loss": 0.061569,
+      "gap_val_minus_train": -0.019642,
+      "val_macro_f1": 0.680893,
+      "val_macro_recall": 0.689049,
+      "train_sec": 95.2,
+      "val_sec": 5.7,
+      "peak_gpu_mb": 377.2,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.067018,
+      "val_loss": 0.055314,
+      "gap_val_minus_train": -0.011704,
+      "val_macro_f1": 0.694893,
+      "val_macro_recall": 0.699843,
+      "train_sec": 103.8,
+      "val_sec": 8.0,
+      "peak_gpu_mb": 377.2,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.059415,
+      "val_loss": 0.049873,
+      "gap_val_minus_train": -0.009541,
+      "val_macro_f1": 0.732971,
+      "val_macro_recall": 0.703603,
+      "train_sec": 101.3,
+      "val_sec": 5.9,
+      "peak_gpu_mb": 377.2,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.055702,
+      "val_loss": 0.049991,
+      "gap_val_minus_train": -0.005711,
+      "val_macro_f1": 0.728314,
+      "val_macro_recall": 0.693904,
+      "train_sec": 96.0,
+      "val_sec": 6.4,
+      "peak_gpu_mb": 377.2,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.053177,
+      "val_loss": 0.045507,
+      "gap_val_minus_train": -0.007671,
+      "val_macro_f1": 0.742579,
+      "val_macro_recall": 0.736462,
+      "train_sec": 106.0,
+      "val_sec": 5.6,
+      "peak_gpu_mb": 377.2,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.051237,
+      "val_loss": 0.052863,
+      "gap_val_minus_train": 0.001625,
+      "val_macro_f1": 0.723049,
+      "val_macro_recall": 0.707033,
+      "train_sec": 93.8,
+      "val_sec": 6.3,
+      "peak_gpu_mb": 377.2,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.050355,
+      "val_loss": 0.050625,
+      "gap_val_minus_train": 0.00027,
+      "val_macro_f1": 0.717926,
+      "val_macro_recall": 0.690527,
+      "train_sec": 102.9,
+      "val_sec": 6.4,
+      "peak_gpu_mb": 377.2,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.049302,
+      "val_loss": 0.043679,
+      "gap_val_minus_train": -0.005624,
+      "val_macro_f1": 0.75121,
+      "val_macro_recall": 0.748113,
+      "train_sec": 95.3,
+      "val_sec": 6.7,
+      "peak_gpu_mb": 377.2,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.04833,
+      "val_loss": 0.040968,
+      "gap_val_minus_train": -0.007362,
+      "val_macro_f1": 0.753019,
+      "val_macro_recall": 0.767669,
+      "train_sec": 96.7,
+      "val_sec": 6.1,
+      "peak_gpu_mb": 377.2,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.047385,
+      "val_loss": 0.04271,
+      "gap_val_minus_train": -0.004675,
+      "val_macro_f1": 0.746295,
+      "val_macro_recall": 0.725443,
+      "train_sec": 96.7,
+      "val_sec": 5.8,
+      "peak_gpu_mb": 377.2,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.047494,
+      "val_loss": 0.043958,
+      "gap_val_minus_train": -0.003536,
+      "val_macro_f1": 0.741705,
+      "val_macro_recall": 0.717715,
+      "train_sec": 95.9,
+      "val_sec": 6.7,
+      "peak_gpu_mb": 377.2,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.046863,
+      "val_loss": 0.039046,
+      "gap_val_minus_train": -0.007817,
+      "val_macro_f1": 0.752238,
+      "val_macro_recall": 0.731779,
+      "train_sec": 98.0,
+      "val_sec": 6.5,
+      "peak_gpu_mb": 377.2,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.046025,
+      "val_loss": 0.040602,
+      "gap_val_minus_train": -0.005423,
+      "val_macro_f1": 0.747015,
+      "val_macro_recall": 0.731571,
+      "train_sec": 102.1,
+      "val_sec": 7.4,
+      "peak_gpu_mb": 377.2,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.045836,
+      "val_loss": 0.040964,
+      "gap_val_minus_train": -0.004872,
+      "val_macro_f1": 0.737582,
+      "val_macro_recall": 0.708569,
+      "train_sec": 100.6,
+      "val_sec": 7.1,
+      "peak_gpu_mb": 377.2,
+      "timing_anomaly": false
+    }
+  ],
+  "test_metrics": {
+    "accuracy": 0.9797175156932053,
+    "macro_precision": 0.741467602171943,
+    "macro_recall": 0.7683574499875044,
+    "macro_f1": 0.7527079019188317,
+    "fpr": 0.0032919270291860473
+  },
+  "test_per_class": {
+    "BENIGN": {
+      "precision": 0.995396989469604,
+      "recall": 0.9805780909665133,
+      "f1": 0.987931972778211,
+      "fpr": 0.02231758312320872,
+      "support": 628517
+    },
+    "DoS Hulk": {
+      "precision": 0.9614984588037291,
+      "recall": 0.9805415204227254,
+      "f1": 0.970926624337614,
+      "fpr": 0.0028905468045686542,
+      "support": 51854
+    },
+    "DDoS": {
+      "precision": 0.9981741201376025,
+      "recall": 0.9822153942297678,
+      "f1": 0.9901304564663885,
+      "fpr": 9.612504614698774e-05,
+      "support": 38404
+    },
+    "PortScan": {
+      "precision": 0.7418014866637517,
+      "recall": 0.9976477506615701,
+      "f1": 0.8509090909090911,
+      "fpr": 0.012960023922821466,
+      "support": 27208
+    },
+    "DoS GoldenEye": {
+      "precision": 0.9697169190256748,
+      "recall": 0.9546338302009073,
+      "f1": 0.9621162638798171,
+      "fpr": 0.00012215637875381905,
+      "support": 3086
+    },
+    "FTP-Patator": {
+      "precision": 0.918580375782881,
+      "recall": 0.9893198426082068,
+      "f1": 0.9526387009472259,
+      "fpr": 0.0002067758867504374,
+      "support": 1779
+    },
+    "DoS slowloris": {
+      "precision": 0.9408706952566601,
+      "recall": 0.8960396039603961,
+      "f1": 0.9179080824088749,
+      "fpr": 0.00012059321258993139,
+      "support": 1616
+    },
+    "DoS Slowhttptest": {
+      "precision": 0.8189845474613686,
+      "recall": 0.9464285714285714,
+      "f1": 0.8781065088757397,
+      "fpr": 0.000434637998226995,
+      "support": 1568
+    },
+    "SSH-Patator": {
+      "precision": 0.9779735682819384,
+      "recall": 0.9192546583850931,
+      "f1": 0.9477054429028815,
+      "fpr": 2.6481192395131168e-05,
+      "support": 966
+    },
+    "Bot": {
+      "precision": 0.5746140651801029,
+      "recall": 0.5736301369863014,
+      "f1": 0.5741216795201372,
+      "fpr": 0.00032820078477042487,
+      "support": 584
+    },
+    "Web Attack-Brute Force": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 0.0,
+      "support": 441
+    },
+    "Web Attack-XSS": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 0.0,
+      "support": 196
+    }
+  },
+  "timing": {
+    "epoch_train_sec_avg": 99.0,
+    "epoch_train_sec_median": 98.0,
+    "total_sec": 1623.1,
+    "test_eval_sec": 28.3,
+    "timing_anomalies": [],
+    "anomaly_rule": "单轮训练耗时 > 前几轮中位数 x1.5 即记为异常，不用于排期"
+  },
+  "peak_gpu_mb": 377.2,
+  "env": {
+    "python": "3.13.14",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit_learn": "1.9.1",
+    "torch": "2.6.0+cu124",
+    "cuda_available": true,
+    "device": "NVIDIA GeForce RTX 4050 Laptop GPU"
+  },
+  "timestamp": "2026-10-17T23:30:42",
+  "artifacts": {
+    "test_proba": "results\\deep_lstm_seed44_12class_test_proba.npy",
+    "test_ytrue": "results\\deep_lstm_seed44_12class_test_ytrue.npy",
+    "best_ckpt": "results\\deep_lstm_seed44_12class_best.pt"
+  }
+}

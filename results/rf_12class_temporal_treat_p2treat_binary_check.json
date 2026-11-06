@@ -1,0 +1,39 @@
+{
+  "note": "二分类仅作管线自检，属附属结果，不进 Table 2",
+  "command": "python src/train_rf.py --split temporal",
+  "seed": 42,
+  "n_train": 587765,
+  "n_test": 627315,
+  "n_estimators": 100,
+  "metrics": {
+    "accuracy": 0.9972071447358982,
+    "macro_precision": 0.9975581507305842,
+    "macro_recall": 0.9924246887994259,
+    "macro_f1": 0.9949697615101082,
+    "fpr": 0.0075753112005741375
+  },
+  "per_class": {
+    "BENIGN": {
+      "precision": 0.9970335421760391,
+      "recall": 0.9996188951406257,
+      "f1": 0.9983245448442458,
+      "fpr": 0.014769517541774054,
+      "support": 522166
+    },
+    "ATTACK": {
+      "precision": 0.9980827592851294,
+      "recall": 0.985230482458226,
+      "f1": 0.9916149781759706,
+      "fpr": 0.000381104859374222,
+      "support": 105149
+    }
+  },
+  "env": {
+    "python": "3.13.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit_learn": "1.9.1"
+  },
+  "timestamp": "2026-10-23T16:51:52"
+}

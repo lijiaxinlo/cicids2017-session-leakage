@@ -1,0 +1,16 @@
+,pred_BENIGN,pred_Bot,pred_DDoS,pred_DoS GoldenEye,pred_DoS Hulk,pred_DoS Slowhttptest,pred_DoS slowloris,pred_FTP-Patator,pred_Heartbleed,pred_Infiltration,pred_PortScan,pred_SSH-Patator,pred_Web Attack-Brute Force,pred_Web Attack-Sql Injection,pred_Web Attack-XSS
+true_BENIGN,628077,55,4,3,86,8,1,0,0,0,283,0,1,0,0
+true_Bot,149,435,0,0,0,0,0,0,0,0,0,0,0,0,0
+true_DDoS,7,0,38396,0,1,0,0,0,0,0,0,0,0,0,0
+true_DoS GoldenEye,9,0,0,3065,9,3,0,0,0,0,0,0,0,0,0
+true_DoS Hulk,175,0,0,6,51669,0,0,0,0,0,4,0,0,0,0
+true_DoS Slowhttptest,1,0,0,0,0,1562,5,0,0,0,0,0,0,0,0
+true_DoS slowloris,8,0,0,2,0,5,1601,0,0,0,0,0,0,0,0
+true_FTP-Patator,4,0,0,0,0,0,0,1774,0,0,0,0,0,0,1
+true_Heartbleed,1,0,0,0,0,0,0,0,2,0,0,0,0,0,0
+true_Infiltration,3,0,0,0,0,0,0,0,0,8,0,0,0,0,0
+true_PortScan,297,0,0,0,7,0,1,0,0,0,26902,0,0,0,1
+true_SSH-Patator,4,0,0,0,0,0,0,0,0,0,0,962,0,0,0
+true_Web Attack-Brute Force,8,0,0,0,0,0,1,0,0,0,0,0,359,0,73
+true_Web Attack-Sql Injection,3,0,0,1,0,0,0,0,0,0,0,0,1,1,0
+true_Web Attack-XSS,8,0,0,0,0,1,0,0,0,0,2,0,127,0,58

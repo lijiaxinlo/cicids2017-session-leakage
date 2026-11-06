@@ -1,0 +1,72 @@
+{
+ "RF (balanced)": {
+  "source": "rf_12class_metrics.json",
+  "cm_file": "rf_12class_confusion_matrix.csv",
+  "cm_seed_claimed": 42,
+  "cm_seed_matched_by_macroF1": [
+   42,
+   44
+  ],
+  "benign_fpr_single_seed": 0.000708015853190924,
+  "macro_f1_5seed": 0.9090749534098844
+ },
+ "RF (unweighted)": {
+  "source": "rf_12class_noweight_metrics.json",
+  "cm_file": "rf_12class_noweight_confusion_matrix.csv",
+  "cm_seed_claimed": 44,
+  "cm_seed_matched_by_macroF1": [
+   42,
+   44
+  ],
+  "benign_fpr_single_seed": 0.0006889232908576856,
+  "macro_f1_5seed": 0.9103015644768047
+ },
+ "CNN": {
+  "seeds": [
+   42,
+   43,
+   44,
+   45,
+   46
+  ],
+  "benign_fpr_mean": 0.008598335446773913,
+  "benign_fpr_std": 0.0027902569891534315
+ },
+ "CNN-LSTM": {
+  "seeds": [
+   42,
+   43,
+   44,
+   45,
+   46
+  ],
+  "benign_fpr_mean": 0.008977641018460917,
+  "benign_fpr_std": 0.002482261193885794
+ },
+ "LSTM": {
+  "seeds": [
+   42,
+   43,
+   44,
+   45,
+   46
+  ],
+  "benign_fpr_mean": 0.009879446379334212,
+  "benign_fpr_std": 0.006325405909164596
+ },
+ "C4_seed42": {
+  "recomputed": 0.7904545161846586,
+  "json": 0.790455,
+  "match": true
+ },
+ "C4_seed44": {
+  "recomputed": 0.8046620631475397,
+  "json": 0.804662,
+  "match": true
+ },
+ "C4_seed46": {
+  "recomputed": 0.7978344578899818,
+  "json": 0.797834,
+  "match": true
+ }
+}

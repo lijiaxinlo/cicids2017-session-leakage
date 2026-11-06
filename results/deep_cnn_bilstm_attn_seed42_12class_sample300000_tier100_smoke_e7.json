@@ -1,0 +1,399 @@
+{
+  "model": "cnn_bilstm_attn",
+  "class_scheme": "12class",
+  "command": "python src/train_main.py --model cnn_bilstm_attn --seed 42 --epochs 1 --batch-size 256 --lr 0.001 --loss focal --sampler smote --gamma 2.0 --alpha-mode uniform --benign-target 300000 --minority-target 12000 --patience 5 --sample 300000 --tag smoke_e7",
+  "seed": 42,
+  "device": "cuda",
+  "n_params": {
+    "total": 142029,
+    "trainable": 142029
+  },
+  "config": {
+    "epochs": 1,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "dropout": 0.3,
+    "patience": 5,
+    "val_frac": 0.1,
+    "norm": "gn",
+    "loss": "focal",
+    "gamma": 2.0,
+    "alpha_mode": "uniform",
+    "sampler": "smote",
+    "benign_target": 300000,
+    "minority_target": 12000,
+    "smote_k": 5,
+    "optimizer": "Adam",
+    "input_shape": "(B, 1, 78)",
+    "fpr_gate": {
+      "audit_macro": 0.01,
+      "audit_benign": 0.016,
+      "gate_semantics": "v4.3_audit_pathological",
+      "diverged_ma3_benign": 0.05,
+      "diverged_ma3_macro": 0.02,
+      "rule": "gate_flag 仅逐 epoch 审计；唯一中止条件 = 3-epoch 滑动平均 val benign FPR > 0.05 或 val macro FPR > 0.02（fpr_diverged）"
+    },
+    "sample_train": 300000,
+    "tier": {
+      "tier_ratio": 100.0,
+      "benign_fit": 224405,
+      "attack_cap_per_class": 2244,
+      "n_fit_before": 270000,
+      "n_fit_after": 234792,
+      "per_class": {
+        "BENIGN": {
+          "n_before": 224405,
+          "n_after": 224405
+        },
+        "DoS Hulk": {
+          "n_before": 18514,
+          "n_after": 2244
+        },
+        "DDoS": {
+          "n_before": 13711,
+          "n_after": 2244
+        },
+        "PortScan": {
+          "n_before": 9715,
+          "n_after": 2244
+        },
+        "DoS GoldenEye": {
+          "n_before": 1102,
+          "n_after": 1102
+        },
+        "FTP-Patator": {
+          "n_before": 635,
+          "n_after": 635
+        },
+        "DoS slowloris": {
+          "n_before": 577,
+          "n_after": 577
+        },
+        "DoS Slowhttptest": {
+          "n_before": 560,
+          "n_after": 560
+        },
+        "SSH-Patator": {
+          "n_before": 345,
+          "n_after": 345
+        },
+        "Bot": {
+          "n_before": 209,
+          "n_after": 209
+        },
+        "Web Attack-Brute Force": {
+          "n_before": 157,
+          "n_after": 157
+        },
+        "Web Attack-XSS": {
+          "n_before": 70,
+          "n_after": 70
+        }
+      },
+      "rule": "BENIGN 全量不动；每个攻击类欠采样至 <= floor(n_benign_fit/R)，低于上限的类保持原样；val/test 一行不动；欠采样在 val 切分之后、SMOTE 之前（L1 顺序不变）",
+      "subsample_rng": "np.random.default_rng(seed=42)，按类别升序依次抽样"
+    }
+  },
+  "leakage_checks": {
+    "val_in_test": 0,
+    "fit_in_test": 0,
+    "val_outside_train_pool": 0,
+    "fit_val_overlap": 0,
+    "passed": true
+  },
+  "resampling_audit": {
+    "seed": 42,
+    "benign_class_id": 0,
+    "benign_before": 224405,
+    "benign_after": 224405,
+    "benign_undersampled": false,
+    "benign_target": 300000,
+    "minority_class_ids": [
+      9,
+      10,
+      11
+    ],
+    "smote_k_effective": 5,
+    "minority": {
+      "9": {
+        "before": 209,
+        "after": 12000,
+        "synthetic": 11791
+      },
+      "10": {
+        "before": 157,
+        "after": 12000,
+        "synthetic": 11843
+      },
+      "11": {
+        "before": 70,
+        "after": 12000,
+        "synthetic": 11930
+      }
+    },
+    "n_fit_before": 234792,
+    "n_fit_after": 270356,
+    "n_synthetic": 35564,
+    "n_real_used": 234792,
+    "counts_after": {
+      "0": 224405,
+      "1": 2244,
+      "2": 2244,
+      "3": 2244,
+      "4": 1102,
+      "5": 635,
+      "6": 577,
+      "7": 560,
+      "8": 345,
+      "9": 12000,
+      "10": 12000,
+      "11": 12000
+    },
+    "smote_sampling_strategy": {
+      "9": 12000,
+      "10": 12000,
+      "11": 12000
+    },
+    "asserts": {
+      "L5_count_selfconsistent": true,
+      "L5_real_subset_of_fit": true
+    },
+    "val_untouched": true,
+    "test_untouched": true,
+    "leakage_assert_passed": true
+  },
+  "n_fit_real": 234792,
+  "n_fit_used": 270356,
+  "n_val": 30000,
+  "n_test": 756219,
+  "n_features": 78,
+  "best_epoch": 1,
+  "epochs_run": 1,
+  "early_stopped": false,
+  "best_val_macro_f1": 0.56007,
+  "val_per_class_at_best": {
+    "BENIGN": {
+      "precision": 0.9555260278255432,
+      "recall": 0.980588754311382,
+      "f1": 0.9678951743794781,
+      "fpr": 0.22463482037110147,
+      "support": 24934
+    },
+    "DoS Hulk": {
+      "precision": 0.9744370054777846,
+      "recall": 0.7783179387457463,
+      "f1": 0.8654054054054054,
+      "fpr": 0.0015030598003077694,
+      "support": 2057
+    },
+    "DDoS": {
+      "precision": 0.8344699318040918,
+      "recall": 0.8832020997375328,
+      "f1": 0.858144724258846,
+      "fpr": 0.009376316898440793,
+      "support": 1524
+    },
+    "PortScan": {
+      "precision": 0.9929577464788732,
+      "recall": 0.39202965708989806,
+      "f1": 0.5621262458471761,
+      "fpr": 0.00010373085301338128,
+      "support": 1079
+    },
+    "DoS GoldenEye": {
+      "precision": 0.625,
+      "recall": 0.36885245901639346,
+      "f1": 0.4639175257731959,
+      "fpr": 0.00090367494477542,
+      "support": 122
+    },
+    "FTP-Patator": {
+      "precision": 0.5157894736842106,
+      "recall": 0.6901408450704225,
+      "f1": 0.5903614457831325,
+      "fpr": 0.001536970830966621,
+      "support": 71
+    },
+    "DoS slowloris": {
+      "precision": 0.9565217391304348,
+      "recall": 0.34375,
+      "f1": 0.5057471264367817,
+      "fpr": 3.340459647247461e-05,
+      "support": 64
+    },
+    "DoS Slowhttptest": {
+      "precision": 0.8,
+      "recall": 0.5161290322580645,
+      "f1": 0.6274509803921569,
+      "fpr": 0.00026721891909947226,
+      "support": 62
+    },
+    "SSH-Patator": {
+      "precision": 1.0,
+      "recall": 0.9473684210526315,
+      "f1": 0.972972972972973,
+      "fpr": 0.0,
+      "support": 38
+    },
+    "Bot": {
+      "precision": 0.06645569620253164,
+      "recall": 0.9130434782608695,
+      "f1": 0.1238938053097345,
+      "fpr": 0.009840878006471628,
+      "support": 23
+    },
+    "Web Attack-Brute Force": {
+      "precision": 0.10273972602739725,
+      "recall": 0.8333333333333334,
+      "f1": 0.18292682926829268,
+      "fpr": 0.004369288239610433,
+      "support": 18
+    },
+    "Web Attack-XSS": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 6.668444918644971e-05,
+      "support": 8
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.182043,
+      "val_loss": 0.238472,
+      "gap_val_minus_train": 0.056429,
+      "val_macro_f1": 0.56007,
+      "val_macro_recall": 0.63723,
+      "val_fpr": 0.021053,
+      "val_benign_fpr": 0.019411,
+      "gate_flag": true,
+      "train_sec": 7.9,
+      "val_sec": 0.4,
+      "peak_gpu_mb": 133.0,
+      "timing_anomaly": false
+    }
+  ],
+  "main_metrics": {
+    "macro_f1_12class": 0.560712,
+    "lesion_group_f1_sum": 0.300125,
+    "lesion_group_f1": {
+      "Bot": 0.111215,
+      "Web Attack-Brute Force": 0.18891,
+      "Web Attack-XSS": 0.0
+    }
+  },
+  "test_metrics": {
+    "accuracy": 0.9364509487331051,
+    "macro_precision": 0.6482919007797893,
+    "macro_recall": 0.6355726799719895,
+    "macro_f1": 0.5607122536917515,
+    "fpr": 0.02062240081447268,
+    "benign_fpr": 0.019559
+  },
+  "test_per_class": {
+    "BENIGN": {
+      "precision": 0.9562756052141527,
+      "recall": 0.9804412609364583,
+      "f1": 0.9682076678997924,
+      "fpr": 0.22063867441386978,
+      "support": 628517
+    },
+    "DoS Hulk": {
+      "precision": 0.975986359115237,
+      "recall": 0.794769930960003,
+      "f1": 0.8761054421768707,
+      "fpr": 0.0014395945284050172,
+      "support": 51854
+    },
+    "DDoS": {
+      "precision": 0.8507383966244726,
+      "recall": 0.8820174981772732,
+      "f1": 0.8660956277166965,
+      "fpr": 0.008279292018138379,
+      "support": 38404
+    },
+    "PortScan": {
+      "precision": 0.9938601877028331,
+      "recall": 0.41645839458982653,
+      "f1": 0.5869615892667513,
+      "fpr": 9.602049900481611e-05,
+      "support": 27208
+    },
+    "DoS GoldenEye": {
+      "precision": 0.6917040358744395,
+      "recall": 0.3998703823720026,
+      "f1": 0.506776180698152,
+      "fpr": 0.0007302826990717444,
+      "support": 3086
+    },
+    "FTP-Patator": {
+      "precision": 0.5286738351254481,
+      "recall": 0.6632939853850478,
+      "f1": 0.5883819496384941,
+      "fpr": 0.001394411749111924,
+      "support": 1779
+    },
+    "DoS slowloris": {
+      "precision": 0.8861646234676007,
+      "recall": 0.3131188118811881,
+      "f1": 0.46273433927754914,
+      "fpr": 8.613800899280813e-05,
+      "support": 1616
+    },
+    "DoS Slowhttptest": {
+      "precision": 0.7508960573476703,
+      "recall": 0.5344387755102041,
+      "f1": 0.6244411326378541,
+      "fpr": 0.0003683822058143433,
+      "support": 1568
+    },
+    "SSH-Patator": {
+      "precision": 0.9801324503311258,
+      "recall": 0.9192546583850931,
+      "f1": 0.9487179487179486,
+      "fpr": 2.3833073155618052e-05,
+      "support": 966
+    },
+    "Bot": {
+      "precision": 0.05969773299748111,
+      "recall": 0.8116438356164384,
+      "f1": 0.11121539183481934,
+      "fpr": 0.009880431689903194,
+      "support": 584
+    },
+    "Web Attack-Brute Force": {
+      "precision": 0.1053735255570118,
+      "recall": 0.9115646258503401,
+      "f1": 0.18890977443609022,
+      "fpr": 0.004515876355226005,
+      "support": 441
+    },
+    "Web Attack-XSS": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 1.587253297849404e-05,
+      "support": 196
+    }
+  },
+  "timing": {
+    "epoch_train_sec_median": 7.9,
+    "total_sec": 23.3,
+    "test_eval_sec": 9.0,
+    "timing_anomalies": []
+  },
+  "peak_gpu_mb": 133.0,
+  "env": {
+    "python": "3.13.14",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit_learn": "1.9.1",
+    "imbalanced_learn": "0.14.2",
+    "torch": "2.6.0+cu124",
+    "cuda_available": true,
+    "device": "NVIDIA GeForce RTX 4050 Laptop GPU"
+  },
+  "timestamp": "2026-10-18T15:39:11"
+}

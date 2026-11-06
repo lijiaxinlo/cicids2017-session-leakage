@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "script": "src/c4prime_table3.py",
+    "note": "C4' = treated arm, joint DE, objective LFS, val-best restart"
+  },
+  "per_seed": [
+    {
+      "seed": 42,
+      "proba": "deep_cnn_bilstm_attn_seed42_12class_g1_bfull",
+      "opt_seed": 1,
+      "C3": {
+        "macro_f1": 0.7946485256360081,
+        "macro_recall": 0.8723712279222299,
+        "macro_ovr_fpr": 0.0038506348788426223,
+        "benign_fpr": 0.020266754916732563,
+        "LFS": 0.9451864285830132
+      },
+      "C4prime": {
+        "macro_f1": 0.8040286421138433,
+        "macro_recall": 0.8175582419012505,
+        "macro_ovr_fpr": 0.00792890848212577,
+        "benign_fpr": 0.003847151310147538,
+        "LFS": 1.1107923180591126
+      }
+    },
+    {
+      "seed": 44,
+      "proba": "deep_cnn_bilstm_attn_seed44_12class_g1_bfull_g1_bfull",
+      "opt_seed": 2,
+      "C3": {
+        "macro_f1": 0.8029462269964646,
+        "macro_recall": 0.86676738534486,
+        "macro_ovr_fpr": 0.00704102426739063,
+        "benign_fpr": 0.006668077394883512,
+        "LFS": 1.0150518459754334
+      },
+      "C4prime": {
+        "macro_f1": 0.793144239102774,
+        "macro_recall": 0.7619654801074356,
+        "macro_ovr_fpr": 0.009375937365840418,
+        "benign_fpr": 0.0012091956144384321,
+        "LFS": 1.2963451318768455
+      }
+    },
+    {
+      "seed": 46,
+      "proba": "deep_cnn_bilstm_attn_seed46_12class_g1_bfull_g1_bfull",
+      "opt_seed": 3,
+      "C3": {
+        "macro_f1": 0.7984265538581489,
+        "macro_recall": 0.876778998915337,
+        "macro_ovr_fpr": 0.005920055323011129,
+        "benign_fpr": 0.01002359522495016,
+        "LFS": 0.9708275275197354
+      },
+      "C4prime": {
+        "macro_f1": 0.8177296115275409,
+        "macro_recall": 0.8397432546631515,
+        "macro_ovr_fpr": 0.007570084305339188,
+        "benign_fpr": 0.0030516278795959377,
+        "LFS": 1.2163527781901764
+      }
+    }
+  ],
+  "aggregate": {
+    "C3": {
+      "macro_f1": {
+        "mean": 0.7987,
+        "sd": 0.0042
+      },
+      "macro_recall": {
+        "mean": 0.872,
+        "sd": 0.005
+      },
+      "macro_ovr_fpr": {
+        "mean": 0.0056,
+        "sd": 0.0016
+      },
+      "benign_fpr": {
+        "mean": 0.0123,
+        "sd": 0.0071
+      },
+      "LFS": {
+        "mean": 0.977,
+        "sd": 0.0353
+      }
+    },
+    "C4prime": {
+      "macro_f1": {
+        "mean": 0.805,
+        "sd": 0.0123
+      },
+      "macro_recall": {
+        "mean": 0.8064,
+        "sd": 0.0401
+      },
+      "macro_ovr_fpr": {
+        "mean": 0.0083,
+        "sd": 0.001
+      },
+      "benign_fpr": {
+        "mean": 0.0027,
+        "sd": 0.0014
+      },
+      "LFS": {
+        "mean": 1.2078,
+        "sd": 0.0931
+      }
+    }
+  }
+}

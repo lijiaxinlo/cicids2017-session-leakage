@@ -1,0 +1,292 @@
+{
+  "model": "cnn_lstm",
+  "class_scheme": "12class",
+  "command": "python src/train_deep.py --model cnn_lstm --seed 43 --epochs 30 --batch-size 256 --norm gn --patience 5 --save-val-proba",
+  "seed": 43,
+  "device": "cuda",
+  "n_params": {
+    "total": 298572,
+    "trainable": 298572
+  },
+  "config": {
+    "epochs": 30,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "dropout": 0.3,
+    "norm": "gn",
+    "norm_note": "三个深度 baseline 统一使用 GroupNorm（无 running stats），BatchNorm 在预实验中存在间歇性 loss 背离，仅作诊断对照",
+    "patience": 5,
+    "val_frac": 0.1,
+    "loss": "CrossEntropyLoss",
+    "optimizer": "Adam",
+    "input_shape": "(B, 1, 78)",
+    "sample_train": null
+  },
+  "leakage_checks": {
+    "val_in_test": 0,
+    "fit_in_test": 0,
+    "val_outside_train_pool": 0,
+    "fit_val_overlap": 0,
+    "passed": true
+  },
+  "n_fit": 1588059,
+  "n_val": 176452,
+  "n_test": 756219,
+  "n_features": 78,
+  "split_protocol": "固定划分 results/splits/；验证集从训练池内切 10%（seed=种子）",
+  "scaler_path": "results\\cache\\scaler.npz",
+  "scaler_fit_on": "仅训练集（fit_idx）",
+  "best_epoch": 6,
+  "best_val_macro_f1": 0.757968,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.11607,
+      "val_loss": 0.051194,
+      "gap_val_minus_train": -0.064876,
+      "val_macro_f1": 0.675522,
+      "val_macro_recall": 0.660449,
+      "train_sec": 42.9,
+      "val_sec": 2.6,
+      "peak_gpu_mb": 152.8,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.052737,
+      "val_loss": 0.047163,
+      "gap_val_minus_train": -0.005574,
+      "val_macro_f1": 0.727475,
+      "val_macro_recall": 0.724914,
+      "train_sec": 43.1,
+      "val_sec": 2.6,
+      "peak_gpu_mb": 153.9,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.046743,
+      "val_loss": 0.042205,
+      "gap_val_minus_train": -0.004538,
+      "val_macro_f1": 0.75184,
+      "val_macro_recall": 0.749599,
+      "train_sec": 43.1,
+      "val_sec": 2.6,
+      "peak_gpu_mb": 153.9,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.042048,
+      "val_loss": 0.044856,
+      "gap_val_minus_train": 0.002807,
+      "val_macro_f1": 0.757291,
+      "val_macro_recall": 0.748779,
+      "train_sec": 43.0,
+      "val_sec": 2.6,
+      "peak_gpu_mb": 153.9,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.040157,
+      "val_loss": 0.040183,
+      "gap_val_minus_train": 2.6e-05,
+      "val_macro_f1": 0.739179,
+      "val_macro_recall": 0.723471,
+      "train_sec": 43.2,
+      "val_sec": 2.7,
+      "peak_gpu_mb": 153.9,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.038717,
+      "val_loss": 0.034591,
+      "gap_val_minus_train": -0.004126,
+      "val_macro_f1": 0.757968,
+      "val_macro_recall": 0.751125,
+      "train_sec": 43.7,
+      "val_sec": 2.6,
+      "peak_gpu_mb": 153.9,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.039055,
+      "val_loss": 0.035039,
+      "gap_val_minus_train": -0.004017,
+      "val_macro_f1": 0.754881,
+      "val_macro_recall": 0.735099,
+      "train_sec": 42.7,
+      "val_sec": 2.6,
+      "peak_gpu_mb": 153.9,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.038296,
+      "val_loss": 0.041037,
+      "gap_val_minus_train": 0.002741,
+      "val_macro_f1": 0.750299,
+      "val_macro_recall": 0.745408,
+      "train_sec": 42.4,
+      "val_sec": 2.3,
+      "peak_gpu_mb": 153.9,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.037161,
+      "val_loss": 0.034737,
+      "gap_val_minus_train": -0.002424,
+      "val_macro_f1": 0.752958,
+      "val_macro_recall": 0.724353,
+      "train_sec": 39.0,
+      "val_sec": 2.4,
+      "peak_gpu_mb": 153.9,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.037217,
+      "val_loss": 0.03575,
+      "gap_val_minus_train": -0.001467,
+      "val_macro_f1": 0.756844,
+      "val_macro_recall": 0.749932,
+      "train_sec": 39.0,
+      "val_sec": 2.4,
+      "peak_gpu_mb": 153.9,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.037532,
+      "val_loss": 0.040502,
+      "gap_val_minus_train": 0.00297,
+      "val_macro_f1": 0.748289,
+      "val_macro_recall": 0.745118,
+      "train_sec": 39.1,
+      "val_sec": 2.4,
+      "peak_gpu_mb": 153.9,
+      "timing_anomaly": false
+    }
+  ],
+  "test_metrics": {
+    "accuracy": 0.9842651401247522,
+    "macro_precision": 0.7934199693514233,
+    "macro_recall": 0.7559827820430273,
+    "macro_f1": 0.7610431947601781,
+    "fpr": 0.0034056067998541415
+  },
+  "test_per_class": {
+    "BENIGN": {
+      "precision": 0.9939423158548911,
+      "recall": 0.9873225386107297,
+      "f1": 0.9906213682745234,
+      "fpr": 0.029615824341043994,
+      "support": 628517
+    },
+    "DoS Hulk": {
+      "precision": 0.9471096734104575,
+      "recall": 0.9994021676244841,
+      "f1": 0.9725535089283202,
+      "fpr": 0.004108665251680591,
+      "support": 51854
+    },
+    "DDoS": {
+      "precision": 0.9995542971003094,
+      "recall": 0.9927351317571086,
+      "f1": 0.9961330441825831,
+      "fpr": 2.3682982384040457e-05,
+      "support": 38404
+    },
+    "PortScan": {
+      "precision": 0.8403313049357675,
+      "recall": 0.9135915907086151,
+      "f1": 0.8754314291751779,
+      "fpr": 0.006478640239996379,
+      "support": 27208
+    },
+    "DoS GoldenEye": {
+      "precision": 0.9473023839397742,
+      "recall": 0.9786130913804277,
+      "f1": 0.9627032196365954,
+      "fpr": 0.00022306816989827827,
+      "support": 3086
+    },
+    "FTP-Patator": {
+      "precision": 0.9854504756575265,
+      "recall": 0.9898819561551433,
+      "f1": 0.9876612450925406,
+      "fpr": 3.446264779173957e-05,
+      "support": 1779
+    },
+    "DoS slowloris": {
+      "precision": 0.9755332496863237,
+      "recall": 0.9622524752475248,
+      "f1": 0.9688473520249221,
+      "fpr": 5.168280539568488e-05,
+      "support": 1616
+    },
+    "DoS Slowhttptest": {
+      "precision": 0.8691695108077361,
+      "recall": 0.9744897959183674,
+      "f1": 0.9188214070956104,
+      "fpr": 0.0003047766450981977,
+      "support": 1568
+    },
+    "SSH-Patator": {
+      "precision": 0.982646420824295,
+      "recall": 0.937888198757764,
+      "f1": 0.9597457627118644,
+      "fpr": 2.1184953916104933e-05,
+      "support": 966
+    },
+    "Bot": {
+      "precision": 0.98,
+      "recall": 0.3356164383561644,
+      "f1": 0.5,
+      "fpr": 5.293561044684272e-06,
+      "support": 584
+    },
+    "Web Attack-Brute Force": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 0.0,
+      "support": 441
+    },
+    "Web Attack-XSS": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 0.0,
+      "support": 196
+    }
+  },
+  "timing": {
+    "epoch_train_sec_avg": 41.9,
+    "epoch_train_sec_median": 42.9,
+    "total_sec": 506.3,
+    "test_eval_sec": 10.4,
+    "timing_anomalies": [],
+    "anomaly_rule": "单轮训练耗时 > 前几轮中位数 x1.5 即记为异常，不用于排期"
+  },
+  "peak_gpu_mb": 153.9,
+  "env": {
+    "python": "3.13.14",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit_learn": "1.9.1",
+    "torch": "2.6.0+cu124",
+    "cuda_available": true,
+    "device": "NVIDIA GeForce RTX 4050 Laptop GPU"
+  },
+  "timestamp": "2026-10-18T14:24:22",
+  "artifacts": {
+    "val_proba": "results\\proba\\deep_cnn_lstm_seed43_12class_val.npy",
+    "val_ytrue": "results\\proba\\deep_cnn_lstm_seed43_12class_val_ytrue.npy"
+  }
+}

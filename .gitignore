@@ -1,0 +1,44 @@
+# ---------- 原始数据：体积 800 MB+，需自行申请下载，不入库 ----------
+data/
+
+# ---------- 实验结果：只收轻量可审计文件（json / csv / md），
+#            排除缓存矩阵、概率矩阵、模型权重等大文件 ----------
+results/*
+!results/*.json
+!results/*.csv
+!results/*.md
+!results/tables/
+
+# ---------- 论文：只收插图，手稿与投稿材料不入库 ----------
+paper/*
+!paper/figures/
+
+# ---------- 内部工作区：文献笔记、评审往返记录、投稿归档 ----------
+docs/
+submission/
+ROADMAP.md
+
+# ---------- 通用 ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# 大体积二进制
+*.npy
+*.npz
+*.pt
+*.pth
+*.pkl
+*.h5
+*.zip
+*.log
+*.docx
+*.pdf
+
+# 系统
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,287 @@
+{
+  "model": "cnn",
+  "class_scheme": "12class",
+  "command": "python src/train_main.py --model cnn --seed 42 --epochs 1 --batch-size 256 --lr 0.001 --loss ce --sampler none --gamma 2.0 --alpha-mode uniform --benign-target full --minority-target 12000 --patience 5 --sample 200000 --tag smoke",
+  "seed": 42,
+  "device": "cuda",
+  "n_params": {
+    "total": 83916,
+    "trainable": 83916
+  },
+  "config": {
+    "epochs": 1,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "dropout": 0.3,
+    "patience": 5,
+    "val_frac": 0.1,
+    "norm": "gn",
+    "loss": "ce",
+    "gamma": null,
+    "alpha_mode": null,
+    "sampler": "none",
+    "benign_target": "full",
+    "minority_target": null,
+    "smote_k": 5,
+    "optimizer": "Adam",
+    "input_shape": "(B, 1, 78)",
+    "fpr_gate": {
+      "audit_macro": 0.01,
+      "audit_benign": 0.016,
+      "gate_semantics": "v4.3_audit_pathological",
+      "diverged_ma3_benign": 0.05,
+      "diverged_ma3_macro": 0.02,
+      "rule": "gate_flag 仅逐 epoch 审计；唯一中止条件 = 3-epoch 滑动平均 val benign FPR > 0.05 或 val macro FPR > 0.02（fpr_diverged）"
+    },
+    "sample_train": 200000,
+    "tier": null,
+    "pool": "attn",
+    "model_name": "cnn"
+  },
+  "leakage_checks": {
+    "val_in_test": 0,
+    "fit_in_test": 0,
+    "val_outside_train_pool": 372366,
+    "fit_val_overlap": 0,
+    "passed": true
+  },
+  "resampling_audit": {
+    "sampler": "none",
+    "n_fit_after": 1509557,
+    "leakage_assert_passed": true
+  },
+  "n_fit_real": 1509557,
+  "n_fit_used": 1509557,
+  "n_val": 372366,
+  "n_test": 627315,
+  "n_features": 78,
+  "best_epoch": 1,
+  "epochs_run": 1,
+  "early_stopped": false,
+  "best_val_macro_f1": 0.650512,
+  "val_per_class_at_best": {
+    "BENIGN": {
+      "precision": 0.9896995851732905,
+      "recall": 0.9510737478300006,
+      "f1": 0.9700022951572183,
+      "fpr": 0.050223469154732,
+      "support": 311060
+    },
+    "DoS Hulk": {
+      "precision": 0.9994321638612857,
+      "recall": 0.9652916519763388,
+      "f1": 0.9820652823721653,
+      "fpr": 4.036454954604298e-05,
+      "support": 25527
+    },
+    "DDoS": {
+      "precision": 0.9996685266007402,
+      "recall": 0.962397617274758,
+      "f1": 0.9806790775817684,
+      "fpr": 1.697005351223541e-05,
+      "support": 18802
+    },
+    "PortScan": {
+      "precision": 0.4640844568086169,
+      "recall": 0.985458951832778,
+      "f1": 0.6310072256437612,
+      "fpr": 0.041836274438832616,
+      "support": 13204
+    },
+    "DoS GoldenEye": {
+      "precision": 0.968476357267951,
+      "recall": 0.48381452318460194,
+      "f1": 0.6452742123687282,
+      "fpr": 4.848837491211482e-05,
+      "support": 1143
+    },
+    "FTP-Patator": {
+      "precision": 1.0,
+      "recall": 0.6636085626911316,
+      "f1": 0.7977941176470589,
+      "fpr": 0.0,
+      "support": 654
+    },
+    "DoS slowloris": {
+      "precision": 0.9605263157894737,
+      "recall": 0.984822934232715,
+      "f1": 0.9725228975853456,
+      "fpr": 6.455552178345388e-05,
+      "support": 593
+    },
+    "DoS Slowhttptest": {
+      "precision": 0.776034236804565,
+      "recall": 0.9428076256499134,
+      "f1": 0.8513302034428796,
+      "fpr": 0.0004222825312206655,
+      "support": 577
+    },
+    "SSH-Patator": {
+      "precision": 1.0,
+      "recall": 0.952112676056338,
+      "f1": 0.9754689754689754,
+      "fpr": 0.0,
+      "support": 355
+    },
+    "Bot": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 0.0,
+      "support": 217
+    },
+    "Web Attack-Brute Force": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 0.0,
+      "support": 162
+    },
+    "Web Attack-XSS": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 0.0,
+      "support": 72
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.116651,
+      "val_loss": 0.076517,
+      "gap_val_minus_train": -0.040134,
+      "val_macro_f1": 0.650512,
+      "val_macro_recall": 0.657616,
+      "val_fpr": 0.007721,
+      "val_benign_fpr": 0.048926,
+      "gate_flag": true,
+      "train_sec": 61.8,
+      "val_sec": 3.7,
+      "peak_gpu_mb": 94.2,
+      "timing_anomaly": false
+    }
+  ],
+  "main_metrics": {
+    "macro_f1_12class": 0.643098,
+    "lesion_group_f1_sum": 0.0,
+    "lesion_group_f1": {
+      "Bot": 0.0,
+      "Web Attack-Brute Force": 0.0,
+      "Web Attack-XSS": 0.0
+    }
+  },
+  "test_metrics": {
+    "accuracy": 0.9682902529032463,
+    "macro_precision": 0.6969882326141524,
+    "macro_recall": 0.6035531316123887,
+    "macro_f1": 0.6430980778200267,
+    "fpr": 0.014485565647838176,
+    "benign_fpr": 0.003309
+  },
+  "test_per_class": {
+    "BENIGN": {
+      "precision": 0.9666740963631636,
+      "recall": 0.9966907075527706,
+      "f1": 0.9814529497070377,
+      "fpr": 0.17063405263007733,
+      "support": 522166
+    },
+    "DoS Hulk": {
+      "precision": 0.9995982591228657,
+      "recall": 0.694178368827304,
+      "f1": 0.8193518289838368,
+      "fpr": 2.05372897281034e-05,
+      "support": 43012
+    },
+    "DDoS": {
+      "precision": 0.9986797372677163,
+      "recall": 0.9513583197082128,
+      "f1": 0.9744448559604516,
+      "fpr": 6.71692042632294e-05,
+      "support": 31804
+    },
+    "PortScan": {
+      "precision": 0.9437932070934776,
+      "recall": 0.9780190442288867,
+      "f1": 0.9606013591766275,
+      "fpr": 0.0021642051382098765,
+      "support": 22474
+    },
+    "DoS GoldenEye": {
+      "precision": 0.9845238095238096,
+      "recall": 0.6973018549747049,
+      "f1": 0.8163869693978283,
+      "fpr": 4.1603794266037063e-05,
+      "support": 2372
+    },
+    "FTP-Patator": {
+      "precision": 0.9990262901655307,
+      "recall": 0.7516483516483516,
+      "f1": 0.8578595317725752,
+      "fpr": 1.597571691029635e-06,
+      "support": 1365
+    },
+    "DoS slowloris": {
+      "precision": 0.7826552462526767,
+      "recall": 0.589516129032258,
+      "f1": 0.672493100275989,
+      "fpr": 0.0003242423032384299,
+      "support": 1240
+    },
+    "DoS Slowhttptest": {
+      "precision": 0.6889081455805892,
+      "recall": 0.6608478802992519,
+      "f1": 0.6745863385659737,
+      "fpr": 0.0005733798425840744,
+      "support": 1203
+    },
+    "SSH-Patator": {
+      "precision": 1.0,
+      "recall": 0.9230769230769231,
+      "f1": 0.9600000000000001,
+      "fpr": 0.0,
+      "support": 741
+    },
+    "Bot": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 0.0,
+      "support": 449
+    },
+    "Web Attack-Brute Force": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 0.0,
+      "support": 339
+    },
+    "Web Attack-XSS": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 0.0,
+      "support": 150
+    }
+  },
+  "timing": {
+    "epoch_train_sec_median": 61.8,
+    "total_sec": 89.2,
+    "test_eval_sec": 6.4,
+    "timing_anomalies": []
+  },
+  "peak_gpu_mb": 94.2,
+  "env": {
+    "python": "3.13.14",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit_learn": "1.9.1",
+    "imbalanced_learn": "0.14.2",
+    "torch": "2.6.0+cu124",
+    "cuda_available": true,
+    "device": "NVIDIA GeForce RTX 4050 Laptop GPU"
+  },
+  "timestamp": "2026-10-23T12:47:33"
+}

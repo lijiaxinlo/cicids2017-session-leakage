@@ -1,0 +1,301 @@
+{
+ "meta": {
+  "note": "w 在 TEST 上搜，上限口径；论文须在 val 上搜",
+  "objective": "macro-F1（12 类）",
+  "grid": "exp(linspace(log 0.1, log 10, 41))"
+ },
+ "per_seed": {
+  "42": {
+   "seed": 42,
+   "base": {
+    "macro_f1": 0.7685,
+    "nine_sum": 8.5808,
+    "macro_ovr_fpr": 0.004453,
+    "benign_fpr": 0.012098
+   },
+   "calibrated": {
+    "macro_f1": 0.7886,
+    "nine_sum": 8.6532,
+    "macro_ovr_fpr": 0.003023,
+    "benign_fpr": 0.014611
+   },
+   "weights": {
+    "BENIGN": 1.0,
+    "DoS Hulk": 10.0,
+    "DDoS": 10.0,
+    "PortScan": 0.794,
+    "DoS GoldenEye": 1.0,
+    "FTP-Patator": 0.794,
+    "DoS slowloris": 0.158,
+    "DoS Slowhttptest": 2.512,
+    "SSH-Patator": 3.162,
+    "Bot": 0.501,
+    "Web Attack-Brute Force": 5.012,
+    "Web Attack-XSS": 1.0
+   },
+   "per_class_f1_base": {
+    "BENIGN": 0.9896,
+    "DoS Hulk": 0.9734,
+    "DDoS": 0.9899,
+    "PortScan": 0.8657,
+    "DoS GoldenEye": 0.9764,
+    "FTP-Patator": 0.9879,
+    "DoS slowloris": 0.935,
+    "DoS Slowhttptest": 0.9061,
+    "SSH-Patator": 0.9568,
+    "Bot": 0.5707,
+    "Web Attack-Brute Force": 0.07,
+    "Web Attack-XSS": 0.0
+   },
+   "per_class_f1_cal": {
+    "BENIGN": 0.9903,
+    "DoS Hulk": 0.9859,
+    "DDoS": 0.9913,
+    "PortScan": 0.8802,
+    "DoS GoldenEye": 0.9804,
+    "FTP-Patator": 0.9854,
+    "DoS slowloris": 0.9639,
+    "DoS Slowhttptest": 0.9184,
+    "SSH-Patator": 0.9574,
+    "Bot": 0.5806,
+    "Web Attack-Brute Force": 0.2297,
+    "Web Attack-XSS": 0.0
+   },
+   "trail": [
+    {
+     "pass": 1,
+     "macro_f1": 0.7877
+    },
+    {
+     "pass": 2,
+     "macro_f1": 0.7886
+    },
+    {
+     "pass": 3,
+     "macro_f1": 0.7886
+    },
+    {
+     "pass": 4,
+     "macro_f1": 0.7886
+    }
+   ]
+  },
+  "43": {
+   "seed": 43,
+   "base": {
+    "macro_f1": 0.765,
+    "nine_sum": 8.6795,
+    "macro_ovr_fpr": 0.003517,
+    "benign_fpr": 0.008063
+   },
+   "calibrated": {
+    "macro_f1": 0.7942,
+    "nine_sum": 8.706,
+    "macro_ovr_fpr": 0.002685,
+    "benign_fpr": 0.012265
+   },
+   "weights": {
+    "BENIGN": 0.316,
+    "DoS Hulk": 0.631,
+    "DDoS": 0.398,
+    "PortScan": 0.398,
+    "DoS GoldenEye": 0.501,
+    "FTP-Patator": 0.398,
+    "DoS slowloris": 1.259,
+    "DoS Slowhttptest": 1.0,
+    "SSH-Patator": 0.1,
+    "Bot": 1.0,
+    "Web Attack-Brute Force": 5.012,
+    "Web Attack-XSS": 10.0
+   },
+   "per_class_f1_base": {
+    "BENIGN": 0.9924,
+    "DoS Hulk": 0.9883,
+    "DDoS": 0.9961,
+    "PortScan": 0.8752,
+    "DoS GoldenEye": 0.9726,
+    "FTP-Patator": 0.9827,
+    "DoS slowloris": 0.9689,
+    "DoS Slowhttptest": 0.9463,
+    "SSH-Patator": 0.9569,
+    "Bot": 0.5006,
+    "Web Attack-Brute Force": 0.0,
+    "Web Attack-XSS": 0.0
+   },
+   "per_class_f1_cal": {
+    "BENIGN": 0.9917,
+    "DoS Hulk": 0.9879,
+    "DDoS": 0.9975,
+    "PortScan": 0.8795,
+    "DoS GoldenEye": 0.9736,
+    "FTP-Patator": 0.9873,
+    "DoS slowloris": 0.9691,
+    "DoS Slowhttptest": 0.9614,
+    "SSH-Patator": 0.9579,
+    "Bot": 0.5801,
+    "Web Attack-Brute Force": 0.2448,
+    "Web Attack-XSS": 0.0
+   },
+   "trail": [
+    {
+     "pass": 1,
+     "macro_f1": 0.794
+    },
+    {
+     "pass": 2,
+     "macro_f1": 0.7942
+    },
+    {
+     "pass": 3,
+     "macro_f1": 0.7942
+    },
+    {
+     "pass": 4,
+     "macro_f1": 0.7942
+    }
+   ]
+  },
+  "44": {
+   "seed": 44,
+   "base": {
+    "macro_f1": 0.7673,
+    "nine_sum": 8.7108,
+    "macro_ovr_fpr": 0.003659,
+    "benign_fpr": 0.004388
+   },
+   "calibrated": {
+    "macro_f1": 0.8229,
+    "nine_sum": 8.7286,
+    "macro_ovr_fpr": 0.002843,
+    "benign_fpr": 0.005731
+   },
+   "weights": {
+    "BENIGN": 0.158,
+    "DoS Hulk": 0.316,
+    "DDoS": 0.794,
+    "PortScan": 0.158,
+    "DoS GoldenEye": 1.259,
+    "FTP-Patator": 0.501,
+    "DoS slowloris": 0.316,
+    "DoS Slowhttptest": 0.398,
+    "SSH-Patator": 0.316,
+    "Bot": 0.794,
+    "Web Attack-Brute Force": 1.0,
+    "Web Attack-XSS": 3.162
+   },
+   "per_class_f1_base": {
+    "BENIGN": 0.9938,
+    "DoS Hulk": 0.9886,
+    "DDoS": 0.9932,
+    "PortScan": 0.9099,
+    "DoS GoldenEye": 0.9789,
+    "FTP-Patator": 0.9966,
+    "DoS slowloris": 0.9752,
+    "DoS Slowhttptest": 0.9183,
+    "SSH-Patator": 0.9562,
+    "Bot": 0.4968,
+    "Web Attack-Brute Force": 0.0,
+    "Web Attack-XSS": 0.0
+   },
+   "per_class_f1_cal": {
+    "BENIGN": 0.9942,
+    "DoS Hulk": 0.9891,
+    "DDoS": 0.9987,
+    "PortScan": 0.9099,
+    "DoS GoldenEye": 0.9796,
+    "FTP-Patator": 0.9972,
+    "DoS slowloris": 0.9802,
+    "DoS Slowhttptest": 0.9229,
+    "SSH-Patator": 0.9568,
+    "Bot": 0.5751,
+    "Web Attack-Brute Force": 0.5569,
+    "Web Attack-XSS": 0.0145
+   },
+   "trail": [
+    {
+     "pass": 1,
+     "macro_f1": 0.8229
+    },
+    {
+     "pass": 2,
+     "macro_f1": 0.8229
+    }
+   ]
+  },
+  "45": {
+   "seed": 45,
+   "base": {
+    "macro_f1": 0.7626,
+    "nine_sum": 8.6485,
+    "macro_ovr_fpr": 0.003722,
+    "benign_fpr": 0.008967
+   },
+   "calibrated": {
+    "macro_f1": 0.7923,
+    "nine_sum": 8.6669,
+    "macro_ovr_fpr": 0.003024,
+    "benign_fpr": 0.012237
+   },
+   "weights": {
+    "BENIGN": 0.126,
+    "DoS Hulk": 0.2,
+    "DDoS": 1.0,
+    "PortScan": 0.158,
+    "DoS GoldenEye": 0.2,
+    "FTP-Patator": 0.251,
+    "DoS slowloris": 1.259,
+    "DoS Slowhttptest": 0.794,
+    "SSH-Patator": 0.316,
+    "Bot": 0.316,
+    "Web Attack-Brute Force": 1.0,
+    "Web Attack-XSS": 1.995
+   },
+   "per_class_f1_base": {
+    "BENIGN": 0.9918,
+    "DoS Hulk": 0.9869,
+    "DDoS": 0.9911,
+    "PortScan": 0.8802,
+    "DoS GoldenEye": 0.9751,
+    "FTP-Patator": 0.986,
+    "DoS slowloris": 0.955,
+    "DoS Slowhttptest": 0.9256,
+    "SSH-Patator": 0.9568,
+    "Bot": 0.5026,
+    "Web Attack-Brute Force": 0.0,
+    "Web Attack-XSS": 0.0
+   },
+   "per_class_f1_cal": {
+    "BENIGN": 0.9913,
+    "DoS Hulk": 0.9868,
+    "DDoS": 0.9932,
+    "PortScan": 0.8814,
+    "DoS GoldenEye": 0.9757,
+    "FTP-Patator": 0.9892,
+    "DoS slowloris": 0.9693,
+    "DoS Slowhttptest": 0.922,
+    "SSH-Patator": 0.9579,
+    "Bot": 0.5816,
+    "Web Attack-Brute Force": 0.2487,
+    "Web Attack-XSS": 0.0099
+   },
+   "trail": [
+    {
+     "pass": 1,
+     "macro_f1": 0.7919
+    },
+    {
+     "pass": 2,
+     "macro_f1": 0.7922
+    },
+    {
+     "pass": 3,
+     "macro_f1": 0.7923
+    },
+    {
+     "pass": 4,
+     "macro_f1": 0.7923
+    }
+   ]
+  }
+ }
+}

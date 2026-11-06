@@ -1,0 +1,8025 @@
+{
+  "protocol": "E17 v4.3 §4.3.3 约束前沿校准（含 P1 公平 C2(val) 对照）",
+  "model": "pred=argmax(w*p), 坐标上升 3 轮, 网格 exp(linspace(log0.1,log10,21))",
+  "objective": "val 12类 macro-F1，硬约束 val benign FPR <= 档位",
+  "tiers": [
+    0.003,
+    0.005,
+    0.008,
+    0.012,
+    0.016,
+    0.02
+  ],
+  "seeds_main": [
+    42,
+    44,
+    46
+  ],
+  "c4": [
+    {
+      "seed": 42,
+      "tier_benign_cap": 0.003,
+      "argmax_val_benign_fpr": 0.020483,
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 3,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.003
+        }
+      ],
+      "enforced_w0": 2.51,
+      "final_val_benign_fpr": 0.002155,
+      "final_val_macro_f1": 0.781263,
+      "w": [
+        2.5119,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.002067,
+      "test_macro_f1": 0.774692,
+      "test_lesion_sum": 0.744701,
+      "sec": 2.0
+    },
+    {
+      "seed": 42,
+      "tier_benign_cap": 0.005,
+      "argmax_val_benign_fpr": 0.020483,
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 3,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.005
+        }
+      ],
+      "enforced_w0": 2.51,
+      "final_val_benign_fpr": 0.002155,
+      "final_val_macro_f1": 0.781263,
+      "w": [
+        2.5119,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.002067,
+      "test_macro_f1": 0.774692,
+      "test_lesion_sum": 0.744701,
+      "sec": 2.1
+    },
+    {
+      "seed": 42,
+      "tier_benign_cap": 0.008,
+      "argmax_val_benign_fpr": 0.020483,
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.008
+        }
+      ],
+      "enforced_w0": 2.0,
+      "final_val_benign_fpr": 0.007528,
+      "final_val_macro_f1": 0.790533,
+      "w": [
+        1.9953,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.007424,
+      "test_macro_f1": 0.790455,
+      "test_lesion_sum": 0.926769,
+      "sec": 2.1
+    },
+    {
+      "seed": 42,
+      "tier_benign_cap": 0.012,
+      "argmax_val_benign_fpr": 0.020483,
+      "rounds": 3,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.012
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.012
+        }
+      ],
+      "final_val_benign_fpr": 0.010753,
+      "final_val_macro_f1": 0.796237,
+      "w": [
+        1.0,
+        1.0,
+        1.5849,
+        0.7943,
+        0.1995,
+        0.1259,
+        0.5012,
+        1.0,
+        0.1,
+        0.5012,
+        1.2589,
+        1.2589
+      ],
+      "test_benign_fpr": 0.010461,
+      "test_macro_f1": 0.798149,
+      "test_lesion_sum": 0.948137,
+      "sec": 6.6
+    },
+    {
+      "seed": 42,
+      "tier_benign_cap": 0.016,
+      "argmax_val_benign_fpr": 0.020483,
+      "rounds": 3,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.016
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.016
+        }
+      ],
+      "final_val_benign_fpr": 0.014803,
+      "final_val_macro_f1": 0.796589,
+      "w": [
+        1.0,
+        1.2589,
+        1.5849,
+        0.7943,
+        0.1995,
+        0.1259,
+        0.5012,
+        1.0,
+        0.1,
+        0.5012,
+        1.2589,
+        1.2589
+      ],
+      "test_benign_fpr": 0.014641,
+      "test_macro_f1": 0.798264,
+      "test_lesion_sum": 0.948137,
+      "sec": 6.7
+    },
+    {
+      "seed": 42,
+      "tier_benign_cap": 0.02,
+      "argmax_val_benign_fpr": 0.020483,
+      "rounds": 3,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.02
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.02
+        }
+      ],
+      "final_val_benign_fpr": 0.014803,
+      "final_val_macro_f1": 0.796589,
+      "w": [
+        1.0,
+        1.2589,
+        1.5849,
+        0.7943,
+        0.1995,
+        0.1259,
+        0.5012,
+        1.0,
+        0.1,
+        0.5012,
+        1.2589,
+        1.2589
+      ],
+      "test_benign_fpr": 0.014641,
+      "test_macro_f1": 0.798264,
+      "test_lesion_sum": 0.948137,
+      "sec": 6.8
+    },
+    {
+      "seed": 44,
+      "tier_benign_cap": 0.003,
+      "argmax_val_benign_fpr": 0.006962,
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 3,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.003
+        }
+      ],
+      "enforced_w0": 2.51,
+      "final_val_benign_fpr": 0.001077,
+      "final_val_macro_f1": 0.762792,
+      "w": [
+        2.5119,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.001034,
+      "test_macro_f1": 0.759408,
+      "test_lesion_sum": 0.872318,
+      "sec": 2.1
+    },
+    {
+      "seed": 44,
+      "tier_benign_cap": 0.005,
+      "argmax_val_benign_fpr": 0.006962,
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 3,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.005
+        }
+      ],
+      "enforced_w0": 2.51,
+      "final_val_benign_fpr": 0.001077,
+      "final_val_macro_f1": 0.762792,
+      "w": [
+        2.5119,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.001034,
+      "test_macro_f1": 0.759408,
+      "test_lesion_sum": 0.872318,
+      "sec": 2.1
+    },
+    {
+      "seed": 44,
+      "tier_benign_cap": 0.008,
+      "argmax_val_benign_fpr": 0.006962,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.007016,
+      "final_val_macro_f1": 0.805169,
+      "w": [
+        1.0,
+        1.0,
+        5.0119,
+        1.0,
+        1.0,
+        0.1,
+        0.631,
+        1.0,
+        0.1,
+        0.3162,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.0067,
+      "test_macro_f1": 0.804662,
+      "test_lesion_sum": 1.01795,
+      "sec": 6.9
+    },
+    {
+      "seed": 44,
+      "tier_benign_cap": 0.012,
+      "argmax_val_benign_fpr": 0.006962,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.010549,
+      "final_val_macro_f1": 0.805436,
+      "w": [
+        1.0,
+        1.2589,
+        5.0119,
+        1.0,
+        1.0,
+        0.1,
+        0.631,
+        1.0,
+        0.1,
+        0.3162,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.010415,
+      "test_macro_f1": 0.804936,
+      "test_lesion_sum": 1.01795,
+      "sec": 6.8
+    },
+    {
+      "seed": 44,
+      "tier_benign_cap": 0.016,
+      "argmax_val_benign_fpr": 0.006962,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.015008,
+      "final_val_macro_f1": 0.806884,
+      "w": [
+        0.7943,
+        1.0,
+        3.1623,
+        1.0,
+        0.7943,
+        0.1,
+        0.631,
+        1.0,
+        0.1,
+        0.2512,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.014886,
+      "test_macro_f1": 0.806155,
+      "test_lesion_sum": 1.012876,
+      "sec": 6.8
+    },
+    {
+      "seed": 44,
+      "tier_benign_cap": 0.02,
+      "argmax_val_benign_fpr": 0.006962,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.018404,
+      "final_val_macro_f1": 0.807592,
+      "w": [
+        0.7943,
+        1.0,
+        3.1623,
+        1.2589,
+        0.7943,
+        0.1,
+        0.631,
+        1.0,
+        0.1,
+        0.2512,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.018348,
+      "test_macro_f1": 0.806953,
+      "test_lesion_sum": 1.012876,
+      "sec": 6.9
+    },
+    {
+      "seed": 46,
+      "tier_benign_cap": 0.003,
+      "argmax_val_benign_fpr": 0.009417,
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 3,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.003
+        }
+      ],
+      "enforced_w0": 2.51,
+      "final_val_benign_fpr": 0.00088,
+      "final_val_macro_f1": 0.791395,
+      "w": [
+        2.5119,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.000838,
+      "test_macro_f1": 0.784536,
+      "test_lesion_sum": 0.850236,
+      "sec": 2.2
+    },
+    {
+      "seed": 46,
+      "tier_benign_cap": 0.005,
+      "argmax_val_benign_fpr": 0.009417,
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 3,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.005
+        }
+      ],
+      "enforced_w0": 1.58,
+      "final_val_benign_fpr": 0.00465,
+      "final_val_macro_f1": 0.799662,
+      "w": [
+        1.5849,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.004986,
+      "test_macro_f1": 0.796293,
+      "test_lesion_sum": 0.980971,
+      "sec": 2.1
+    },
+    {
+      "seed": 46,
+      "tier_benign_cap": 0.008,
+      "argmax_val_benign_fpr": 0.009417,
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 2,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 3,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.008
+        }
+      ],
+      "enforced_w0": 1.26,
+      "final_val_benign_fpr": 0.005148,
+      "final_val_macro_f1": 0.801049,
+      "w": [
+        1.2589,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.005432,
+      "test_macro_f1": 0.797834,
+      "test_lesion_sum": 0.977498,
+      "sec": 2.1
+    },
+    {
+      "seed": 46,
+      "tier_benign_cap": 0.012,
+      "argmax_val_benign_fpr": 0.009417,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.011346,
+      "final_val_macro_f1": 0.806319,
+      "w": [
+        1.0,
+        1.0,
+        1.9953,
+        1.2589,
+        0.631,
+        0.1,
+        1.0,
+        1.2589,
+        3.9811,
+        1.0,
+        0.3981,
+        0.631
+      ],
+      "test_benign_fpr": 0.011906,
+      "test_macro_f1": 0.799932,
+      "test_lesion_sum": 0.9517,
+      "sec": 6.8
+    },
+    {
+      "seed": 46,
+      "tier_benign_cap": 0.016,
+      "argmax_val_benign_fpr": 0.009417,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.011346,
+      "final_val_macro_f1": 0.806319,
+      "w": [
+        1.0,
+        1.0,
+        1.9953,
+        1.2589,
+        0.631,
+        0.1,
+        1.0,
+        1.2589,
+        3.9811,
+        1.0,
+        0.3981,
+        0.631
+      ],
+      "test_benign_fpr": 0.011906,
+      "test_macro_f1": 0.799932,
+      "test_lesion_sum": 0.9517,
+      "sec": 6.8
+    },
+    {
+      "seed": 46,
+      "tier_benign_cap": 0.02,
+      "argmax_val_benign_fpr": 0.009417,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.016549,
+      "final_val_macro_f1": 0.80816,
+      "w": [
+        1.0,
+        1.0,
+        1.9953,
+        1.5849,
+        0.631,
+        0.1,
+        0.7943,
+        1.0,
+        3.9811,
+        1.0,
+        0.3981,
+        0.631
+      ],
+      "test_benign_fpr": 0.017136,
+      "test_macro_f1": 0.801664,
+      "test_lesion_sum": 0.9517,
+      "sec": 6.9
+    }
+  ],
+  "c2": [
+    {
+      "model": "cnn",
+      "seed": 42,
+      "tier_benign_cap": 0.003,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.003
+        }
+      ],
+      "initial_val_benign_fpr": 0.012098,
+      "enforced_w0": 3.16,
+      "final_val_benign_fpr": 0.002396,
+      "final_val_macro_f1": 0.713516,
+      "w": [
+        3.1623,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.002396,
+      "test_macro_f1": 0.713516,
+      "test_lesion_sum": 0.006826
+    },
+    {
+      "model": "cnn",
+      "seed": 42,
+      "tier_benign_cap": 0.005,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.005
+        }
+      ],
+      "initial_val_benign_fpr": 0.012098,
+      "enforced_w0": 2.0,
+      "final_val_benign_fpr": 0.004907,
+      "final_val_macro_f1": 0.762404,
+      "w": [
+        1.9953,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.004907,
+      "test_macro_f1": 0.762404,
+      "test_lesion_sum": 0.580589
+    },
+    {
+      "model": "cnn",
+      "seed": 42,
+      "tier_benign_cap": 0.008,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.008
+        }
+      ],
+      "initial_val_benign_fpr": 0.012098,
+      "enforced_w0": 1.58,
+      "final_val_benign_fpr": 0.006869,
+      "final_val_macro_f1": 0.762908,
+      "w": [
+        1.5849,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.006869,
+      "test_macro_f1": 0.762908,
+      "test_lesion_sum": 0.580589
+    },
+    {
+      "model": "cnn",
+      "seed": 42,
+      "tier_benign_cap": 0.012,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.012
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.012
+        }
+      ],
+      "initial_val_benign_fpr": 0.012098,
+      "final_val_benign_fpr": 0.011998,
+      "final_val_macro_f1": 0.787578,
+      "w": [
+        1.0,
+        7.9433,
+        6.3096,
+        0.7943,
+        1.0,
+        0.631,
+        0.1585,
+        1.9953,
+        3.1623,
+        0.5012,
+        3.9811,
+        1.0
+      ],
+      "test_benign_fpr": 0.011998,
+      "test_macro_f1": 0.787578,
+      "test_lesion_sum": 0.79923
+    },
+    {
+      "model": "cnn",
+      "seed": 42,
+      "tier_benign_cap": 0.016,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.012098,
+      "final_val_benign_fpr": 0.014611,
+      "final_val_macro_f1": 0.78863,
+      "w": [
+        1.0,
+        10.0,
+        10.0,
+        0.7943,
+        1.0,
+        0.7943,
+        0.1585,
+        2.5119,
+        3.1623,
+        0.5012,
+        5.0119,
+        1.0
+      ],
+      "test_benign_fpr": 0.014611,
+      "test_macro_f1": 0.78863,
+      "test_lesion_sum": 0.810327
+    },
+    {
+      "model": "cnn",
+      "seed": 42,
+      "tier_benign_cap": 0.02,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.012098,
+      "final_val_benign_fpr": 0.014611,
+      "final_val_macro_f1": 0.78863,
+      "w": [
+        1.0,
+        10.0,
+        10.0,
+        0.7943,
+        1.0,
+        0.7943,
+        0.1585,
+        2.5119,
+        3.1623,
+        0.5012,
+        5.0119,
+        1.0
+      ],
+      "test_benign_fpr": 0.014611,
+      "test_macro_f1": 0.78863,
+      "test_lesion_sum": 0.810327
+    },
+    {
+      "model": "cnn",
+      "seed": 43,
+      "tier_benign_cap": 0.003,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.003
+        }
+      ],
+      "initial_val_benign_fpr": 0.008063,
+      "enforced_w0": 1.58,
+      "final_val_benign_fpr": 0.00274,
+      "final_val_macro_f1": 0.720929,
+      "w": [
+        1.5849,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.00274,
+      "test_macro_f1": 0.720929,
+      "test_lesion_sum": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 43,
+      "tier_benign_cap": 0.005,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.005
+        }
+      ],
+      "initial_val_benign_fpr": 0.008063,
+      "enforced_w0": 1.26,
+      "final_val_benign_fpr": 0.003208,
+      "final_val_macro_f1": 0.721477,
+      "w": [
+        1.2589,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.003208,
+      "test_macro_f1": 0.721477,
+      "test_lesion_sum": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 43,
+      "tier_benign_cap": 0.008,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 2,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.008
+        }
+      ],
+      "initial_val_benign_fpr": 0.008063,
+      "enforced_w0": 1.26,
+      "final_val_benign_fpr": 0.003208,
+      "final_val_macro_f1": 0.721477,
+      "w": [
+        1.2589,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.003208,
+      "test_macro_f1": 0.721477,
+      "test_lesion_sum": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 43,
+      "tier_benign_cap": 0.012,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.008063,
+      "final_val_benign_fpr": 0.010705,
+      "final_val_macro_f1": 0.791485,
+      "w": [
+        0.7943,
+        1.9953,
+        1.0,
+        1.0,
+        1.5849,
+        0.3981,
+        1.2589,
+        1.0,
+        0.1,
+        2.5119,
+        10.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.010705,
+      "test_macro_f1": 0.791485,
+      "test_lesion_sum": 0.780547
+    },
+    {
+      "model": "cnn",
+      "seed": 43,
+      "tier_benign_cap": 0.016,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.008063,
+      "final_val_benign_fpr": 0.012242,
+      "final_val_macro_f1": 0.794564,
+      "w": [
+        0.631,
+        1.2589,
+        0.7943,
+        0.7943,
+        1.0,
+        0.3981,
+        1.2589,
+        1.0,
+        0.1,
+        1.9953,
+        10.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.012242,
+      "test_macro_f1": 0.794564,
+      "test_lesion_sum": 0.818825
+    },
+    {
+      "model": "cnn",
+      "seed": 43,
+      "tier_benign_cap": 0.02,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.008063,
+      "final_val_benign_fpr": 0.012265,
+      "final_val_macro_f1": 0.794235,
+      "w": [
+        0.3162,
+        0.631,
+        0.3981,
+        0.3981,
+        0.5012,
+        0.3981,
+        1.2589,
+        1.0,
+        0.1,
+        1.0,
+        5.0119,
+        10.0
+      ],
+      "test_benign_fpr": 0.012265,
+      "test_macro_f1": 0.794235,
+      "test_lesion_sum": 0.824871
+    },
+    {
+      "model": "cnn",
+      "seed": 44,
+      "tier_benign_cap": 0.003,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.003
+        }
+      ],
+      "initial_val_benign_fpr": 0.004388,
+      "enforced_w0": 1.58,
+      "final_val_benign_fpr": 0.002698,
+      "final_val_macro_f1": 0.762658,
+      "w": [
+        1.5849,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.002698,
+      "test_macro_f1": 0.762658,
+      "test_lesion_sum": 0.5
+    },
+    {
+      "model": "cnn",
+      "seed": 44,
+      "tier_benign_cap": 0.005,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.004388,
+      "final_val_benign_fpr": 0.004752,
+      "final_val_macro_f1": 0.771048,
+      "w": [
+        1.0,
+        1.9953,
+        5.0119,
+        1.0,
+        7.9433,
+        1.5849,
+        0.7943,
+        2.5119,
+        1.9953,
+        0.3981,
+        0.1,
+        10.0
+      ],
+      "test_benign_fpr": 0.004752,
+      "test_macro_f1": 0.771048,
+      "test_lesion_sum": 0.520444
+    },
+    {
+      "model": "cnn",
+      "seed": 44,
+      "tier_benign_cap": 0.008,
+      "oracle": "test",
+      "rounds": 2,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.004388,
+      "final_val_benign_fpr": 0.00572,
+      "final_val_macro_f1": 0.819526,
+      "w": [
+        1.0,
+        1.9953,
+        5.0119,
+        1.0,
+        7.9433,
+        1.5849,
+        0.7943,
+        2.5119,
+        1.9953,
+        5.0119,
+        6.3096,
+        1.0
+      ],
+      "test_benign_fpr": 0.00572,
+      "test_macro_f1": 0.819526,
+      "test_lesion_sum": 1.102124
+    },
+    {
+      "model": "cnn",
+      "seed": 44,
+      "tier_benign_cap": 0.012,
+      "oracle": "test",
+      "rounds": 2,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.004388,
+      "final_val_benign_fpr": 0.00572,
+      "final_val_macro_f1": 0.819526,
+      "w": [
+        1.0,
+        1.9953,
+        5.0119,
+        1.0,
+        7.9433,
+        1.5849,
+        0.7943,
+        2.5119,
+        1.9953,
+        5.0119,
+        6.3096,
+        1.0
+      ],
+      "test_benign_fpr": 0.00572,
+      "test_macro_f1": 0.819526,
+      "test_lesion_sum": 1.102124
+    },
+    {
+      "model": "cnn",
+      "seed": 44,
+      "tier_benign_cap": 0.016,
+      "oracle": "test",
+      "rounds": 2,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.004388,
+      "final_val_benign_fpr": 0.00572,
+      "final_val_macro_f1": 0.819526,
+      "w": [
+        1.0,
+        1.9953,
+        5.0119,
+        1.0,
+        7.9433,
+        1.5849,
+        0.7943,
+        2.5119,
+        1.9953,
+        5.0119,
+        6.3096,
+        1.0
+      ],
+      "test_benign_fpr": 0.00572,
+      "test_macro_f1": 0.819526,
+      "test_lesion_sum": 1.102124
+    },
+    {
+      "model": "cnn",
+      "seed": 44,
+      "tier_benign_cap": 0.02,
+      "oracle": "test",
+      "rounds": 2,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.004388,
+      "final_val_benign_fpr": 0.005731,
+      "final_val_macro_f1": 0.82293,
+      "w": [
+        0.1585,
+        0.3162,
+        0.7943,
+        0.1585,
+        1.2589,
+        0.5012,
+        0.3162,
+        0.3981,
+        0.3162,
+        0.7943,
+        1.0,
+        3.1623
+      ],
+      "test_benign_fpr": 0.005731,
+      "test_macro_f1": 0.82293,
+      "test_lesion_sum": 1.146515
+    },
+    {
+      "model": "cnn",
+      "seed": 45,
+      "tier_benign_cap": 0.003,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.003
+        }
+      ],
+      "initial_val_benign_fpr": 0.008967,
+      "enforced_w0": 3.16,
+      "final_val_benign_fpr": 0.002453,
+      "final_val_macro_f1": 0.719646,
+      "w": [
+        3.1623,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.002453,
+      "test_macro_f1": 0.719646,
+      "test_lesion_sum": 0.050083
+    },
+    {
+      "model": "cnn",
+      "seed": 45,
+      "tier_benign_cap": 0.005,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.005
+        }
+      ],
+      "initial_val_benign_fpr": 0.008967,
+      "enforced_w0": 1.58,
+      "final_val_benign_fpr": 0.004337,
+      "final_val_macro_f1": 0.759682,
+      "w": [
+        1.5849,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.004337,
+      "test_macro_f1": 0.759682,
+      "test_lesion_sum": 0.502564
+    },
+    {
+      "model": "cnn",
+      "seed": 45,
+      "tier_benign_cap": 0.008,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.008
+        }
+      ],
+      "initial_val_benign_fpr": 0.008967,
+      "enforced_w0": 1.26,
+      "final_val_benign_fpr": 0.006721,
+      "final_val_macro_f1": 0.76087,
+      "w": [
+        1.2589,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.006721,
+      "test_macro_f1": 0.76087,
+      "test_lesion_sum": 0.502564
+    },
+    {
+      "model": "cnn",
+      "seed": 45,
+      "tier_benign_cap": 0.012,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.008967,
+      "final_val_benign_fpr": 0.010641,
+      "final_val_macro_f1": 0.771606,
+      "w": [
+        0.7943,
+        1.2589,
+        5.0119,
+        1.0,
+        1.2589,
+        1.2589,
+        6.3096,
+        3.1623,
+        1.9953,
+        1.9953,
+        1.0,
+        10.0
+      ],
+      "test_benign_fpr": 0.010641,
+      "test_macro_f1": 0.771606,
+      "test_lesion_sum": 0.591547
+    },
+    {
+      "model": "cnn",
+      "seed": 45,
+      "tier_benign_cap": 0.016,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.008967,
+      "final_val_benign_fpr": 0.012208,
+      "final_val_macro_f1": 0.791406,
+      "w": [
+        0.7943,
+        1.2589,
+        5.0119,
+        1.0,
+        1.2589,
+        1.2589,
+        6.3096,
+        3.1623,
+        1.9953,
+        1.9953,
+        6.3096,
+        10.0
+      ],
+      "test_benign_fpr": 0.012208,
+      "test_macro_f1": 0.791406,
+      "test_lesion_sum": 0.829713
+    },
+    {
+      "model": "cnn",
+      "seed": 45,
+      "tier_benign_cap": 0.02,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.008967,
+      "final_val_benign_fpr": 0.012237,
+      "final_val_macro_f1": 0.792253,
+      "w": [
+        0.1259,
+        0.1995,
+        1.0,
+        0.1585,
+        0.1995,
+        0.2512,
+        1.2589,
+        0.7943,
+        0.3162,
+        0.3162,
+        1.0,
+        1.9953
+      ],
+      "test_benign_fpr": 0.012237,
+      "test_macro_f1": 0.792253,
+      "test_lesion_sum": 0.840142
+    },
+    {
+      "model": "cnn",
+      "seed": 46,
+      "tier_benign_cap": 0.003,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.003
+        }
+      ],
+      "initial_val_benign_fpr": 0.009462,
+      "enforced_w0": 2.0,
+      "final_val_benign_fpr": 0.002978,
+      "final_val_macro_f1": 0.734498,
+      "w": [
+        1.9953,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.002978,
+      "test_macro_f1": 0.734498,
+      "test_lesion_sum": 0.137161
+    },
+    {
+      "model": "cnn",
+      "seed": 46,
+      "tier_benign_cap": 0.005,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.005
+        }
+      ],
+      "initial_val_benign_fpr": 0.009462,
+      "enforced_w0": 1.58,
+      "final_val_benign_fpr": 0.003518,
+      "final_val_macro_f1": 0.761197,
+      "w": [
+        1.5849,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.003518,
+      "test_macro_f1": 0.761197,
+      "test_lesion_sum": 0.457067
+    },
+    {
+      "model": "cnn",
+      "seed": 46,
+      "tier_benign_cap": 0.008,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 2,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.008
+        }
+      ],
+      "initial_val_benign_fpr": 0.009462,
+      "enforced_w0": 1.26,
+      "final_val_benign_fpr": 0.006111,
+      "final_val_macro_f1": 0.765727,
+      "w": [
+        1.2589,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.006111,
+      "test_macro_f1": 0.765727,
+      "test_lesion_sum": 0.542564
+    },
+    {
+      "model": "cnn",
+      "seed": 46,
+      "tier_benign_cap": 0.012,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.009462,
+      "final_val_benign_fpr": 0.010246,
+      "final_val_macro_f1": 0.783488,
+      "w": [
+        0.631,
+        0.3162,
+        2.5119,
+        1.0,
+        0.7943,
+        0.2512,
+        0.5012,
+        0.1995,
+        0.3162,
+        3.1623,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.010246,
+      "test_macro_f1": 0.783488,
+      "test_lesion_sum": 0.676787
+    },
+    {
+      "model": "cnn",
+      "seed": 46,
+      "tier_benign_cap": 0.016,
+      "oracle": "test",
+      "rounds": 2,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.009462,
+      "final_val_benign_fpr": 0.013438,
+      "final_val_macro_f1": 0.79714,
+      "w": [
+        0.631,
+        0.3162,
+        2.5119,
+        1.0,
+        0.7943,
+        0.2512,
+        1.2589,
+        0.3162,
+        0.3162,
+        3.1623,
+        3.1623,
+        1.0
+      ],
+      "test_benign_fpr": 0.013438,
+      "test_macro_f1": 0.79714,
+      "test_lesion_sum": 0.842941
+    },
+    {
+      "model": "cnn",
+      "seed": 46,
+      "tier_benign_cap": 0.02,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.009462,
+      "final_val_benign_fpr": 0.013438,
+      "final_val_macro_f1": 0.79714,
+      "w": [
+        0.2512,
+        0.1259,
+        1.0,
+        0.3981,
+        0.3162,
+        0.1,
+        0.5012,
+        0.1259,
+        0.1259,
+        1.2589,
+        1.2589,
+        1.0
+      ],
+      "test_benign_fpr": 0.013438,
+      "test_macro_f1": 0.79714,
+      "test_lesion_sum": 0.842941
+    },
+    {
+      "model": "lstm",
+      "seed": 42,
+      "tier_benign_cap": 0.003,
+      "oracle": "test",
+      "rounds": 2,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.005383,
+      "final_val_benign_fpr": 0.002994,
+      "final_val_macro_f1": 0.762516,
+      "w": [
+        1.2589,
+        0.3162,
+        6.3096,
+        1.2589,
+        1.0,
+        2.5119,
+        1.0,
+        1.0,
+        0.1,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.002994,
+      "test_macro_f1": 0.762516,
+      "test_lesion_sum": 0.578085
+    },
+    {
+      "model": "lstm",
+      "seed": 42,
+      "tier_benign_cap": 0.005,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.005383,
+      "final_val_benign_fpr": 0.004996,
+      "final_val_macro_f1": 0.76097,
+      "w": [
+        1.2589,
+        1.2589,
+        2.5119,
+        1.0,
+        0.631,
+        2.5119,
+        1.0,
+        1.0,
+        0.1,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.004996,
+      "test_macro_f1": 0.76097,
+      "test_lesion_sum": 0.578085
+    },
+    {
+      "model": "lstm",
+      "seed": 42,
+      "tier_benign_cap": 0.008,
+      "oracle": "test",
+      "rounds": 2,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.005383,
+      "final_val_benign_fpr": 0.0062,
+      "final_val_macro_f1": 0.762593,
+      "w": [
+        1.2589,
+        1.5849,
+        6.3096,
+        1.2589,
+        1.0,
+        2.5119,
+        1.0,
+        1.0,
+        0.1,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.0062,
+      "test_macro_f1": 0.762593,
+      "test_lesion_sum": 0.578085
+    },
+    {
+      "model": "lstm",
+      "seed": 42,
+      "tier_benign_cap": 0.012,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.005383,
+      "final_val_benign_fpr": 0.011319,
+      "final_val_macro_f1": 0.76618,
+      "w": [
+        0.631,
+        0.7943,
+        3.1623,
+        1.0,
+        0.5012,
+        1.2589,
+        0.5012,
+        0.5012,
+        0.1,
+        0.5012,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.011319,
+      "test_macro_f1": 0.76618,
+      "test_lesion_sum": 0.578085
+    },
+    {
+      "model": "lstm",
+      "seed": 42,
+      "tier_benign_cap": 0.016,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.005383,
+      "final_val_benign_fpr": 0.012382,
+      "final_val_macro_f1": 0.766564,
+      "w": [
+        0.5012,
+        0.631,
+        2.5119,
+        1.0,
+        0.3981,
+        1.0,
+        0.3981,
+        0.3981,
+        0.1,
+        0.3981,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.012382,
+      "test_macro_f1": 0.766564,
+      "test_lesion_sum": 0.578085
+    },
+    {
+      "model": "lstm",
+      "seed": 42,
+      "tier_benign_cap": 0.02,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.005383,
+      "final_val_benign_fpr": 0.016372,
+      "final_val_macro_f1": 0.784246,
+      "w": [
+        0.5012,
+        0.631,
+        2.5119,
+        1.0,
+        0.3981,
+        1.0,
+        0.3981,
+        0.3981,
+        0.1,
+        0.3981,
+        6.3096,
+        1.0
+      ],
+      "test_benign_fpr": 0.016372,
+      "test_macro_f1": 0.784246,
+      "test_lesion_sum": 0.791842
+    },
+    {
+      "model": "lstm",
+      "seed": 43,
+      "tier_benign_cap": 0.003,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.003
+        }
+      ],
+      "initial_val_benign_fpr": 0.00371,
+      "enforced_w0": 1.26,
+      "final_val_benign_fpr": 0.002288,
+      "final_val_macro_f1": 0.751778,
+      "w": [
+        1.2589,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.002288,
+      "test_macro_f1": 0.751778,
+      "test_lesion_sum": 0.496815
+    },
+    {
+      "model": "lstm",
+      "seed": 43,
+      "tier_benign_cap": 0.005,
+      "oracle": "test",
+      "rounds": 2,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.00371,
+      "final_val_benign_fpr": 0.004923,
+      "final_val_macro_f1": 0.765785,
+      "w": [
+        1.0,
+        1.2589,
+        6.3096,
+        1.0,
+        1.2589,
+        0.1995,
+        1.9953,
+        1.0,
+        0.1,
+        1.0,
+        7.9433,
+        1.0
+      ],
+      "test_benign_fpr": 0.004923,
+      "test_macro_f1": 0.765785,
+      "test_lesion_sum": 0.626218
+    },
+    {
+      "model": "lstm",
+      "seed": 43,
+      "tier_benign_cap": 0.008,
+      "oracle": "test",
+      "rounds": 2,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.00371,
+      "final_val_benign_fpr": 0.007438,
+      "final_val_macro_f1": 0.771983,
+      "w": [
+        0.7943,
+        1.0,
+        6.3096,
+        1.0,
+        1.0,
+        0.1585,
+        1.9953,
+        1.0,
+        0.1,
+        1.9953,
+        6.3096,
+        1.0
+      ],
+      "test_benign_fpr": 0.007438,
+      "test_macro_f1": 0.771983,
+      "test_lesion_sum": 0.701612
+    },
+    {
+      "model": "lstm",
+      "seed": 43,
+      "tier_benign_cap": 0.012,
+      "oracle": "test",
+      "rounds": 2,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.00371,
+      "final_val_benign_fpr": 0.010988,
+      "final_val_macro_f1": 0.773515,
+      "w": [
+        0.631,
+        0.7943,
+        5.0119,
+        1.2589,
+        0.7943,
+        0.1259,
+        1.9953,
+        1.0,
+        0.1,
+        1.5849,
+        5.0119,
+        1.0
+      ],
+      "test_benign_fpr": 0.010988,
+      "test_macro_f1": 0.773515,
+      "test_lesion_sum": 0.701612
+    },
+    {
+      "model": "lstm",
+      "seed": 43,
+      "tier_benign_cap": 0.016,
+      "oracle": "test",
+      "rounds": 2,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.00371,
+      "final_val_benign_fpr": 0.015008,
+      "final_val_macro_f1": 0.780913,
+      "w": [
+        0.631,
+        0.7943,
+        5.0119,
+        1.2589,
+        0.7943,
+        0.1259,
+        1.9953,
+        1.0,
+        0.1,
+        1.5849,
+        6.3096,
+        1.0
+      ],
+      "test_benign_fpr": 0.015008,
+      "test_macro_f1": 0.780913,
+      "test_lesion_sum": 0.791999
+    },
+    {
+      "model": "lstm",
+      "seed": 43,
+      "tier_benign_cap": 0.02,
+      "oracle": "test",
+      "rounds": 2,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.00371,
+      "final_val_benign_fpr": 0.015008,
+      "final_val_macro_f1": 0.780913,
+      "w": [
+        0.631,
+        0.7943,
+        5.0119,
+        1.2589,
+        0.7943,
+        0.1259,
+        1.9953,
+        1.0,
+        0.1,
+        1.5849,
+        6.3096,
+        1.0
+      ],
+      "test_benign_fpr": 0.015008,
+      "test_macro_f1": 0.780913,
+      "test_lesion_sum": 0.791999
+    },
+    {
+      "model": "lstm",
+      "seed": 44,
+      "tier_benign_cap": 0.003,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 3,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.003
+        }
+      ],
+      "initial_val_benign_fpr": 0.019419,
+      "enforced_w0": 2.0,
+      "final_val_benign_fpr": 0.001422,
+      "final_val_macro_f1": 0.744297,
+      "w": [
+        1.9953,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.001422,
+      "test_macro_f1": 0.744297,
+      "test_lesion_sum": 0.496831
+    },
+    {
+      "model": "lstm",
+      "seed": 44,
+      "tier_benign_cap": 0.005,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.005
+        }
+      ],
+      "initial_val_benign_fpr": 0.019419,
+      "enforced_w0": 1.58,
+      "final_val_benign_fpr": 0.003212,
+      "final_val_macro_f1": 0.745176,
+      "w": [
+        1.5849,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.003212,
+      "test_macro_f1": 0.745176,
+      "test_lesion_sum": 0.496831
+    },
+    {
+      "model": "lstm",
+      "seed": 44,
+      "tier_benign_cap": 0.008,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.008
+        }
+      ],
+      "initial_val_benign_fpr": 0.019419,
+      "enforced_w0": 1.58,
+      "final_val_benign_fpr": 0.003212,
+      "final_val_macro_f1": 0.745176,
+      "w": [
+        1.5849,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.003212,
+      "test_macro_f1": 0.745176,
+      "test_lesion_sum": 0.496831
+    },
+    {
+      "model": "lstm",
+      "seed": 44,
+      "tier_benign_cap": 0.012,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.012
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.012
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.012
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.012
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.012
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.012
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.012
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.012
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.012
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.012
+        }
+      ],
+      "initial_val_benign_fpr": 0.019419,
+      "enforced_w0": 1.58,
+      "final_val_benign_fpr": 0.003212,
+      "final_val_macro_f1": 0.745176,
+      "w": [
+        1.5849,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.003212,
+      "test_macro_f1": 0.745176,
+      "test_lesion_sum": 0.496831
+    },
+    {
+      "model": "lstm",
+      "seed": 44,
+      "tier_benign_cap": 0.016,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.016
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.016
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.016
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.016
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.016
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.016
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.016
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.016
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.016
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.016
+        }
+      ],
+      "initial_val_benign_fpr": 0.019419,
+      "enforced_w0": 1.58,
+      "final_val_benign_fpr": 0.003212,
+      "final_val_macro_f1": 0.745176,
+      "w": [
+        1.5849,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.003212,
+      "test_macro_f1": 0.745176,
+      "test_lesion_sum": 0.496831
+    },
+    {
+      "model": "lstm",
+      "seed": 44,
+      "tier_benign_cap": 0.02,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.019419,
+      "final_val_benign_fpr": 0.018641,
+      "final_val_macro_f1": 0.76671,
+      "w": [
+        1.2589,
+        1.2589,
+        10.0,
+        1.0,
+        1.0,
+        0.1585,
+        3.9811,
+        0.631,
+        0.1,
+        1.2589,
+        6.3096,
+        1.0
+      ],
+      "test_benign_fpr": 0.018641,
+      "test_macro_f1": 0.76671,
+      "test_lesion_sum": 0.664444
+    },
+    {
+      "model": "lstm",
+      "seed": 45,
+      "tier_benign_cap": 0.003,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 3,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.003
+        }
+      ],
+      "initial_val_benign_fpr": 0.012687,
+      "enforced_w0": 2.0,
+      "final_val_benign_fpr": 0.002966,
+      "final_val_macro_f1": 0.748085,
+      "w": [
+        1.9953,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.002966,
+      "test_macro_f1": 0.748085,
+      "test_lesion_sum": 0.498094
+    },
+    {
+      "model": "lstm",
+      "seed": 45,
+      "tier_benign_cap": 0.005,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.005
+        }
+      ],
+      "initial_val_benign_fpr": 0.012687,
+      "enforced_w0": 1.58,
+      "final_val_benign_fpr": 0.004838,
+      "final_val_macro_f1": 0.750298,
+      "w": [
+        1.5849,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.004838,
+      "test_macro_f1": 0.750298,
+      "test_lesion_sum": 0.498094
+    },
+    {
+      "model": "lstm",
+      "seed": 45,
+      "tier_benign_cap": 0.008,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.008
+        }
+      ],
+      "initial_val_benign_fpr": 0.012687,
+      "enforced_w0": 1.58,
+      "final_val_benign_fpr": 0.004838,
+      "final_val_macro_f1": 0.750298,
+      "w": [
+        1.5849,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.004838,
+      "test_macro_f1": 0.750298,
+      "test_lesion_sum": 0.498094
+    },
+    {
+      "model": "lstm",
+      "seed": 45,
+      "tier_benign_cap": 0.012,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.012687,
+      "final_val_benign_fpr": 0.011468,
+      "final_val_macro_f1": 0.759867,
+      "w": [
+        1.0,
+        0.2512,
+        3.1623,
+        1.0,
+        0.1585,
+        0.1,
+        0.631,
+        0.2512,
+        0.1,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.011468,
+      "test_macro_f1": 0.759867,
+      "test_lesion_sum": 0.573139
+    },
+    {
+      "model": "lstm",
+      "seed": 45,
+      "tier_benign_cap": 0.016,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.012687,
+      "final_val_benign_fpr": 0.011468,
+      "final_val_macro_f1": 0.759867,
+      "w": [
+        1.0,
+        0.2512,
+        3.1623,
+        1.0,
+        0.1585,
+        0.1,
+        0.631,
+        0.2512,
+        0.1,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.011468,
+      "test_macro_f1": 0.759867,
+      "test_lesion_sum": 0.573139
+    },
+    {
+      "model": "lstm",
+      "seed": 45,
+      "tier_benign_cap": 0.02,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.012687,
+      "final_val_benign_fpr": 0.016852,
+      "final_val_macro_f1": 0.773326,
+      "w": [
+        1.0,
+        0.2512,
+        3.1623,
+        1.0,
+        0.1585,
+        0.1,
+        0.631,
+        0.2512,
+        0.1,
+        1.0,
+        6.3096,
+        10.0
+      ],
+      "test_benign_fpr": 0.016852,
+      "test_macro_f1": 0.773326,
+      "test_lesion_sum": 0.736946
+    },
+    {
+      "model": "lstm",
+      "seed": 46,
+      "tier_benign_cap": 0.003,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 3,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.003
+        }
+      ],
+      "initial_val_benign_fpr": 0.008191,
+      "enforced_w0": 2.51,
+      "final_val_benign_fpr": 0.002305,
+      "final_val_macro_f1": 0.75056,
+      "w": [
+        2.5119,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.002305,
+      "test_macro_f1": 0.75056,
+      "test_lesion_sum": 0.5
+    },
+    {
+      "model": "lstm",
+      "seed": 46,
+      "tier_benign_cap": 0.005,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.008191,
+      "final_val_benign_fpr": 0.004969,
+      "final_val_macro_f1": 0.770589,
+      "w": [
+        1.9953,
+        1.9953,
+        10.0,
+        1.2589,
+        0.3981,
+        0.3981,
+        0.631,
+        0.7943,
+        0.1,
+        1.0,
+        7.9433,
+        1.0
+      ],
+      "test_benign_fpr": 0.004969,
+      "test_macro_f1": 0.770589,
+      "test_lesion_sum": 0.713821
+    },
+    {
+      "model": "lstm",
+      "seed": 46,
+      "tier_benign_cap": 0.008,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.008191,
+      "final_val_benign_fpr": 0.007963,
+      "final_val_macro_f1": 0.771187,
+      "w": [
+        1.9953,
+        1.9953,
+        10.0,
+        1.9953,
+        0.3981,
+        0.3981,
+        0.631,
+        0.7943,
+        0.1,
+        1.0,
+        7.9433,
+        1.0
+      ],
+      "test_benign_fpr": 0.007963,
+      "test_macro_f1": 0.771187,
+      "test_lesion_sum": 0.713821
+    },
+    {
+      "model": "lstm",
+      "seed": 46,
+      "tier_benign_cap": 0.012,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.008191,
+      "final_val_benign_fpr": 0.011128,
+      "final_val_macro_f1": 0.773139,
+      "w": [
+        1.9953,
+        1.9953,
+        10.0,
+        3.1623,
+        0.3981,
+        0.3981,
+        0.631,
+        0.7943,
+        0.1,
+        1.0,
+        7.9433,
+        1.0
+      ],
+      "test_benign_fpr": 0.011128,
+      "test_macro_f1": 0.773139,
+      "test_lesion_sum": 0.713821
+    },
+    {
+      "model": "lstm",
+      "seed": 46,
+      "tier_benign_cap": 0.016,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.008191,
+      "final_val_benign_fpr": 0.011128,
+      "final_val_macro_f1": 0.773139,
+      "w": [
+        1.9953,
+        1.9953,
+        10.0,
+        3.1623,
+        0.3981,
+        0.3981,
+        0.631,
+        0.7943,
+        0.1,
+        1.0,
+        7.9433,
+        1.0
+      ],
+      "test_benign_fpr": 0.011128,
+      "test_macro_f1": 0.773139,
+      "test_lesion_sum": 0.713821
+    },
+    {
+      "model": "lstm",
+      "seed": 46,
+      "tier_benign_cap": 0.02,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.008191,
+      "final_val_benign_fpr": 0.011128,
+      "final_val_macro_f1": 0.773139,
+      "w": [
+        1.9953,
+        1.9953,
+        10.0,
+        3.1623,
+        0.3981,
+        0.3981,
+        0.631,
+        0.7943,
+        0.1,
+        1.0,
+        7.9433,
+        1.0
+      ],
+      "test_benign_fpr": 0.011128,
+      "test_macro_f1": 0.773139,
+      "test_lesion_sum": 0.713821
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 42,
+      "tier_benign_cap": 0.003,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 3,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.003
+        }
+      ],
+      "initial_val_benign_fpr": 0.010242,
+      "enforced_w0": 2.0,
+      "final_val_benign_fpr": 0.002159,
+      "final_val_macro_f1": 0.72068,
+      "w": [
+        1.9953,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.002159,
+      "test_macro_f1": 0.72068,
+      "test_lesion_sum": 0.0
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 42,
+      "tier_benign_cap": 0.005,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.005
+        }
+      ],
+      "initial_val_benign_fpr": 0.010242,
+      "enforced_w0": 1.58,
+      "final_val_benign_fpr": 0.003036,
+      "final_val_macro_f1": 0.722318,
+      "w": [
+        1.5849,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.003036,
+      "test_macro_f1": 0.722318,
+      "test_lesion_sum": 0.0
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 42,
+      "tier_benign_cap": 0.008,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.008
+        }
+      ],
+      "initial_val_benign_fpr": 0.010242,
+      "enforced_w0": 1.26,
+      "final_val_benign_fpr": 0.007314,
+      "final_val_macro_f1": 0.772145,
+      "w": [
+        1.2589,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.007314,
+      "test_macro_f1": 0.772145,
+      "test_lesion_sum": 0.585492
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 42,
+      "tier_benign_cap": 0.012,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.010242,
+      "final_val_benign_fpr": 0.009486,
+      "final_val_macro_f1": 0.790612,
+      "w": [
+        0.7943,
+        0.5012,
+        2.5119,
+        1.0,
+        1.5849,
+        1.2589,
+        0.631,
+        0.7943,
+        0.1,
+        7.9433,
+        3.9811,
+        1.0
+      ],
+      "test_benign_fpr": 0.009486,
+      "test_macro_f1": 0.790612,
+      "test_lesion_sum": 0.78428
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 42,
+      "tier_benign_cap": 0.016,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.010242,
+      "final_val_benign_fpr": 0.013559,
+      "final_val_macro_f1": 0.794199,
+      "w": [
+        0.631,
+        0.3981,
+        1.9953,
+        0.7943,
+        1.2589,
+        1.5849,
+        0.7943,
+        1.0,
+        0.1,
+        6.3096,
+        10.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.013559,
+      "test_macro_f1": 0.794199,
+      "test_lesion_sum": 0.832109
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 42,
+      "tier_benign_cap": 0.02,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.010242,
+      "final_val_benign_fpr": 0.013638,
+      "final_val_macro_f1": 0.794556,
+      "w": [
+        0.3162,
+        0.1995,
+        1.0,
+        0.3981,
+        0.631,
+        0.3981,
+        0.2512,
+        0.3162,
+        0.1,
+        3.1623,
+        10.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.013638,
+      "test_macro_f1": 0.794556,
+      "test_lesion_sum": 0.829617
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 43,
+      "tier_benign_cap": 0.003,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 3,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.003
+        }
+      ],
+      "initial_val_benign_fpr": 0.012677,
+      "enforced_w0": 1.58,
+      "final_val_benign_fpr": 0.001737,
+      "final_val_macro_f1": 0.757762,
+      "w": [
+        1.5849,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.001737,
+      "test_macro_f1": 0.757762,
+      "test_lesion_sum": 0.5
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 43,
+      "tier_benign_cap": 0.005,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 3,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.005
+        }
+      ],
+      "initial_val_benign_fpr": 0.012677,
+      "enforced_w0": 1.58,
+      "final_val_benign_fpr": 0.001737,
+      "final_val_macro_f1": 0.757762,
+      "w": [
+        1.5849,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.001737,
+      "test_macro_f1": 0.757762,
+      "test_lesion_sum": 0.5
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 43,
+      "tier_benign_cap": 0.008,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.012677,
+      "final_val_benign_fpr": 0.007879,
+      "final_val_macro_f1": 0.768931,
+      "w": [
+        1.2589,
+        0.1,
+        3.1623,
+        1.0,
+        0.5012,
+        0.631,
+        2.5119,
+        1.0,
+        1.2589,
+        2.5119,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.007879,
+      "test_macro_f1": 0.768931,
+      "test_lesion_sum": 0.579585
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 43,
+      "tier_benign_cap": 0.012,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.012677,
+      "final_val_benign_fpr": 0.008498,
+      "final_val_macro_f1": 0.76916,
+      "w": [
+        1.2589,
+        0.3981,
+        3.1623,
+        1.2589,
+        0.5012,
+        0.631,
+        2.5119,
+        1.0,
+        1.2589,
+        2.5119,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.008498,
+      "test_macro_f1": 0.76916,
+      "test_lesion_sum": 0.579585
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 43,
+      "tier_benign_cap": 0.016,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.012677,
+      "final_val_benign_fpr": 0.012496,
+      "final_val_macro_f1": 0.786212,
+      "w": [
+        1.2589,
+        0.3981,
+        3.1623,
+        1.2589,
+        0.5012,
+        0.631,
+        2.5119,
+        1.0,
+        1.2589,
+        2.5119,
+        10.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.012496,
+      "test_macro_f1": 0.786212,
+      "test_lesion_sum": 0.784771
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 43,
+      "tier_benign_cap": 0.02,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.012677,
+      "final_val_benign_fpr": 0.012496,
+      "final_val_macro_f1": 0.786212,
+      "w": [
+        1.2589,
+        0.3981,
+        3.1623,
+        1.2589,
+        0.5012,
+        0.631,
+        2.5119,
+        1.0,
+        1.2589,
+        2.5119,
+        10.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.012496,
+      "test_macro_f1": 0.786212,
+      "test_lesion_sum": 0.784771
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 44,
+      "tier_benign_cap": 0.003,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 3,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.003
+        }
+      ],
+      "initial_val_benign_fpr": 0.00715,
+      "enforced_w0": 1.58,
+      "final_val_benign_fpr": 0.002466,
+      "final_val_macro_f1": 0.756617,
+      "w": [
+        1.5849,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.002466,
+      "test_macro_f1": 0.756617,
+      "test_lesion_sum": 0.499363
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 44,
+      "tier_benign_cap": 0.005,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 2,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.005
+        }
+      ],
+      "initial_val_benign_fpr": 0.00715,
+      "enforced_w0": 1.26,
+      "final_val_benign_fpr": 0.003152,
+      "final_val_macro_f1": 0.763186,
+      "w": [
+        1.2589,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.003152,
+      "test_macro_f1": 0.763186,
+      "test_lesion_sum": 0.580087
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 44,
+      "tier_benign_cap": 0.008,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.00715,
+      "final_val_benign_fpr": 0.007287,
+      "final_val_macro_f1": 0.781785,
+      "w": [
+        1.0,
+        1.0,
+        2.5119,
+        1.0,
+        0.2512,
+        10.0,
+        3.9811,
+        0.5012,
+        0.1,
+        0.7943,
+        10.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.007287,
+      "test_macro_f1": 0.781785,
+      "test_lesion_sum": 0.755269
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 44,
+      "tier_benign_cap": 0.012,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.00715,
+      "final_val_benign_fpr": 0.011901,
+      "final_val_macro_f1": 0.783602,
+      "w": [
+        1.0,
+        1.0,
+        2.5119,
+        1.2589,
+        0.2512,
+        10.0,
+        3.9811,
+        0.5012,
+        0.1,
+        0.7943,
+        10.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.011901,
+      "test_macro_f1": 0.783602,
+      "test_lesion_sum": 0.755269
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 44,
+      "tier_benign_cap": 0.016,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.00715,
+      "final_val_benign_fpr": 0.015904,
+      "final_val_macro_f1": 0.78812,
+      "w": [
+        0.7943,
+        0.7943,
+        1.9953,
+        1.0,
+        0.1995,
+        7.9433,
+        3.1623,
+        0.3981,
+        0.1,
+        0.631,
+        10.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.015904,
+      "test_macro_f1": 0.78812,
+      "test_lesion_sum": 0.810795
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 44,
+      "tier_benign_cap": 0.02,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.00715,
+      "final_val_benign_fpr": 0.015904,
+      "final_val_macro_f1": 0.78812,
+      "w": [
+        0.7943,
+        0.7943,
+        1.9953,
+        1.0,
+        0.1995,
+        7.9433,
+        3.1623,
+        0.3981,
+        0.1,
+        0.631,
+        10.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.015904,
+      "test_macro_f1": 0.78812,
+      "test_lesion_sum": 0.810795
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 45,
+      "tier_benign_cap": 0.003,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.003
+        }
+      ],
+      "initial_val_benign_fpr": 0.006659,
+      "enforced_w0": 1.26,
+      "final_val_benign_fpr": 0.002372,
+      "final_val_macro_f1": 0.755431,
+      "w": [
+        1.2589,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.002372,
+      "test_macro_f1": 0.755431,
+      "test_lesion_sum": 0.494949
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 45,
+      "tier_benign_cap": 0.005,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.005
+        }
+      ],
+      "initial_val_benign_fpr": 0.006659,
+      "enforced_w0": 1.26,
+      "final_val_benign_fpr": 0.002372,
+      "final_val_macro_f1": 0.755431,
+      "w": [
+        1.2589,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.002372,
+      "test_macro_f1": 0.755431,
+      "test_lesion_sum": 0.494949
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 45,
+      "tier_benign_cap": 0.008,
+      "oracle": "test",
+      "rounds": 2,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.006659,
+      "final_val_benign_fpr": 0.007861,
+      "final_val_macro_f1": 0.766035,
+      "w": [
+        0.7943,
+        1.2589,
+        2.5119,
+        1.0,
+        0.7943,
+        0.1,
+        0.631,
+        0.7943,
+        0.1,
+        0.7943,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.007861,
+      "test_macro_f1": 0.766035,
+      "test_lesion_sum": 0.57265
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 45,
+      "tier_benign_cap": 0.012,
+      "oracle": "test",
+      "rounds": 2,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.006659,
+      "final_val_benign_fpr": 0.011629,
+      "final_val_macro_f1": 0.766189,
+      "w": [
+        0.7943,
+        1.5849,
+        2.5119,
+        1.0,
+        0.7943,
+        0.1,
+        0.631,
+        0.7943,
+        0.1,
+        0.7943,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.011629,
+      "test_macro_f1": 0.766189,
+      "test_lesion_sum": 0.57265
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 45,
+      "tier_benign_cap": 0.016,
+      "oracle": "test",
+      "rounds": 2,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.006659,
+      "final_val_benign_fpr": 0.012563,
+      "final_val_macro_f1": 0.766609,
+      "w": [
+        0.7943,
+        1.5849,
+        2.5119,
+        1.5849,
+        0.7943,
+        0.1,
+        0.631,
+        0.7943,
+        0.1,
+        0.7943,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.012563,
+      "test_macro_f1": 0.766609,
+      "test_lesion_sum": 0.57265
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 45,
+      "tier_benign_cap": 0.02,
+      "oracle": "test",
+      "rounds": 2,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.006659,
+      "final_val_benign_fpr": 0.016593,
+      "final_val_macro_f1": 0.784428,
+      "w": [
+        0.7943,
+        1.5849,
+        2.5119,
+        1.5849,
+        0.7943,
+        0.1,
+        0.631,
+        0.7943,
+        0.1,
+        0.7943,
+        7.9433,
+        1.0
+      ],
+      "test_benign_fpr": 0.016593,
+      "test_macro_f1": 0.784428,
+      "test_lesion_sum": 0.788026
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 46,
+      "tier_benign_cap": 0.003,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.003
+        }
+      ],
+      "initial_val_benign_fpr": 0.008148,
+      "enforced_w0": 1.26,
+      "final_val_benign_fpr": 0.002635,
+      "final_val_macro_f1": 0.761039,
+      "w": [
+        1.2589,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.002635,
+      "test_macro_f1": 0.761039,
+      "test_lesion_sum": 0.534998
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 46,
+      "tier_benign_cap": 0.005,
+      "oracle": "test",
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.005
+        }
+      ],
+      "initial_val_benign_fpr": 0.008148,
+      "enforced_w0": 1.26,
+      "final_val_benign_fpr": 0.002635,
+      "final_val_macro_f1": 0.761039,
+      "w": [
+        1.2589,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.002635,
+      "test_macro_f1": 0.761039,
+      "test_lesion_sum": 0.534998
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 46,
+      "tier_benign_cap": 0.008,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.008
+        }
+      ],
+      "initial_val_benign_fpr": 0.008148,
+      "final_val_benign_fpr": 0.007928,
+      "final_val_macro_f1": 0.777985,
+      "w": [
+        1.0,
+        0.7943,
+        1.2589,
+        1.0,
+        0.1,
+        7.9433,
+        3.1623,
+        0.3981,
+        0.7943,
+        0.2512,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.007928,
+      "test_macro_f1": 0.777985,
+      "test_lesion_sum": 0.683262
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 46,
+      "tier_benign_cap": 0.012,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.008148,
+      "final_val_benign_fpr": 0.010786,
+      "final_val_macro_f1": 0.78412,
+      "w": [
+        0.7943,
+        1.0,
+        1.0,
+        1.0,
+        0.1259,
+        10.0,
+        3.9811,
+        0.5012,
+        0.1259,
+        10.0,
+        3.9811,
+        1.0
+      ],
+      "test_benign_fpr": 0.010786,
+      "test_macro_f1": 0.78412,
+      "test_lesion_sum": 0.740447
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 46,
+      "tier_benign_cap": 0.016,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.008148,
+      "final_val_benign_fpr": 0.01493,
+      "final_val_macro_f1": 0.786125,
+      "w": [
+        0.7943,
+        1.0,
+        1.0,
+        1.0,
+        0.1259,
+        10.0,
+        3.9811,
+        0.5012,
+        0.1995,
+        10.0,
+        6.3096,
+        1.0
+      ],
+      "test_benign_fpr": 0.01493,
+      "test_macro_f1": 0.786125,
+      "test_lesion_sum": 0.766106
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 46,
+      "tier_benign_cap": 0.02,
+      "oracle": "test",
+      "rounds": 3,
+      "infeasible_classes": [],
+      "initial_val_benign_fpr": 0.008148,
+      "final_val_benign_fpr": 0.01508,
+      "final_val_macro_f1": 0.787796,
+      "w": [
+        0.631,
+        0.7943,
+        0.7943,
+        0.7943,
+        0.1,
+        7.9433,
+        3.1623,
+        0.3981,
+        0.1995,
+        10.0,
+        5.0119,
+        10.0
+      ],
+      "test_benign_fpr": 0.01508,
+      "test_macro_f1": 0.787796,
+      "test_lesion_sum": 0.7862
+    }
+  ],
+  "c2_val": [
+    {
+      "model": "cnn_lstm",
+      "seed": 42,
+      "tier_benign_cap": 0.003,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.010508,
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 3,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.003
+        }
+      ],
+      "enforced_w0": 2.0,
+      "final_val_benign_fpr": 0.002305,
+      "final_val_macro_f1": 0.718843,
+      "w": [
+        1.9953,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.002159,
+      "test_macro_f1": 0.72068,
+      "test_lesion_sum": 0.0,
+      "sec": 1.9
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 42,
+      "tier_benign_cap": 0.005,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.010508,
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.005
+        }
+      ],
+      "enforced_w0": 1.58,
+      "final_val_benign_fpr": 0.003232,
+      "final_val_macro_f1": 0.720469,
+      "w": [
+        1.5849,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.003036,
+      "test_macro_f1": 0.722318,
+      "test_lesion_sum": 0.0,
+      "sec": 1.9
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 42,
+      "tier_benign_cap": 0.008,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.010508,
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.008
+        }
+      ],
+      "enforced_w0": 1.26,
+      "final_val_benign_fpr": 0.007596,
+      "final_val_macro_f1": 0.77172,
+      "w": [
+        1.2589,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.007314,
+      "test_macro_f1": 0.772145,
+      "test_lesion_sum": 0.585492,
+      "sec": 1.9
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 42,
+      "tier_benign_cap": 0.012,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.010508,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.010092,
+      "final_val_macro_f1": 0.792328,
+      "w": [
+        1.0,
+        0.7943,
+        5.0119,
+        1.2589,
+        1.9953,
+        6.3096,
+        0.5012,
+        0.631,
+        3.1623,
+        6.3096,
+        5.0119,
+        1.0
+      ],
+      "test_benign_fpr": 0.010059,
+      "test_macro_f1": 0.789407,
+      "test_lesion_sum": 0.781276,
+      "sec": 6.2
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 42,
+      "tier_benign_cap": 0.016,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.010508,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.01419,
+      "final_val_macro_f1": 0.794003,
+      "w": [
+        0.631,
+        0.5012,
+        3.1623,
+        0.7943,
+        1.2589,
+        7.9433,
+        0.5012,
+        0.1259,
+        5.0119,
+        3.9811,
+        6.3096,
+        1.0
+      ],
+      "test_benign_fpr": 0.014098,
+      "test_macro_f1": 0.792329,
+      "test_lesion_sum": 0.825801,
+      "sec": 6.2
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 42,
+      "tier_benign_cap": 0.02,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.010508,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.014169,
+      "final_val_macro_f1": 0.80151,
+      "w": [
+        0.1585,
+        0.1259,
+        0.7943,
+        0.1995,
+        0.3162,
+        0.1,
+        0.7943,
+        0.1,
+        0.7943,
+        1.0,
+        1.2589,
+        3.9811
+      ],
+      "test_benign_fpr": 0.014093,
+      "test_macro_f1": 0.799586,
+      "test_lesion_sum": 0.914864,
+      "sec": 6.3
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 43,
+      "tier_benign_cap": 0.003,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.01256,
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 3,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.003
+        }
+      ],
+      "enforced_w0": 1.58,
+      "final_val_benign_fpr": 0.001834,
+      "final_val_macro_f1": 0.754623,
+      "w": [
+        1.5849,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.001737,
+      "test_macro_f1": 0.757762,
+      "test_lesion_sum": 0.5,
+      "sec": 1.9
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 43,
+      "tier_benign_cap": 0.005,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.01256,
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 3,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.005
+        }
+      ],
+      "enforced_w0": 1.58,
+      "final_val_benign_fpr": 0.001834,
+      "final_val_macro_f1": 0.754623,
+      "w": [
+        1.5849,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.001737,
+      "test_macro_f1": 0.757762,
+      "test_lesion_sum": 0.5,
+      "sec": 2.0
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 43,
+      "tier_benign_cap": 0.008,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.01256,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.007889,
+      "final_val_macro_f1": 0.765289,
+      "w": [
+        1.2589,
+        1.0,
+        3.1623,
+        1.0,
+        0.5012,
+        1.0,
+        0.1259,
+        0.3981,
+        1.0,
+        2.5119,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.007909,
+      "test_macro_f1": 0.76847,
+      "test_lesion_sum": 0.579585,
+      "sec": 7.0
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 43,
+      "tier_benign_cap": 0.012,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.01256,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.01183,
+      "final_val_macro_f1": 0.760331,
+      "w": [
+        1.2589,
+        1.2589,
+        3.1623,
+        1.0,
+        0.5012,
+        1.0,
+        0.1259,
+        0.3981,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.011952,
+      "test_macro_f1": 0.761807,
+      "test_lesion_sum": 0.5,
+      "sec": 6.8
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 43,
+      "tier_benign_cap": 0.016,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.01256,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.012812,
+      "final_val_macro_f1": 0.765534,
+      "w": [
+        1.2589,
+        1.2589,
+        3.1623,
+        1.2589,
+        0.5012,
+        1.0,
+        0.1259,
+        0.3981,
+        1.0,
+        2.5119,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.012918,
+      "test_macro_f1": 0.768673,
+      "test_lesion_sum": 0.579585,
+      "sec": 6.9
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 43,
+      "tier_benign_cap": 0.02,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.01256,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.016972,
+      "final_val_macro_f1": 0.782752,
+      "w": [
+        1.2589,
+        1.2589,
+        3.1623,
+        1.2589,
+        0.5012,
+        1.0,
+        0.1259,
+        0.3981,
+        1.0,
+        2.5119,
+        7.9433,
+        1.0
+      ],
+      "test_benign_fpr": 0.016916,
+      "test_macro_f1": 0.785573,
+      "test_lesion_sum": 0.783981,
+      "sec": 6.8
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 44,
+      "tier_benign_cap": 0.003,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.007085,
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 3,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.003
+        }
+      ],
+      "enforced_w0": 1.58,
+      "final_val_benign_fpr": 0.00255,
+      "final_val_macro_f1": 0.755053,
+      "w": [
+        1.5849,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.002466,
+      "test_macro_f1": 0.756617,
+      "test_lesion_sum": 0.499363,
+      "sec": 1.9
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 44,
+      "tier_benign_cap": 0.005,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.007085,
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 2,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.005
+        }
+      ],
+      "enforced_w0": 1.26,
+      "final_val_benign_fpr": 0.003218,
+      "final_val_macro_f1": 0.764609,
+      "w": [
+        1.2589,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.003152,
+      "test_macro_f1": 0.763186,
+      "test_lesion_sum": 0.580087,
+      "sec": 1.9
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 44,
+      "tier_benign_cap": 0.008,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.007085,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.007173,
+      "final_val_macro_f1": 0.783891,
+      "w": [
+        1.0,
+        1.0,
+        2.5119,
+        1.0,
+        0.2512,
+        3.9811,
+        1.9953,
+        0.2512,
+        0.1,
+        0.7943,
+        10.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.007225,
+      "test_macro_f1": 0.782606,
+      "test_lesion_sum": 0.755014,
+      "sec": 6.2
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 44,
+      "tier_benign_cap": 0.012,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.007085,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.011626,
+      "final_val_macro_f1": 0.785972,
+      "w": [
+        1.0,
+        1.0,
+        2.5119,
+        1.2589,
+        0.2512,
+        3.9811,
+        1.9953,
+        0.2512,
+        0.1,
+        0.7943,
+        10.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.011844,
+      "test_macro_f1": 0.784424,
+      "test_lesion_sum": 0.755014,
+      "sec": 6.2
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 44,
+      "tier_benign_cap": 0.016,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.007085,
+      "rounds": 2,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.011735,
+      "final_val_macro_f1": 0.784025,
+      "w": [
+        0.7943,
+        0.7943,
+        1.9953,
+        1.0,
+        0.1995,
+        1.9953,
+        7.9433,
+        1.0,
+        0.1,
+        0.631,
+        7.9433,
+        1.0
+      ],
+      "test_benign_fpr": 0.012004,
+      "test_macro_f1": 0.781881,
+      "test_lesion_sum": 0.755269,
+      "sec": 4.2
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 44,
+      "tier_benign_cap": 0.02,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.007085,
+      "rounds": 2,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.01601,
+      "final_val_macro_f1": 0.788146,
+      "w": [
+        0.7943,
+        0.7943,
+        1.9953,
+        1.0,
+        0.1995,
+        1.9953,
+        7.9433,
+        1.0,
+        0.1,
+        0.631,
+        10.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.016008,
+      "test_macro_f1": 0.786397,
+      "test_lesion_sum": 0.81104,
+      "sec": 4.2
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 45,
+      "tier_benign_cap": 0.003,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.006757,
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.003
+        }
+      ],
+      "enforced_w0": 1.26,
+      "final_val_benign_fpr": 0.002284,
+      "final_val_macro_f1": 0.748078,
+      "w": [
+        1.2589,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.002372,
+      "test_macro_f1": 0.755431,
+      "test_lesion_sum": 0.494949,
+      "sec": 1.9
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 45,
+      "tier_benign_cap": 0.005,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.006757,
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.005
+        }
+      ],
+      "enforced_w0": 1.26,
+      "final_val_benign_fpr": 0.002284,
+      "final_val_macro_f1": 0.748078,
+      "w": [
+        1.2589,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.002372,
+      "test_macro_f1": 0.755431,
+      "test_lesion_sum": 0.494949,
+      "sec": 1.9
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 45,
+      "tier_benign_cap": 0.008,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.006757,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.007869,
+      "final_val_macro_f1": 0.76385,
+      "w": [
+        0.7943,
+        0.1585,
+        2.5119,
+        1.0,
+        3.1623,
+        0.1,
+        2.5119,
+        1.0,
+        0.1,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.007939,
+      "test_macro_f1": 0.765202,
+      "test_lesion_sum": 0.571185,
+      "sec": 6.4
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 45,
+      "tier_benign_cap": 0.012,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.006757,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.01196,
+      "final_val_macro_f1": 0.764339,
+      "w": [
+        0.7943,
+        1.5849,
+        2.5119,
+        1.2589,
+        3.1623,
+        0.1,
+        3.9811,
+        1.0,
+        0.1,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.012146,
+      "test_macro_f1": 0.766022,
+      "test_lesion_sum": 0.571185,
+      "sec": 6.6
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 45,
+      "tier_benign_cap": 0.016,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.006757,
+      "rounds": 2,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.012465,
+      "final_val_macro_f1": 0.764467,
+      "w": [
+        0.7943,
+        1.5849,
+        2.5119,
+        1.5849,
+        3.1623,
+        0.1,
+        3.9811,
+        1.0,
+        0.1,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.012658,
+      "test_macro_f1": 0.766163,
+      "test_lesion_sum": 0.571185,
+      "sec": 4.4
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 45,
+      "tier_benign_cap": 0.02,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.006757,
+      "rounds": 2,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.01631,
+      "final_val_macro_f1": 0.78277,
+      "w": [
+        0.7943,
+        1.5849,
+        2.5119,
+        1.5849,
+        3.1623,
+        0.1,
+        3.9811,
+        1.0,
+        0.1,
+        1.0,
+        7.9433,
+        1.0
+      ],
+      "test_benign_fpr": 0.016688,
+      "test_macro_f1": 0.783982,
+      "test_lesion_sum": 0.786561,
+      "sec": 4.4
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 46,
+      "tier_benign_cap": 0.003,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.008557,
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.003
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.003
+        }
+      ],
+      "enforced_w0": 1.26,
+      "final_val_benign_fpr": 0.002912,
+      "final_val_macro_f1": 0.763252,
+      "w": [
+        1.2589,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.002635,
+      "test_macro_f1": 0.761039,
+      "test_lesion_sum": 0.534998,
+      "sec": 2.0
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 46,
+      "tier_benign_cap": 0.005,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.008557,
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.005
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.005
+        }
+      ],
+      "enforced_w0": 1.26,
+      "final_val_benign_fpr": 0.002912,
+      "final_val_macro_f1": 0.763252,
+      "w": [
+        1.2589,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.002635,
+      "test_macro_f1": 0.761039,
+      "test_lesion_sum": 0.534998,
+      "sec": 2.0
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 46,
+      "tier_benign_cap": 0.008,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.008557,
+      "rounds": 1,
+      "infeasible_classes": [
+        {
+          "class": 1,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 2,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 4,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 5,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 6,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 7,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 8,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 9,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 10,
+          "tier_cap": 0.008
+        },
+        {
+          "class": 11,
+          "tier_cap": 0.008
+        }
+      ],
+      "enforced_w0": 1.26,
+      "final_val_benign_fpr": 0.002912,
+      "final_val_macro_f1": 0.763252,
+      "w": [
+        1.2589,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_benign_fpr": 0.002635,
+      "test_macro_f1": 0.761039,
+      "test_lesion_sum": 0.534998,
+      "sec": 1.9
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 46,
+      "tier_benign_cap": 0.012,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.008557,
+      "rounds": 2,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.010903,
+      "final_val_macro_f1": 0.783644,
+      "w": [
+        0.7943,
+        1.0,
+        1.0,
+        1.0,
+        0.1,
+        1.0,
+        3.9811,
+        0.5012,
+        0.631,
+        10.0,
+        1.0,
+        5.0119
+      ],
+      "test_benign_fpr": 0.010646,
+      "test_macro_f1": 0.782275,
+      "test_lesion_sum": 0.717329,
+      "sec": 4.5
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 46,
+      "tier_benign_cap": 0.016,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.008557,
+      "rounds": 2,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.01496,
+      "final_val_macro_f1": 0.789366,
+      "w": [
+        0.7943,
+        1.0,
+        1.0,
+        1.0,
+        0.1,
+        1.0,
+        3.9811,
+        0.5012,
+        0.631,
+        10.0,
+        5.0119,
+        1.0
+      ],
+      "test_benign_fpr": 0.01484,
+      "test_macro_f1": 0.785876,
+      "test_lesion_sum": 0.765137,
+      "sec": 4.2
+    },
+    {
+      "model": "cnn_lstm",
+      "seed": 46,
+      "tier_benign_cap": 0.02,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.008557,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.015097,
+      "final_val_macro_f1": 0.791235,
+      "w": [
+        0.631,
+        0.7943,
+        0.7943,
+        0.7943,
+        0.1,
+        1.0,
+        3.9811,
+        0.5012,
+        0.631,
+        10.0,
+        3.9811,
+        1.0
+      ],
+      "test_benign_fpr": 0.015012,
+      "test_macro_f1": 0.787565,
+      "test_lesion_sum": 0.785172,
+      "sec": 6.3
+    },
+    {
+      "model": "rf",
+      "seed": 42,
+      "tier_benign_cap": 0.003,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000648,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000675,
+      "final_val_macro_f1": 0.916005,
+      "w": [
+        0.631,
+        0.2512,
+        0.5012,
+        7.9433,
+        0.5012,
+        5.0119,
+        1.0,
+        0.2512,
+        1.9953,
+        1.0,
+        0.5012,
+        1.0
+      ],
+      "test_benign_fpr": 0.000749,
+      "test_macro_f1": 0.907307,
+      "test_lesion_sum": 1.917908,
+      "sec": 6.3
+    },
+    {
+      "model": "rf",
+      "seed": 42,
+      "tier_benign_cap": 0.005,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000648,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000675,
+      "final_val_macro_f1": 0.916005,
+      "w": [
+        0.631,
+        0.2512,
+        0.5012,
+        7.9433,
+        0.5012,
+        5.0119,
+        1.0,
+        0.2512,
+        1.9953,
+        1.0,
+        0.5012,
+        1.0
+      ],
+      "test_benign_fpr": 0.000749,
+      "test_macro_f1": 0.907307,
+      "test_lesion_sum": 1.917908,
+      "sec": 6.3
+    },
+    {
+      "model": "rf",
+      "seed": 42,
+      "tier_benign_cap": 0.008,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000648,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000675,
+      "final_val_macro_f1": 0.916005,
+      "w": [
+        0.631,
+        0.2512,
+        0.5012,
+        7.9433,
+        0.5012,
+        5.0119,
+        1.0,
+        0.2512,
+        1.9953,
+        1.0,
+        0.5012,
+        1.0
+      ],
+      "test_benign_fpr": 0.000749,
+      "test_macro_f1": 0.907307,
+      "test_lesion_sum": 1.917908,
+      "sec": 6.3
+    },
+    {
+      "model": "rf",
+      "seed": 42,
+      "tier_benign_cap": 0.012,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000648,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000675,
+      "final_val_macro_f1": 0.916005,
+      "w": [
+        0.631,
+        0.2512,
+        0.5012,
+        7.9433,
+        0.5012,
+        5.0119,
+        1.0,
+        0.2512,
+        1.9953,
+        1.0,
+        0.5012,
+        1.0
+      ],
+      "test_benign_fpr": 0.000749,
+      "test_macro_f1": 0.907307,
+      "test_lesion_sum": 1.917908,
+      "sec": 6.3
+    },
+    {
+      "model": "rf",
+      "seed": 42,
+      "tier_benign_cap": 0.016,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000648,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000675,
+      "final_val_macro_f1": 0.916005,
+      "w": [
+        0.631,
+        0.2512,
+        0.5012,
+        7.9433,
+        0.5012,
+        5.0119,
+        1.0,
+        0.2512,
+        1.9953,
+        1.0,
+        0.5012,
+        1.0
+      ],
+      "test_benign_fpr": 0.000749,
+      "test_macro_f1": 0.907307,
+      "test_lesion_sum": 1.917908,
+      "sec": 6.4
+    },
+    {
+      "model": "rf",
+      "seed": 42,
+      "tier_benign_cap": 0.02,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000648,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000675,
+      "final_val_macro_f1": 0.916005,
+      "w": [
+        0.631,
+        0.2512,
+        0.5012,
+        7.9433,
+        0.5012,
+        5.0119,
+        1.0,
+        0.2512,
+        1.9953,
+        1.0,
+        0.5012,
+        1.0
+      ],
+      "test_benign_fpr": 0.000749,
+      "test_macro_f1": 0.907307,
+      "test_lesion_sum": 1.917908,
+      "sec": 6.3
+    },
+    {
+      "model": "rf",
+      "seed": 43,
+      "tier_benign_cap": 0.003,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000709,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000907,
+      "final_val_macro_f1": 0.927183,
+      "w": [
+        0.5012,
+        1.2589,
+        1.0,
+        6.3096,
+        0.3981,
+        0.3981,
+        1.5849,
+        1.0,
+        1.2589,
+        0.7943,
+        0.3981,
+        1.0
+      ],
+      "test_benign_fpr": 0.000956,
+      "test_macro_f1": 0.911101,
+      "test_lesion_sum": 1.965789,
+      "sec": 6.4
+    },
+    {
+      "model": "rf",
+      "seed": 43,
+      "tier_benign_cap": 0.005,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000709,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000907,
+      "final_val_macro_f1": 0.927183,
+      "w": [
+        0.5012,
+        1.2589,
+        1.0,
+        6.3096,
+        0.3981,
+        0.3981,
+        1.5849,
+        1.0,
+        1.2589,
+        0.7943,
+        0.3981,
+        1.0
+      ],
+      "test_benign_fpr": 0.000956,
+      "test_macro_f1": 0.911101,
+      "test_lesion_sum": 1.965789,
+      "sec": 6.4
+    },
+    {
+      "model": "rf",
+      "seed": 43,
+      "tier_benign_cap": 0.008,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000709,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000907,
+      "final_val_macro_f1": 0.927183,
+      "w": [
+        0.5012,
+        1.2589,
+        1.0,
+        6.3096,
+        0.3981,
+        0.3981,
+        1.5849,
+        1.0,
+        1.2589,
+        0.7943,
+        0.3981,
+        1.0
+      ],
+      "test_benign_fpr": 0.000956,
+      "test_macro_f1": 0.911101,
+      "test_lesion_sum": 1.965789,
+      "sec": 6.4
+    },
+    {
+      "model": "rf",
+      "seed": 43,
+      "tier_benign_cap": 0.012,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000709,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000907,
+      "final_val_macro_f1": 0.927183,
+      "w": [
+        0.5012,
+        1.2589,
+        1.0,
+        6.3096,
+        0.3981,
+        0.3981,
+        1.5849,
+        1.0,
+        1.2589,
+        0.7943,
+        0.3981,
+        1.0
+      ],
+      "test_benign_fpr": 0.000956,
+      "test_macro_f1": 0.911101,
+      "test_lesion_sum": 1.965789,
+      "sec": 6.4
+    },
+    {
+      "model": "rf",
+      "seed": 43,
+      "tier_benign_cap": 0.016,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000709,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000907,
+      "final_val_macro_f1": 0.927183,
+      "w": [
+        0.5012,
+        1.2589,
+        1.0,
+        6.3096,
+        0.3981,
+        0.3981,
+        1.5849,
+        1.0,
+        1.2589,
+        0.7943,
+        0.3981,
+        1.0
+      ],
+      "test_benign_fpr": 0.000956,
+      "test_macro_f1": 0.911101,
+      "test_lesion_sum": 1.965789,
+      "sec": 6.3
+    },
+    {
+      "model": "rf",
+      "seed": 43,
+      "tier_benign_cap": 0.02,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000709,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000907,
+      "final_val_macro_f1": 0.927183,
+      "w": [
+        0.5012,
+        1.2589,
+        1.0,
+        6.3096,
+        0.3981,
+        0.3981,
+        1.5849,
+        1.0,
+        1.2589,
+        0.7943,
+        0.3981,
+        1.0
+      ],
+      "test_benign_fpr": 0.000956,
+      "test_macro_f1": 0.911101,
+      "test_lesion_sum": 1.965789,
+      "sec": 6.3
+    },
+    {
+      "model": "rf",
+      "seed": 44,
+      "tier_benign_cap": 0.003,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000682,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000675,
+      "final_val_macro_f1": 0.917451,
+      "w": [
+        0.5012,
+        0.3162,
+        0.3981,
+        1.2589,
+        0.1995,
+        1.5849,
+        1.2589,
+        2.5119,
+        1.5849,
+        0.631,
+        0.5012,
+        1.0
+      ],
+      "test_benign_fpr": 0.000764,
+      "test_macro_f1": 0.909089,
+      "test_lesion_sum": 1.950059,
+      "sec": 6.3
+    },
+    {
+      "model": "rf",
+      "seed": 44,
+      "tier_benign_cap": 0.005,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000682,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000675,
+      "final_val_macro_f1": 0.917451,
+      "w": [
+        0.5012,
+        0.3162,
+        0.3981,
+        1.2589,
+        0.1995,
+        1.5849,
+        1.2589,
+        2.5119,
+        1.5849,
+        0.631,
+        0.5012,
+        1.0
+      ],
+      "test_benign_fpr": 0.000764,
+      "test_macro_f1": 0.909089,
+      "test_lesion_sum": 1.950059,
+      "sec": 6.3
+    },
+    {
+      "model": "rf",
+      "seed": 44,
+      "tier_benign_cap": 0.008,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000682,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000675,
+      "final_val_macro_f1": 0.917451,
+      "w": [
+        0.5012,
+        0.3162,
+        0.3981,
+        1.2589,
+        0.1995,
+        1.5849,
+        1.2589,
+        2.5119,
+        1.5849,
+        0.631,
+        0.5012,
+        1.0
+      ],
+      "test_benign_fpr": 0.000764,
+      "test_macro_f1": 0.909089,
+      "test_lesion_sum": 1.950059,
+      "sec": 6.4
+    },
+    {
+      "model": "rf",
+      "seed": 44,
+      "tier_benign_cap": 0.012,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000682,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000675,
+      "final_val_macro_f1": 0.917451,
+      "w": [
+        0.5012,
+        0.3162,
+        0.3981,
+        1.2589,
+        0.1995,
+        1.5849,
+        1.2589,
+        2.5119,
+        1.5849,
+        0.631,
+        0.5012,
+        1.0
+      ],
+      "test_benign_fpr": 0.000764,
+      "test_macro_f1": 0.909089,
+      "test_lesion_sum": 1.950059,
+      "sec": 6.3
+    },
+    {
+      "model": "rf",
+      "seed": 44,
+      "tier_benign_cap": 0.016,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000682,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000675,
+      "final_val_macro_f1": 0.917451,
+      "w": [
+        0.5012,
+        0.3162,
+        0.3981,
+        1.2589,
+        0.1995,
+        1.5849,
+        1.2589,
+        2.5119,
+        1.5849,
+        0.631,
+        0.5012,
+        1.0
+      ],
+      "test_benign_fpr": 0.000764,
+      "test_macro_f1": 0.909089,
+      "test_lesion_sum": 1.950059,
+      "sec": 6.4
+    },
+    {
+      "model": "rf",
+      "seed": 44,
+      "tier_benign_cap": 0.02,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000682,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000675,
+      "final_val_macro_f1": 0.917451,
+      "w": [
+        0.5012,
+        0.3162,
+        0.3981,
+        1.2589,
+        0.1995,
+        1.5849,
+        1.2589,
+        2.5119,
+        1.5849,
+        0.631,
+        0.5012,
+        1.0
+      ],
+      "test_benign_fpr": 0.000764,
+      "test_macro_f1": 0.909089,
+      "test_lesion_sum": 1.950059,
+      "sec": 6.2
+    },
+    {
+      "model": "rf",
+      "seed": 45,
+      "tier_benign_cap": 0.003,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000648,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000811,
+      "final_val_macro_f1": 0.909116,
+      "w": [
+        0.2512,
+        0.7943,
+        0.7943,
+        1.5849,
+        0.1,
+        1.0,
+        0.5012,
+        0.1585,
+        1.2589,
+        0.2512,
+        1.2589,
+        1.0
+      ],
+      "test_benign_fpr": 0.000916,
+      "test_macro_f1": 0.90539,
+      "test_lesion_sum": 1.893826,
+      "sec": 6.2
+    },
+    {
+      "model": "rf",
+      "seed": 45,
+      "tier_benign_cap": 0.005,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000648,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000811,
+      "final_val_macro_f1": 0.909116,
+      "w": [
+        0.2512,
+        0.7943,
+        0.7943,
+        1.5849,
+        0.1,
+        1.0,
+        0.5012,
+        0.1585,
+        1.2589,
+        0.2512,
+        1.2589,
+        1.0
+      ],
+      "test_benign_fpr": 0.000916,
+      "test_macro_f1": 0.90539,
+      "test_lesion_sum": 1.893826,
+      "sec": 6.2
+    },
+    {
+      "model": "rf",
+      "seed": 45,
+      "tier_benign_cap": 0.008,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000648,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000811,
+      "final_val_macro_f1": 0.909116,
+      "w": [
+        0.2512,
+        0.7943,
+        0.7943,
+        1.5849,
+        0.1,
+        1.0,
+        0.5012,
+        0.1585,
+        1.2589,
+        0.2512,
+        1.2589,
+        1.0
+      ],
+      "test_benign_fpr": 0.000916,
+      "test_macro_f1": 0.90539,
+      "test_lesion_sum": 1.893826,
+      "sec": 6.2
+    },
+    {
+      "model": "rf",
+      "seed": 45,
+      "tier_benign_cap": 0.012,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000648,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000811,
+      "final_val_macro_f1": 0.909116,
+      "w": [
+        0.2512,
+        0.7943,
+        0.7943,
+        1.5849,
+        0.1,
+        1.0,
+        0.5012,
+        0.1585,
+        1.2589,
+        0.2512,
+        1.2589,
+        1.0
+      ],
+      "test_benign_fpr": 0.000916,
+      "test_macro_f1": 0.90539,
+      "test_lesion_sum": 1.893826,
+      "sec": 6.2
+    },
+    {
+      "model": "rf",
+      "seed": 45,
+      "tier_benign_cap": 0.016,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000648,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000811,
+      "final_val_macro_f1": 0.909116,
+      "w": [
+        0.2512,
+        0.7943,
+        0.7943,
+        1.5849,
+        0.1,
+        1.0,
+        0.5012,
+        0.1585,
+        1.2589,
+        0.2512,
+        1.2589,
+        1.0
+      ],
+      "test_benign_fpr": 0.000916,
+      "test_macro_f1": 0.90539,
+      "test_lesion_sum": 1.893826,
+      "sec": 6.4
+    },
+    {
+      "model": "rf",
+      "seed": 45,
+      "tier_benign_cap": 0.02,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000648,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000811,
+      "final_val_macro_f1": 0.909116,
+      "w": [
+        0.2512,
+        0.7943,
+        0.7943,
+        1.5849,
+        0.1,
+        1.0,
+        0.5012,
+        0.1585,
+        1.2589,
+        0.2512,
+        1.2589,
+        1.0
+      ],
+      "test_benign_fpr": 0.000916,
+      "test_macro_f1": 0.90539,
+      "test_lesion_sum": 1.893826,
+      "sec": 6.5
+    },
+    {
+      "model": "rf",
+      "seed": 46,
+      "tier_benign_cap": 0.003,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000702,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000961,
+      "final_val_macro_f1": 0.915146,
+      "w": [
+        0.3981,
+        1.0,
+        1.0,
+        7.9433,
+        0.7943,
+        5.0119,
+        1.0,
+        0.3162,
+        1.5849,
+        1.0,
+        0.5012,
+        1.0
+      ],
+      "test_benign_fpr": 0.001125,
+      "test_macro_f1": 0.913139,
+      "test_lesion_sum": 1.989692,
+      "sec": 6.3
+    },
+    {
+      "model": "rf",
+      "seed": 46,
+      "tier_benign_cap": 0.005,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000702,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000961,
+      "final_val_macro_f1": 0.915146,
+      "w": [
+        0.3981,
+        1.0,
+        1.0,
+        7.9433,
+        0.7943,
+        5.0119,
+        1.0,
+        0.3162,
+        1.5849,
+        1.0,
+        0.5012,
+        1.0
+      ],
+      "test_benign_fpr": 0.001125,
+      "test_macro_f1": 0.913139,
+      "test_lesion_sum": 1.989692,
+      "sec": 6.4
+    },
+    {
+      "model": "rf",
+      "seed": 46,
+      "tier_benign_cap": 0.008,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000702,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000961,
+      "final_val_macro_f1": 0.915146,
+      "w": [
+        0.3981,
+        1.0,
+        1.0,
+        7.9433,
+        0.7943,
+        5.0119,
+        1.0,
+        0.3162,
+        1.5849,
+        1.0,
+        0.5012,
+        1.0
+      ],
+      "test_benign_fpr": 0.001125,
+      "test_macro_f1": 0.913139,
+      "test_lesion_sum": 1.989692,
+      "sec": 6.7
+    },
+    {
+      "model": "rf",
+      "seed": 46,
+      "tier_benign_cap": 0.012,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000702,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000961,
+      "final_val_macro_f1": 0.915146,
+      "w": [
+        0.3981,
+        1.0,
+        1.0,
+        7.9433,
+        0.7943,
+        5.0119,
+        1.0,
+        0.3162,
+        1.5849,
+        1.0,
+        0.5012,
+        1.0
+      ],
+      "test_benign_fpr": 0.001125,
+      "test_macro_f1": 0.913139,
+      "test_lesion_sum": 1.989692,
+      "sec": 6.7
+    },
+    {
+      "model": "rf",
+      "seed": 46,
+      "tier_benign_cap": 0.016,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000702,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000961,
+      "final_val_macro_f1": 0.915146,
+      "w": [
+        0.3981,
+        1.0,
+        1.0,
+        7.9433,
+        0.7943,
+        5.0119,
+        1.0,
+        0.3162,
+        1.5849,
+        1.0,
+        0.5012,
+        1.0
+      ],
+      "test_benign_fpr": 0.001125,
+      "test_macro_f1": 0.913139,
+      "test_lesion_sum": 1.989692,
+      "sec": 7.2
+    },
+    {
+      "model": "rf",
+      "seed": 46,
+      "tier_benign_cap": 0.02,
+      "protocol": "val",
+      "argmax_val_benign_fpr": 0.000702,
+      "rounds": 3,
+      "infeasible_classes": [],
+      "final_val_benign_fpr": 0.000961,
+      "final_val_macro_f1": 0.915146,
+      "w": [
+        0.3981,
+        1.0,
+        1.0,
+        7.9433,
+        0.7943,
+        5.0119,
+        1.0,
+        0.3162,
+        1.5849,
+        1.0,
+        0.5012,
+        1.0
+      ],
+      "test_benign_fpr": 0.001125,
+      "test_macro_f1": 0.913139,
+      "test_lesion_sum": 1.989692,
+      "sec": 7.5
+    }
+  ],
+  "notes": [
+    "C2 有两条口径：`c2` 为 test-oracle（纯 CE proba 只有 test 段），`c2_val` 为 val 拟合（5 种子）；二者不得混报。",
+    "稿件 Table 6(b) 的 C2 使用 `c2_val` 的 42/44/46 三种子：macro-F1 0.7719 / LFS 0.6252 / benign FPR 0.0057。",
+    "RF 未入表：无 proba 落盘，需 --save-proba 重跑 5 种子约 10 分钟。",
+    "补记（2026-10-20，第三轮评审后）：原 notes 第一条写作『C2 全部为 test-oracle 口径』，与 `c2_val` 的存在冲突，已按实际结构更正。"
+  ],
+  "summary_mean_std": {
+    "c4": {
+      "0.003": {
+        "final_val_benign_fpr": {
+          "mean": 0.001371,
+          "std": 0.000686
+        },
+        "final_val_macro_f1": {
+          "mean": 0.778483,
+          "std": 0.014503
+        },
+        "test_benign_fpr": {
+          "mean": 0.001313,
+          "std": 0.00066
+        },
+        "test_macro_f1": {
+          "mean": 0.772879,
+          "std": 0.012662
+        },
+        "test_lesion_sum": {
+          "mean": 0.822418,
+          "std": 0.068205
+        }
+      },
+      "0.005": {
+        "final_val_benign_fpr": {
+          "mean": 0.002627,
+          "std": 0.001833
+        },
+        "final_val_macro_f1": {
+          "mean": 0.781239,
+          "std": 0.018435
+        },
+        "test_benign_fpr": {
+          "mean": 0.002696,
+          "std": 0.00205
+        },
+        "test_macro_f1": {
+          "mean": 0.776798,
+          "std": 0.018532
+        },
+        "test_lesion_sum": {
+          "mean": 0.865997,
+          "std": 0.118262
+        }
+      },
+      "0.008": {
+        "final_val_benign_fpr": {
+          "mean": 0.006564,
+          "std": 0.001253
+        },
+        "final_val_macro_f1": {
+          "mean": 0.798917,
+          "std": 0.007547
+        },
+        "test_benign_fpr": {
+          "mean": 0.006519,
+          "std": 0.001008
+        },
+        "test_macro_f1": {
+          "mean": 0.79765,
+          "std": 0.007105
+        },
+        "test_lesion_sum": {
+          "mean": 0.974072,
+          "std": 0.045687
+        }
+      },
+      "0.012": {
+        "final_val_benign_fpr": {
+          "mean": 0.010883,
+          "std": 0.000414
+        },
+        "final_val_macro_f1": {
+          "mean": 0.802664,
+          "std": 0.005583
+        },
+        "test_benign_fpr": {
+          "mean": 0.010927,
+          "std": 0.000848
+        },
+        "test_macro_f1": {
+          "mean": 0.801006,
+          "std": 0.003519
+        },
+        "test_lesion_sum": {
+          "mean": 0.972596,
+          "std": 0.039318
+        }
+      },
+      "0.016": {
+        "final_val_benign_fpr": {
+          "mean": 0.013719,
+          "std": 0.002058
+        },
+        "final_val_macro_f1": {
+          "mean": 0.803264,
+          "std": 0.005788
+        },
+        "test_benign_fpr": {
+          "mean": 0.013811,
+          "std": 0.001654
+        },
+        "test_macro_f1": {
+          "mean": 0.80145,
+          "std": 0.004159
+        },
+        "test_lesion_sum": {
+          "mean": 0.970904,
+          "std": 0.036392
+        }
+      },
+      "0.02": {
+        "final_val_benign_fpr": {
+          "mean": 0.016585,
+          "std": 0.001801
+        },
+        "final_val_macro_f1": {
+          "mean": 0.804114,
+          "std": 0.006523
+        },
+        "test_benign_fpr": {
+          "mean": 0.016708,
+          "std": 0.00189
+        },
+        "test_macro_f1": {
+          "mean": 0.802294,
+          "std": 0.004379
+        },
+        "test_lesion_sum": {
+          "mean": 0.970904,
+          "std": 0.036392
+        }
+      }
+    },
+    "c2": {
+      "cnn": {
+        "0.003": {
+          "final_val_benign_fpr": {
+            "mean": 0.002653,
+            "std": 0.000235
+          },
+          "final_val_macro_f1": {
+            "mean": 0.730249,
+            "std": 0.01967
+          },
+          "test_benign_fpr": {
+            "mean": 0.002653,
+            "std": 0.000235
+          },
+          "test_macro_f1": {
+            "mean": 0.730249,
+            "std": 0.01967
+          },
+          "test_lesion_sum": {
+            "mean": 0.138814,
+            "std": 0.209178
+          }
+        },
+        "0.005": {
+          "final_val_benign_fpr": {
+            "mean": 0.004144,
+            "std": 0.000751
+          },
+          "final_val_macro_f1": {
+            "mean": 0.755162,
+            "std": 0.019341
+          },
+          "test_benign_fpr": {
+            "mean": 0.004144,
+            "std": 0.000751
+          },
+          "test_macro_f1": {
+            "mean": 0.755162,
+            "std": 0.019341
+          },
+          "test_lesion_sum": {
+            "mean": 0.412133,
+            "std": 0.234606
+          }
+        },
+        "0.008": {
+          "final_val_benign_fpr": {
+            "mean": 0.005726,
+            "std": 0.001482
+          },
+          "final_val_macro_f1": {
+            "mean": 0.766102,
+            "std": 0.03494
+          },
+          "test_benign_fpr": {
+            "mean": 0.005726,
+            "std": 0.001482
+          },
+          "test_macro_f1": {
+            "mean": 0.766102,
+            "std": 0.03494
+          },
+          "test_lesion_sum": {
+            "mean": 0.545568,
+            "std": 0.390667
+          }
+        },
+        "0.012": {
+          "final_val_benign_fpr": {
+            "mean": 0.009862,
+            "std": 0.002407
+          },
+          "final_val_macro_f1": {
+            "mean": 0.790737,
+            "std": 0.017733
+          },
+          "test_benign_fpr": {
+            "mean": 0.009862,
+            "std": 0.002407
+          },
+          "test_macro_f1": {
+            "mean": 0.790737,
+            "std": 0.017733
+          },
+          "test_lesion_sum": {
+            "mean": 0.790047,
+            "std": 0.193518
+          }
+        },
+        "0.016": {
+          "final_val_benign_fpr": {
+            "mean": 0.011644,
+            "std": 0.003457
+          },
+          "final_val_macro_f1": {
+            "mean": 0.798253,
+            "std": 0.012317
+          },
+          "test_benign_fpr": {
+            "mean": 0.011644,
+            "std": 0.003457
+          },
+          "test_macro_f1": {
+            "mean": 0.798253,
+            "std": 0.012317
+          },
+          "test_lesion_sum": {
+            "mean": 0.880786,
+            "std": 0.124333
+          }
+        },
+        "0.02": {
+          "final_val_benign_fpr": {
+            "mean": 0.011656,
+            "std": 0.003454
+          },
+          "final_val_macro_f1": {
+            "mean": 0.799038,
+            "std": 0.01371
+          },
+          "test_benign_fpr": {
+            "mean": 0.011656,
+            "std": 0.003454
+          },
+          "test_macro_f1": {
+            "mean": 0.799038,
+            "std": 0.01371
+          },
+          "test_lesion_sum": {
+            "mean": 0.892959,
+            "std": 0.142343
+          }
+        }
+      },
+      "lstm": {
+        "0.003": {
+          "final_val_benign_fpr": {
+            "mean": 0.002395,
+            "std": 0.000642
+          },
+          "final_val_macro_f1": {
+            "mean": 0.751447,
+            "std": 0.006816
+          },
+          "test_benign_fpr": {
+            "mean": 0.002395,
+            "std": 0.000642
+          },
+          "test_macro_f1": {
+            "mean": 0.751447,
+            "std": 0.006816
+          },
+          "test_lesion_sum": {
+            "mean": 0.513965,
+            "std": 0.035868
+          }
+        },
+        "0.005": {
+          "final_val_benign_fpr": {
+            "mean": 0.004588,
+            "std": 0.000771
+          },
+          "final_val_macro_f1": {
+            "mean": 0.758564,
+            "std": 0.010608
+          },
+          "test_benign_fpr": {
+            "mean": 0.004588,
+            "std": 0.000771
+          },
+          "test_macro_f1": {
+            "mean": 0.758564,
+            "std": 0.010608
+          },
+          "test_lesion_sum": {
+            "mean": 0.58261,
+            "std": 0.091705
+          }
+        },
+        "0.008": {
+          "final_val_benign_fpr": {
+            "mean": 0.00593,
+            "std": 0.00194
+          },
+          "final_val_macro_f1": {
+            "mean": 0.760247,
+            "std": 0.012135
+          },
+          "test_benign_fpr": {
+            "mean": 0.00593,
+            "std": 0.00194
+          },
+          "test_macro_f1": {
+            "mean": 0.760247,
+            "std": 0.012135
+          },
+          "test_lesion_sum": {
+            "mean": 0.597689,
+            "std": 0.105786
+          }
+        },
+        "0.012": {
+          "final_val_benign_fpr": {
+            "mean": 0.009623,
+            "std": 0.003589
+          },
+          "final_val_macro_f1": {
+            "mean": 0.763575,
+            "std": 0.011719
+          },
+          "test_benign_fpr": {
+            "mean": 0.009623,
+            "std": 0.003589
+          },
+          "test_macro_f1": {
+            "mean": 0.763575,
+            "std": 0.011719
+          },
+          "test_lesion_sum": {
+            "mean": 0.612698,
+            "std": 0.092628
+          }
+        },
+        "0.016": {
+          "final_val_benign_fpr": {
+            "mean": 0.01064,
+            "std": 0.004422
+          },
+          "final_val_macro_f1": {
+            "mean": 0.765132,
+            "std": 0.013612
+          },
+          "test_benign_fpr": {
+            "mean": 0.01064,
+            "std": 0.004422
+          },
+          "test_macro_f1": {
+            "mean": 0.765132,
+            "std": 0.013612
+          },
+          "test_lesion_sum": {
+            "mean": 0.630775,
+            "std": 0.119299
+          }
+        },
+        "0.02": {
+          "final_val_benign_fpr": {
+            "mean": 0.0156,
+            "std": 0.002818
+          },
+          "final_val_macro_f1": {
+            "mean": 0.775667,
+            "std": 0.00695
+          },
+          "test_benign_fpr": {
+            "mean": 0.0156,
+            "std": 0.002818
+          },
+          "test_macro_f1": {
+            "mean": 0.775667,
+            "std": 0.00695
+          },
+          "test_lesion_sum": {
+            "mean": 0.73981,
+            "std": 0.054302
+          }
+        }
+      },
+      "cnn_lstm": {
+        "0.003": {
+          "final_val_benign_fpr": {
+            "mean": 0.002274,
+            "std": 0.000346
+          },
+          "final_val_macro_f1": {
+            "mean": 0.750306,
+            "std": 0.016693
+          },
+          "test_benign_fpr": {
+            "mean": 0.002274,
+            "std": 0.000346
+          },
+          "test_macro_f1": {
+            "mean": 0.750306,
+            "std": 0.016693
+          },
+          "test_lesion_sum": {
+            "mean": 0.405862,
+            "std": 0.227454
+          }
+        },
+        "0.005": {
+          "final_val_benign_fpr": {
+            "mean": 0.002586,
+            "std": 0.000568
+          },
+          "final_val_macro_f1": {
+            "mean": 0.751947,
+            "std": 0.016829
+          },
+          "test_benign_fpr": {
+            "mean": 0.002586,
+            "std": 0.000568
+          },
+          "test_macro_f1": {
+            "mean": 0.751947,
+            "std": 0.016829
+          },
+          "test_lesion_sum": {
+            "mean": 0.422007,
+            "std": 0.238354
+          }
+        },
+        "0.008": {
+          "final_val_benign_fpr": {
+            "mean": 0.007654,
+            "std": 0.000324
+          },
+          "final_val_macro_f1": {
+            "mean": 0.773376,
+            "std": 0.006464
+          },
+          "test_benign_fpr": {
+            "mean": 0.007654,
+            "std": 0.000324
+          },
+          "test_macro_f1": {
+            "mean": 0.773376,
+            "std": 0.006464
+          },
+          "test_lesion_sum": {
+            "mean": 0.635252,
+            "std": 0.080937
+          }
+        },
+        "0.012": {
+          "final_val_benign_fpr": {
+            "mean": 0.01046,
+            "std": 0.001445
+          },
+          "final_val_macro_f1": {
+            "mean": 0.778737,
+            "std": 0.010522
+          },
+          "test_benign_fpr": {
+            "mean": 0.01046,
+            "std": 0.001445
+          },
+          "test_macro_f1": {
+            "mean": 0.778737,
+            "std": 0.010522
+          },
+          "test_lesion_sum": {
+            "mean": 0.686446,
+            "std": 0.101972
+          }
+        },
+        "0.016": {
+          "final_val_benign_fpr": {
+            "mean": 0.01389,
+            "std": 0.001496
+          },
+          "final_val_macro_f1": {
+            "mean": 0.784253,
+            "std": 0.010399
+          },
+          "test_benign_fpr": {
+            "mean": 0.01389,
+            "std": 0.001496
+          },
+          "test_macro_f1": {
+            "mean": 0.784253,
+            "std": 0.010399
+          },
+          "test_lesion_sum": {
+            "mean": 0.753286,
+            "std": 0.10405
+          }
+        },
+        "0.02": {
+          "final_val_benign_fpr": {
+            "mean": 0.014742,
+            "std": 0.00167
+          },
+          "final_val_macro_f1": {
+            "mean": 0.788222,
+            "std": 0.003832
+          },
+          "test_benign_fpr": {
+            "mean": 0.014742,
+            "std": 0.00167
+          },
+          "test_macro_f1": {
+            "mean": 0.788222,
+            "std": 0.003832
+          },
+          "test_lesion_sum": {
+            "mean": 0.799882,
+            "std": 0.019744
+          }
+        }
+      }
+    },
+    "c2_val": {
+      "cnn_lstm": {
+        "0.003": {
+          "final_val_benign_fpr": {
+            "mean": 0.002377,
+            "std": 0.000395
+          },
+          "final_val_macro_f1": {
+            "mean": 0.74797,
+            "std": 0.017149
+          },
+          "test_benign_fpr": {
+            "mean": 0.002274,
+            "std": 0.000346
+          },
+          "test_macro_f1": {
+            "mean": 0.750306,
+            "std": 0.016693
+          },
+          "test_lesion_sum": {
+            "mean": 0.405862,
+            "std": 0.227454
+          }
+        },
+        "0.005": {
+          "final_val_benign_fpr": {
+            "mean": 0.002696,
+            "std": 0.000616
+          },
+          "final_val_macro_f1": {
+            "mean": 0.750206,
+            "std": 0.01793
+          },
+          "test_benign_fpr": {
+            "mean": 0.002586,
+            "std": 0.000568
+          },
+          "test_macro_f1": {
+            "mean": 0.751947,
+            "std": 0.016829
+          },
+          "test_lesion_sum": {
+            "mean": 0.422007,
+            "std": 0.238354
+          }
+        },
+        "0.008": {
+          "final_val_benign_fpr": {
+            "mean": 0.006688,
+            "std": 0.00213
+          },
+          "final_val_macro_f1": {
+            "mean": 0.7696,
+            "std": 0.00867
+          },
+          "test_benign_fpr": {
+            "mean": 0.006604,
+            "std": 0.002243
+          },
+          "test_macro_f1": {
+            "mean": 0.769892,
+            "std": 0.008202
+          },
+          "test_lesion_sum": {
+            "mean": 0.605255,
+            "std": 0.085986
+          }
+        },
+        "0.012": {
+          "final_val_benign_fpr": {
+            "mean": 0.011282,
+            "std": 0.000781
+          },
+          "final_val_macro_f1": {
+            "mean": 0.777323,
+            "std": 0.014118
+          },
+          "test_benign_fpr": {
+            "mean": 0.011329,
+            "std": 0.000922
+          },
+          "test_macro_f1": {
+            "mean": 0.776787,
+            "std": 0.012124
+          },
+          "test_lesion_sum": {
+            "mean": 0.664961,
+            "std": 0.122869
+          }
+        },
+        "0.016": {
+          "final_val_benign_fpr": {
+            "mean": 0.013232,
+            "std": 0.001314
+          },
+          "final_val_macro_f1": {
+            "mean": 0.779479,
+            "std": 0.013686
+          },
+          "test_benign_fpr": {
+            "mean": 0.013304,
+            "std": 0.001145
+          },
+          "test_macro_f1": {
+            "mean": 0.778984,
+            "std": 0.011232
+          },
+          "test_lesion_sum": {
+            "mean": 0.699395,
+            "std": 0.11642
+          }
+        },
+        "0.02": {
+          "final_val_benign_fpr": {
+            "mean": 0.015712,
+            "std": 0.001095
+          },
+          "final_val_macro_f1": {
+            "mean": 0.789283,
+            "std": 0.007741
+          },
+          "test_benign_fpr": {
+            "mean": 0.015743,
+            "std": 0.001183
+          },
+          "test_macro_f1": {
+            "mean": 0.788621,
+            "std": 0.006267
+          },
+          "test_lesion_sum": {
+            "mean": 0.816324,
+            "std": 0.056215
+          }
+        }
+      },
+      "rf": {
+        "0.003": {
+          "final_val_benign_fpr": {
+            "mean": 0.000806,
+            "std": 0.000131
+          },
+          "final_val_macro_f1": {
+            "mean": 0.91698,
+            "std": 0.006528
+          },
+          "test_benign_fpr": {
+            "mean": 0.000902,
+            "std": 0.000154
+          },
+          "test_macro_f1": {
+            "mean": 0.909205,
+            "std": 0.003051
+          },
+          "test_lesion_sum": {
+            "mean": 1.943455,
+            "std": 0.038066
+          }
+        },
+        "0.005": {
+          "final_val_benign_fpr": {
+            "mean": 0.000806,
+            "std": 0.000131
+          },
+          "final_val_macro_f1": {
+            "mean": 0.91698,
+            "std": 0.006528
+          },
+          "test_benign_fpr": {
+            "mean": 0.000902,
+            "std": 0.000154
+          },
+          "test_macro_f1": {
+            "mean": 0.909205,
+            "std": 0.003051
+          },
+          "test_lesion_sum": {
+            "mean": 1.943455,
+            "std": 0.038066
+          }
+        },
+        "0.008": {
+          "final_val_benign_fpr": {
+            "mean": 0.000806,
+            "std": 0.000131
+          },
+          "final_val_macro_f1": {
+            "mean": 0.91698,
+            "std": 0.006528
+          },
+          "test_benign_fpr": {
+            "mean": 0.000902,
+            "std": 0.000154
+          },
+          "test_macro_f1": {
+            "mean": 0.909205,
+            "std": 0.003051
+          },
+          "test_lesion_sum": {
+            "mean": 1.943455,
+            "std": 0.038066
+          }
+        },
+        "0.012": {
+          "final_val_benign_fpr": {
+            "mean": 0.000806,
+            "std": 0.000131
+          },
+          "final_val_macro_f1": {
+            "mean": 0.91698,
+            "std": 0.006528
+          },
+          "test_benign_fpr": {
+            "mean": 0.000902,
+            "std": 0.000154
+          },
+          "test_macro_f1": {
+            "mean": 0.909205,
+            "std": 0.003051
+          },
+          "test_lesion_sum": {
+            "mean": 1.943455,
+            "std": 0.038066
+          }
+        },
+        "0.016": {
+          "final_val_benign_fpr": {
+            "mean": 0.000806,
+            "std": 0.000131
+          },
+          "final_val_macro_f1": {
+            "mean": 0.91698,
+            "std": 0.006528
+          },
+          "test_benign_fpr": {
+            "mean": 0.000902,
+            "std": 0.000154
+          },
+          "test_macro_f1": {
+            "mean": 0.909205,
+            "std": 0.003051
+          },
+          "test_lesion_sum": {
+            "mean": 1.943455,
+            "std": 0.038066
+          }
+        },
+        "0.02": {
+          "final_val_benign_fpr": {
+            "mean": 0.000806,
+            "std": 0.000131
+          },
+          "final_val_macro_f1": {
+            "mean": 0.91698,
+            "std": 0.006528
+          },
+          "test_benign_fpr": {
+            "mean": 0.000902,
+            "std": 0.000154
+          },
+          "test_macro_f1": {
+            "mean": 0.909205,
+            "std": 0.003051
+          },
+          "test_lesion_sum": {
+            "mean": 1.943455,
+            "std": 0.038066
+          }
+        }
+      }
+    },
+    "c4_minus_c2val_verdict": {
+      "cap0.003_cnn_lstm": {
+        "c4_val_test_macro_f1": 0.772879,
+        "c2_val_test_macro_f1": 0.750306,
+        "delta": 0.022573,
+        "contribution2_holds(>=0.03)": false
+      },
+      "cap0.003_rf": {
+        "c4_val_test_macro_f1": 0.772879,
+        "c2_val_test_macro_f1": 0.909205,
+        "delta": -0.136326,
+        "contribution2_holds(>=0.03)": false
+      },
+      "cap0.005_cnn_lstm": {
+        "c4_val_test_macro_f1": 0.776798,
+        "c2_val_test_macro_f1": 0.751947,
+        "delta": 0.024851,
+        "contribution2_holds(>=0.03)": false
+      },
+      "cap0.005_rf": {
+        "c4_val_test_macro_f1": 0.776798,
+        "c2_val_test_macro_f1": 0.909205,
+        "delta": -0.132407,
+        "contribution2_holds(>=0.03)": false
+      },
+      "cap0.008_cnn_lstm": {
+        "c4_val_test_macro_f1": 0.79765,
+        "c2_val_test_macro_f1": 0.769892,
+        "delta": 0.027758,
+        "contribution2_holds(>=0.03)": false
+      },
+      "cap0.008_rf": {
+        "c4_val_test_macro_f1": 0.79765,
+        "c2_val_test_macro_f1": 0.909205,
+        "delta": -0.111555,
+        "contribution2_holds(>=0.03)": false
+      },
+      "cap0.012_cnn_lstm": {
+        "c4_val_test_macro_f1": 0.801006,
+        "c2_val_test_macro_f1": 0.776787,
+        "delta": 0.024219,
+        "contribution2_holds(>=0.03)": false
+      },
+      "cap0.012_rf": {
+        "c4_val_test_macro_f1": 0.801006,
+        "c2_val_test_macro_f1": 0.909205,
+        "delta": -0.108199,
+        "contribution2_holds(>=0.03)": false
+      },
+      "cap0.016_cnn_lstm": {
+        "c4_val_test_macro_f1": 0.80145,
+        "c2_val_test_macro_f1": 0.778984,
+        "delta": 0.022466,
+        "contribution2_holds(>=0.03)": false
+      },
+      "cap0.016_rf": {
+        "c4_val_test_macro_f1": 0.80145,
+        "c2_val_test_macro_f1": 0.909205,
+        "delta": -0.107755,
+        "contribution2_holds(>=0.03)": false
+      },
+      "cap0.02_cnn_lstm": {
+        "c4_val_test_macro_f1": 0.802294,
+        "c2_val_test_macro_f1": 0.788621,
+        "delta": 0.013673,
+        "contribution2_holds(>=0.03)": false
+      },
+      "cap0.02_rf": {
+        "c4_val_test_macro_f1": 0.802294,
+        "c2_val_test_macro_f1": 0.909205,
+        "delta": -0.106911,
+        "contribution2_holds(>=0.03)": false
+      }
+    }
+  }
+}

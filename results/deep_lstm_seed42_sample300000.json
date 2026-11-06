@@ -1,0 +1,167 @@
+{
+  "model": "lstm",
+  "class_scheme": "11class",
+  "command": "python src/train_deep.py --model lstm --seed 42 --epochs 2 --sample 300000 --batch-size 256",
+  "seed": 42,
+  "device": "cuda",
+  "n_params": {
+    "total": 208204,
+    "trainable": 208204
+  },
+  "config": {
+    "epochs": 2,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "dropout": 0.3,
+    "norm": "bn",
+    "patience": 5,
+    "val_frac": 0.1,
+    "loss": "CrossEntropyLoss",
+    "optimizer": "Adam",
+    "input_shape": "(B, 1, 78)",
+    "sample_train": 300000
+  },
+  "n_fit": 270000,
+  "n_val": 30000,
+  "n_test": 756219,
+  "n_features": 78,
+  "split_protocol": "固定划分 results/splits/；验证集从训练池内切 10%（seed=种子）",
+  "scaler_path": "results\\cache\\scaler_sample300000.npz",
+  "scaler_fit_on": "仅训练集（fit_idx）",
+  "best_epoch": 1,
+  "best_val_macro_f1": 0.159695,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.601854,
+      "val_loss": 0.521384,
+      "gap_val_minus_train": -0.08047,
+      "val_macro_f1": 0.159695,
+      "val_macro_recall": 0.154418,
+      "train_sec": 16.4,
+      "val_sec": 0.8,
+      "peak_gpu_mb": 376.4
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.542623,
+      "val_loss": 0.528906,
+      "gap_val_minus_train": -0.013717,
+      "val_macro_f1": 0.145049,
+      "val_macro_recall": 0.146372,
+      "train_sec": 14.3,
+      "val_sec": 0.8,
+      "peak_gpu_mb": 377.2
+    }
+  ],
+  "test_metrics": {
+    "accuracy": 0.8828593304320573,
+    "macro_precision": 0.20843661463167704,
+    "macro_recall": 0.15621405252789172,
+    "macro_f1": 0.16155791353338908,
+    "fpr": 0.053647568460765495
+  },
+  "test_per_class": {
+    "BENIGN": {
+      "precision": 0.8852341901415453,
+      "recall": 0.9916692786352637,
+      "f1": 0.9354338839099117,
+      "fpr": 0.6327622120248704,
+      "support": 628517
+    },
+    "DoS Hulk": {
+      "precision": 0.8619826220947652,
+      "recall": 0.7767385351178309,
+      "f1": 0.8171434368025967,
+      "fpr": 0.009155764411917117,
+      "support": 51854
+    },
+    "DDoS": {
+      "precision": 0.7540225633438136,
+      "recall": 0.10616081658160609,
+      "f1": 0.1861176416881605,
+      "fpr": 0.0018528450923984592,
+      "support": 38404
+    },
+    "PortScan": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 0.0,
+      "support": 27208
+    },
+    "DoS GoldenEye": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 0.0,
+      "support": 3086
+    },
+    "FTP-Patator": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 0.0,
+      "support": 1779
+    },
+    "DoS slowloris": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 0.0,
+      "support": 1616
+    },
+    "DoS Slowhttptest": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 0.0,
+      "support": 1568
+    },
+    "SSH-Patator": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 0.0,
+      "support": 966
+    },
+    "Bot": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 0.0,
+      "support": 584
+    },
+    "Web Attack-Brute Force": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 0.0,
+      "support": 441
+    },
+    "Web Attack-XSS": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 0.0,
+      "support": 196
+    }
+  },
+  "timing": {
+    "epoch_train_sec_avg": 15.3,
+    "total_sec": 61.5,
+    "test_eval_sec": 21.0
+  },
+  "peak_gpu_mb": 377.2,
+  "env": {
+    "python": "3.13.14",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit_learn": "1.9.1",
+    "torch": "2.6.0+cu124",
+    "cuda_available": true,
+    "device": "NVIDIA GeForce RTX 4050 Laptop GPU"
+  },
+  "timestamp": "2026-10-17T14:02:57"
+}

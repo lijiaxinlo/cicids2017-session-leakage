@@ -1,0 +1,224 @@
+{
+  "note": "per-class F1 on the test split; weights fitted on validation only",
+  "lesion_order": [
+    "Bot",
+    "WebAttack-BruteForce",
+    "WebAttack-XSS"
+  ],
+  "arms": {
+    "A3_argmax": [
+      {
+        "Bot": 0.5791,
+        "BruteForce": 0.0,
+        "XSS": 0.0,
+        "LFS": 0.5791,
+        "macro_f1": 0.7648,
+        "benign_fpr": 0.012232,
+        "seed": 42
+      },
+      {
+        "Bot": 0.5786,
+        "BruteForce": 0.0,
+        "XSS": 0.0,
+        "LFS": 0.5786,
+        "macro_f1": 0.7612,
+        "benign_fpr": 0.017487,
+        "seed": 44
+      },
+      {
+        "Bot": 0.5057,
+        "BruteForce": 0.0826,
+        "XSS": 0.0,
+        "LFS": 0.5883,
+        "macro_f1": 0.7711,
+        "benign_fpr": 0.011729,
+        "seed": 46
+      }
+    ],
+    "A3_calibrated": [
+      {
+        "Bot": 0.5778,
+        "BruteForce": 0.2257,
+        "XSS": 0.0,
+        "LFS": 0.8035,
+        "macro_f1": 0.7735,
+        "benign_fpr": 0.006437,
+        "seed": 42
+      },
+      {
+        "Bot": 0.5796,
+        "BruteForce": 0.2337,
+        "XSS": 0.0,
+        "LFS": 0.8133,
+        "macro_f1": 0.6987,
+        "benign_fpr": 0.005137,
+        "seed": 44
+      },
+      {
+        "Bot": 0.5806,
+        "BruteForce": 0.53,
+        "XSS": 0.0,
+        "LFS": 1.1106,
+        "macro_f1": 0.8128,
+        "benign_fpr": 0.006113,
+        "seed": 46
+      }
+    ],
+    "C3_argmax": [
+      {
+        "Bot": 0.5939,
+        "BruteForce": 0.2361,
+        "XSS": 0.1152,
+        "LFS": 0.9452,
+        "macro_f1": 0.7946,
+        "benign_fpr": 0.020267,
+        "seed": 42
+      },
+      {
+        "Bot": 0.6022,
+        "BruteForce": 0.2568,
+        "XSS": 0.156,
+        "LFS": 1.0151,
+        "macro_f1": 0.8029,
+        "benign_fpr": 0.006668,
+        "seed": 44
+      },
+      {
+        "Bot": 0.6068,
+        "BruteForce": 0.2383,
+        "XSS": 0.1257,
+        "LFS": 0.9708,
+        "macro_f1": 0.7984,
+        "benign_fpr": 0.010024,
+        "seed": 46
+      }
+    ],
+    "C4_published": [
+      {
+        "Bot": 0.5998,
+        "BruteForce": 0.2109,
+        "XSS": 0.116,
+        "LFS": 0.9268,
+        "macro_f1": 0.7905,
+        "benign_fpr": 0.007424,
+        "seed": 42
+      },
+      {
+        "Bot": 0.6051,
+        "BruteForce": 0.2568,
+        "XSS": 0.156,
+        "LFS": 1.0179,
+        "macro_f1": 0.8047,
+        "benign_fpr": 0.0067,
+        "seed": 44
+      },
+      {
+        "Bot": 0.6108,
+        "BruteForce": 0.2409,
+        "XSS": 0.1258,
+        "LFS": 0.9775,
+        "macro_f1": 0.7978,
+        "benign_fpr": 0.005432,
+        "seed": 46
+      }
+    ],
+    "A0_lfsjoint": [
+      {
+        "Bot": 0.5817,
+        "BruteForce": 0.2779,
+        "XSS": 0.2512,
+        "LFS": 1.1108,
+        "macro_f1": 0.804,
+        "benign_fpr": 0.003847,
+        "seed": 42
+      },
+      {
+        "Bot": 0.6056,
+        "BruteForce": 0.3789,
+        "XSS": 0.3119,
+        "LFS": 1.2963,
+        "macro_f1": 0.7931,
+        "benign_fpr": 0.001209,
+        "seed": 44
+      },
+      {
+        "Bot": 0.6209,
+        "BruteForce": 0.4215,
+        "XSS": 0.1739,
+        "LFS": 1.2164,
+        "macro_f1": 0.8177,
+        "benign_fpr": 0.003052,
+        "seed": 46
+      }
+    ]
+  },
+  "means": {
+    "A3_argmax": {
+      "Bot": 0.5545,
+      "BruteForce": 0.0275,
+      "XSS": 0.0,
+      "LFS": 0.582,
+      "macro_f1": 0.7657,
+      "benign_fpr": 0.013816
+    },
+    "A3_calibrated": {
+      "Bot": 0.5793,
+      "BruteForce": 0.3298,
+      "XSS": 0.0,
+      "LFS": 0.9091,
+      "macro_f1": 0.7617,
+      "benign_fpr": 0.005896
+    },
+    "C3_argmax": {
+      "Bot": 0.601,
+      "BruteForce": 0.2437,
+      "XSS": 0.1323,
+      "LFS": 0.977,
+      "macro_f1": 0.7986,
+      "benign_fpr": 0.01232
+    },
+    "C4_published": {
+      "Bot": 0.6052,
+      "BruteForce": 0.2362,
+      "XSS": 0.1326,
+      "LFS": 0.9741,
+      "macro_f1": 0.7977,
+      "benign_fpr": 0.006519
+    },
+    "A0_lfsjoint": {
+      "Bot": 0.6027,
+      "BruteForce": 0.3594,
+      "XSS": 0.2457,
+      "LFS": 1.2078,
+      "macro_f1": 0.8049,
+      "benign_fpr": 0.002703
+    }
+  },
+  "matched_objective_comparison": {
+    "untreated_calibrated": {
+      "Bot": 0.5793,
+      "BruteForce": 0.3298,
+      "XSS": 0.0,
+      "LFS": 0.9091,
+      "macro_f1": 0.7617,
+      "benign_fpr": 0.005896
+    },
+    "treated_calibrated": {
+      "Bot": 0.6027,
+      "BruteForce": 0.3594,
+      "XSS": 0.2457,
+      "LFS": 1.2078,
+      "macro_f1": 0.8049,
+      "benign_fpr": 0.002703
+    },
+    "delta_Bot": 0.0234,
+    "delta_BruteForce": 0.0296,
+    "delta_XSS": 0.2457,
+    "delta_LFS": 0.2987,
+    "untreated_baseline_LFS": 0.582,
+    "treatment_gain": 0.6258,
+    "calibration_gain": 0.3271,
+    "recovery_fraction": 0.5227,
+    "XSS_share_of_gap": 0.8226
+  }
+}

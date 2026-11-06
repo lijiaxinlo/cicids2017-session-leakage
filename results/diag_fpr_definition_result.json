@@ -1,0 +1,218 @@
+{
+ "definition": {
+  "macro_ovr": "eval_utils.py:36 —— (1/12)Σ FP_c/(FP_c+TN_c)，项目现有报告口径",
+  "benign_only": "P(pred != BENIGN | y == BENIGN)，IDS 领域默认口径"
+ },
+ "models": {
+  "RF (seed42)": {
+   "macro_ovr_fpr": 0.000479,
+   "benign_only_fpr": 0.000708,
+   "ratio_benign_over_macro": 1.48,
+   "per_class_fpr": {
+    "BENIGN": 0.004824,
+    "DoS Hulk": 0.000125,
+    "DDoS": 6e-06,
+    "PortScan": 0.000387,
+    "DoS GoldenEye": 1.1e-05,
+    "FTP-Patator": 0.0,
+    "DoS slowloris": 9e-06,
+    "DoS Slowhttptest": 2.7e-05,
+    "SSH-Patator": 0.0,
+    "Bot": 9.8e-05,
+    "Web Attack-Brute Force": 0.000173,
+    "Web Attack-XSS": 9.3e-05
+   },
+   "benign_row_top_errors": [
+    [
+     "PortScan",
+     280
+    ],
+    [
+     "DoS Hulk",
+     75
+    ],
+    [
+     "Bot",
+     74
+    ],
+    [
+     "DoS Slowhttptest",
+     8
+    ],
+    [
+     "DDoS",
+     4
+    ]
+   ],
+   "attack_to_benign_total": 616
+  },
+  "CNN (seed42)": {
+   "macro_ovr_fpr": 0.004452,
+   "benign_only_fpr": 0.012098,
+   "ratio_benign_over_macro": 2.72,
+   "per_class_fpr": {
+    "BENIGN": 0.042748,
+    "DoS Hulk": 7.7e-05,
+    "DDoS": 4.2e-05,
+    "PortScan": 0.009631,
+    "DoS GoldenEye": 7.8e-05,
+    "FTP-Patator": 1.7e-05,
+    "DoS slowloris": 0.000246,
+    "DoS Slowhttptest": 0.000253,
+    "SSH-Patator": 0.0,
+    "Bot": 0.000337,
+    "Web Attack-Brute Force": 0.0,
+    "Web Attack-XSS": 0.0
+   },
+   "benign_row_top_errors": [
+    [
+     "PortScan",
+     7016
+    ],
+    [
+     "Bot",
+     255
+    ],
+    [
+     "DoS Slowhttptest",
+     175
+    ],
+    [
+     "DoS slowloris",
+     67
+    ],
+    [
+     "DoS Hulk",
+     46
+    ]
+   ],
+   "attack_to_benign_total": 5459
+  },
+  "CNN (seed43)": {
+   "macro_ovr_fpr": 0.003516,
+   "benign_only_fpr": 0.008071,
+   "ratio_benign_over_macro": 2.3,
+   "per_class_fpr": {
+    "BENIGN": 0.0348,
+    "DoS Hulk": 0.0009,
+    "DDoS": 0.000199,
+    "PortScan": 0.00596,
+    "DoS GoldenEye": 0.000116,
+    "FTP-Patator": 5.2e-05,
+    "DoS slowloris": 3.6e-05,
+    "DoS Slowhttptest": 0.000131,
+    "SSH-Patator": 3e-06,
+    "Bot": 0.0,
+    "Web Attack-Brute Force": 0.0,
+    "Web Attack-XSS": 0.0
+   },
+   "benign_row_top_errors": [
+    [
+     "PortScan",
+     4339
+    ],
+    [
+     "DoS Hulk",
+     621
+    ],
+    [
+     "DoS GoldenEye",
+     40
+    ],
+    [
+     "DDoS",
+     33
+    ],
+    [
+     "DoS Slowhttptest",
+     22
+    ]
+   ],
+   "attack_to_benign_total": 4444
+  },
+  "CNN (seed44)": {
+   "macro_ovr_fpr": 0.003659,
+   "benign_only_fpr": 0.004388,
+   "ratio_benign_over_macro": 1.2,
+   "per_class_fpr": {
+    "BENIGN": 0.039921,
+    "DoS Hulk": 0.00092,
+    "DDoS": 4.2e-05,
+    "PortScan": 0.002669,
+    "DoS GoldenEye": 4e-05,
+    "FTP-Patator": 4e-06,
+    "DoS slowloris": 5.2e-05,
+    "DoS Slowhttptest": 0.000248,
+    "SSH-Patator": 0.0,
+    "Bot": 8e-06,
+    "Web Attack-Brute Force": 0.0,
+    "Web Attack-XSS": 0.0
+   },
+   "benign_row_top_errors": [
+    [
+     "PortScan",
+     1941
+    ],
+    [
+     "DoS Hulk",
+     606
+    ],
+    [
+     "DoS Slowhttptest",
+     169
+    ],
+    [
+     "DoS GoldenEye",
+     26
+    ],
+    [
+     "DoS slowloris",
+     6
+    ]
+   ],
+   "attack_to_benign_total": 5098
+  },
+  "CNN (seed45)": {
+   "macro_ovr_fpr": 0.003722,
+   "benign_only_fpr": 0.008969,
+   "ratio_benign_over_macro": 2.41,
+   "per_class_fpr": {
+    "BENIGN": 0.036757,
+    "DoS Hulk": 0.000869,
+    "DDoS": 8.4e-05,
+    "PortScan": 0.00652,
+    "DoS GoldenEye": 0.000118,
+    "FTP-Patator": 4e-05,
+    "DoS slowloris": 1.5e-05,
+    "DoS Slowhttptest": 0.000265,
+    "SSH-Patator": 0.0,
+    "Bot": 0.0,
+    "Web Attack-Brute Force": 0.0,
+    "Web Attack-XSS": 0.0
+   },
+   "benign_row_top_errors": [
+    [
+     "PortScan",
+     4748
+    ],
+    [
+     "DoS Hulk",
+     590
+    ],
+    [
+     "DoS Slowhttptest",
+     178
+    ],
+    [
+     "DoS GoldenEye",
+     78
+    ],
+    [
+     "DDoS",
+     35
+    ]
+   ],
+   "attack_to_benign_total": 4694
+  }
+ }
+}

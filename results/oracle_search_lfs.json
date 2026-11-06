@@ -1,0 +1,573 @@
+{
+ "meta": {
+  "script": "src/oracle_search_lfs.py",
+  "data": {
+   "test": "results/proba/deep_cnn_bilstm_attn_seed42_12class_ce_none_a3p_test.npy",
+   "val": "results/proba/deep_cnn_bilstm_attn_seed42_12class_ce_none_a3p_val.npy"
+  },
+  "n_test": 756219,
+  "n_val": 176452,
+  "class_order": [
+   "BENIGN",
+   "DoS Hulk",
+   "DDoS",
+   "PortScan",
+   "DoS GoldenEye",
+   "FTP-Patator",
+   "DoS slowloris",
+   "DoS Slowhttptest",
+   "SSH-Patator",
+   "Bot",
+   "Web Attack-Brute Force",
+   "Web Attack-XSS"
+  ],
+  "cap_benign_fpr": 0.008,
+  "w_range": [
+   0.1,
+   10.0
+  ],
+  "grid_points": 21,
+  "objective": "LFS = F1[9]+F1[10]+F1[11]",
+  "elapsed_sec": 370.6
+ },
+ "task_a": {
+  "baseline": {
+   "LFS": 0.579084,
+   "benign_fpr": 0.012232,
+   "macro_f1": 0.764765,
+   "note": "argmax w=1；FPR>CAP 说明基线本身不可行，任何可行解都必须抬 w0"
+  },
+  "random_search": {
+   "LFS": 0.810752,
+   "delta_LFS": 0.231668,
+   "benign_fpr": 0.007246,
+   "macro_f1": 0.7759,
+   "feasible": true,
+   "n_nonunit_w": 12,
+   "nonunit_w": [
+    {
+     "class": 0,
+     "name": "BENIGN",
+     "w": 1.6726
+    },
+    {
+     "class": 1,
+     "name": "DoS Hulk",
+     "w": 0.4458
+    },
+    {
+     "class": 2,
+     "name": "DDoS",
+     "w": 0.1955
+    },
+    {
+     "class": 3,
+     "name": "PortScan",
+     "w": 1.2256
+    },
+    {
+     "class": 4,
+     "name": "DoS GoldenEye",
+     "w": 1.8341
+    },
+    {
+     "class": 5,
+     "name": "FTP-Patator",
+     "w": 4.3268
+    },
+    {
+     "class": 6,
+     "name": "DoS slowloris",
+     "w": 7.5414
+    },
+    {
+     "class": 7,
+     "name": "DoS Slowhttptest",
+     "w": 0.9856
+    },
+    {
+     "class": 8,
+     "name": "SSH-Patator",
+     "w": 4.1247
+    },
+    {
+     "class": 9,
+     "name": "Bot",
+     "w": 2.9205
+    },
+    {
+     "class": 10,
+     "name": "Web Attack-Brute Force",
+     "w": 8.448
+    },
+    {
+     "class": 11,
+     "name": "Web Attack-XSS",
+     "w": 0.2859
+    }
+   ],
+   "w": [
+    1.6726,
+    0.4458,
+    0.1955,
+    1.2256,
+    1.8341,
+    4.3268,
+    7.5414,
+    0.9856,
+    4.1247,
+    2.9205,
+    8.448,
+    0.2859
+   ],
+   "n_samples": 20000,
+   "n_feasible": 8232,
+   "seed": 20240501,
+   "elapsed_sec": 59.3
+  },
+  "random_unconstrained": {
+   "LFS": 0.899968,
+   "delta_LFS": 0.320884,
+   "benign_fpr": 0.02138,
+   "macro_f1": 0.786118,
+   "feasible": false,
+   "n_nonunit_w": 12,
+   "nonunit_w": [
+    {
+     "class": 0,
+     "name": "BENIGN",
+     "w": 0.49
+    },
+    {
+     "class": 1,
+     "name": "DoS Hulk",
+     "w": 1.251
+    },
+    {
+     "class": 2,
+     "name": "DDoS",
+     "w": 7.5681
+    },
+    {
+     "class": 3,
+     "name": "PortScan",
+     "w": 0.5242
+    },
+    {
+     "class": 4,
+     "name": "DoS GoldenEye",
+     "w": 1.3086
+    },
+    {
+     "class": 5,
+     "name": "FTP-Patator",
+     "w": 1.2461
+    },
+    {
+     "class": 6,
+     "name": "DoS slowloris",
+     "w": 0.2515
+    },
+    {
+     "class": 7,
+     "name": "DoS Slowhttptest",
+     "w": 1.0528
+    },
+    {
+     "class": 8,
+     "name": "SSH-Patator",
+     "w": 0.6737
+    },
+    {
+     "class": 9,
+     "name": "Bot",
+     "w": 4.8122
+    },
+    {
+     "class": 10,
+     "name": "Web Attack-Brute Force",
+     "w": 3.3677
+    },
+    {
+     "class": 11,
+     "name": "Web Attack-XSS",
+     "w": 7.3979
+    }
+   ],
+   "w": [
+    0.49,
+    1.251,
+    7.5681,
+    0.5242,
+    1.3086,
+    1.2461,
+    0.2515,
+    1.0528,
+    0.6737,
+    4.8122,
+    3.3677,
+    7.3979
+   ]
+  },
+  "multistart_coord": {
+   "LFS": 0.926061,
+   "delta_LFS": 0.346977,
+   "benign_fpr": 0.005351,
+   "macro_f1": 0.772557,
+   "feasible": true,
+   "n_nonunit_w": 12,
+   "nonunit_w": [
+    {
+     "class": 0,
+     "name": "BENIGN",
+     "w": 0.631
+    },
+    {
+     "class": 1,
+     "name": "DoS Hulk",
+     "w": 0.2289
+    },
+    {
+     "class": 2,
+     "name": "DDoS",
+     "w": 0.7174
+    },
+    {
+     "class": 3,
+     "name": "PortScan",
+     "w": 0.1171
+    },
+    {
+     "class": 4,
+     "name": "DoS GoldenEye",
+     "w": 0.1
+    },
+    {
+     "class": 5,
+     "name": "FTP-Patator",
+     "w": 0.1876
+    },
+    {
+     "class": 6,
+     "name": "DoS slowloris",
+     "w": 1.5849
+    },
+    {
+     "class": 7,
+     "name": "DoS Slowhttptest",
+     "w": 0.1181
+    },
+    {
+     "class": 8,
+     "name": "SSH-Patator",
+     "w": 1.5849
+    },
+    {
+     "class": 9,
+     "name": "Bot",
+     "w": 2.5119
+    },
+    {
+     "class": 10,
+     "name": "Web Attack-Brute Force",
+     "w": 3.9811
+    },
+    {
+     "class": 11,
+     "name": "Web Attack-XSS",
+     "w": 8.7015
+    }
+   ],
+   "w": [
+    0.631,
+    0.2289,
+    0.7174,
+    0.1171,
+    0.1,
+    0.1876,
+    1.5849,
+    0.1181,
+    1.5849,
+    2.5119,
+    3.9811,
+    8.7015
+   ],
+   "n_starts": 50,
+   "seed": 20240502,
+   "LFS_min": 0.5,
+   "LFS_median": 0.579585,
+   "LFS_max": 0.926061,
+   "n_distinct_LFS": 14,
+   "elapsed_sec": 90.5
+  },
+  "differential_evolution": {
+   "LFS": 0.953547,
+   "delta_LFS": 0.374463,
+   "benign_fpr": 0.007122,
+   "macro_f1": 0.736332,
+   "feasible": true,
+   "n_nonunit_w": 12,
+   "nonunit_w": [
+    {
+     "class": 0,
+     "name": "BENIGN",
+     "w": 0.8414
+    },
+    {
+     "class": 1,
+     "name": "DoS Hulk",
+     "w": 0.4595
+    },
+    {
+     "class": 2,
+     "name": "DDoS",
+     "w": 1.2588
+    },
+    {
+     "class": 3,
+     "name": "PortScan",
+     "w": 0.5645
+    },
+    {
+     "class": 4,
+     "name": "DoS GoldenEye",
+     "w": 7.6822
+    },
+    {
+     "class": 5,
+     "name": "FTP-Patator",
+     "w": 8.6036
+    },
+    {
+     "class": 6,
+     "name": "DoS slowloris",
+     "w": 1.9681
+    },
+    {
+     "class": 7,
+     "name": "DoS Slowhttptest",
+     "w": 0.1297
+    },
+    {
+     "class": 8,
+     "name": "SSH-Patator",
+     "w": 4.3296
+    },
+    {
+     "class": 9,
+     "name": "Bot",
+     "w": 3.2921
+    },
+    {
+     "class": 10,
+     "name": "Web Attack-Brute Force",
+     "w": 4.2531
+    },
+    {
+     "class": 11,
+     "name": "Web Attack-XSS",
+     "w": 9.3175
+    }
+   ],
+   "w": [
+    0.8414,
+    0.4595,
+    1.2588,
+    0.5645,
+    7.6822,
+    8.6036,
+    1.9681,
+    0.1297,
+    4.3296,
+    3.2921,
+    4.2531,
+    9.3175
+   ],
+   "maxiter": 250,
+   "popsize": 15,
+   "n_eval": 45193,
+   "seed": 20240503,
+   "raw_de_fun": -0.953547,
+   "elapsed_sec": 129.1
+  },
+  "pair_ascent": {
+   "LFS": 0.926061,
+   "delta_LFS": 0.346977,
+   "benign_fpr": 0.005351,
+   "macro_f1": 0.772557,
+   "feasible": true,
+   "n_nonunit_w": 12,
+   "nonunit_w": [
+    {
+     "class": 0,
+     "name": "BENIGN",
+     "w": 0.631
+    },
+    {
+     "class": 1,
+     "name": "DoS Hulk",
+     "w": 0.2289
+    },
+    {
+     "class": 2,
+     "name": "DDoS",
+     "w": 0.7174
+    },
+    {
+     "class": 3,
+     "name": "PortScan",
+     "w": 0.1171
+    },
+    {
+     "class": 4,
+     "name": "DoS GoldenEye",
+     "w": 0.1
+    },
+    {
+     "class": 5,
+     "name": "FTP-Patator",
+     "w": 0.1876
+    },
+    {
+     "class": 6,
+     "name": "DoS slowloris",
+     "w": 1.5849
+    },
+    {
+     "class": 7,
+     "name": "DoS Slowhttptest",
+     "w": 0.1181
+    },
+    {
+     "class": 8,
+     "name": "SSH-Patator",
+     "w": 1.5849
+    },
+    {
+     "class": 9,
+     "name": "Bot",
+     "w": 2.5119
+    },
+    {
+     "class": 10,
+     "name": "Web Attack-Brute Force",
+     "w": 3.9811
+    },
+    {
+     "class": 11,
+     "name": "Web Attack-XSS",
+     "w": 8.7015
+    }
+   ],
+   "w": [
+    0.631,
+    0.2289,
+    0.7174,
+    0.1171,
+    0.1,
+    0.1876,
+    1.5849,
+    0.1181,
+    1.5849,
+    2.5119,
+    3.9811,
+    8.7015
+   ],
+   "protocol": "66 pairs x 21x21 grid, <=2 rounds",
+   "rounds": 1,
+   "elapsed_sec": 89.7
+  }
+ },
+ "task_b": {
+  "protocol": "E17 同构：21 点网格 exp(linspace(log0.1,log10,21))、<=3 轮坐标上升、目标 macro-F1、硬约束 benign FPR<=0.008、拟合集上做约束强制段",
+  "argmax_val": {
+   "macro_f1": 0.766061,
+   "LFS": 0.602941,
+   "benign_fpr": 0.012376
+  },
+  "argmax_test": {
+   "macro_f1": 0.764765,
+   "LFS": 0.579084,
+   "benign_fpr": 0.012232
+  },
+  "val_fit": {
+   "LFS": 0.579084,
+   "delta_LFS": -0.0,
+   "benign_fpr": 0.005021,
+   "macro_f1": 0.763129,
+   "feasible": true,
+   "n_nonunit_w": 1,
+   "nonunit_w": [
+    {
+     "class": 0,
+     "name": "BENIGN",
+     "w": 1.1659
+    }
+   ],
+   "w": [
+    1.1659,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "fit_info": {
+    "rounds": 1,
+    "infeasible_classes": 0,
+    "enforced_w0": 1.1659,
+    "fit_objective_value": 0.764233
+   }
+  },
+  "test_fit": {
+   "LFS": 0.579084,
+   "delta_LFS": -0.0,
+   "benign_fpr": 0.005021,
+   "macro_f1": 0.763129,
+   "feasible": true,
+   "n_nonunit_w": 1,
+   "nonunit_w": [
+    {
+     "class": 0,
+     "name": "BENIGN",
+     "w": 1.1659
+    }
+   ],
+   "w": [
+    1.1659,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "fit_info": {
+    "rounds": 1,
+    "infeasible_classes": 0,
+    "enforced_w0": 1.1659,
+    "fit_objective_value": 0.763129
+   }
+  },
+  "gap_test_minus_val_fit": {
+   "macro_f1": 0.0,
+   "LFS": 0.0,
+   "benign_fpr": 0.0
+  },
+  "weight_diff": {
+   "n_coords_diff": 0,
+   "per_class": []
+  }
+ }
+}

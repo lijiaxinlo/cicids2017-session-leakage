@@ -1,0 +1,49 @@
+{
+  "model": "RandomForest",
+  "features": "ctx",
+  "source_log": "results/rf_feat_ctx.log",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "n_seeds": 3,
+  "timestamp": "2026-10-24T12:09:12",
+  "summary": {
+    "macro_f1": {
+      "mean": 0.7942666666666667,
+      "std": 0.000694422221866664
+    },
+    "lesion_sum": {
+      "mean": 1.0264333333333333,
+      "std": 0.00400777023071708
+    },
+    "benign_fpr": {
+      "mean": 0.023119666666666667,
+      "std": 0.0004144895119970526
+    }
+  },
+  "per_seed": [
+    {
+      "seed": 42,
+      "macro_f1": 0.7946,
+      "lesion_sum": 1.0237,
+      "benign_fpr": 0.022758,
+      "fit_seconds": 1228.0
+    },
+    {
+      "seed": 43,
+      "macro_f1": 0.7933,
+      "lesion_sum": 1.0235,
+      "benign_fpr": 0.022901,
+      "fit_seconds": 1235.0
+    },
+    {
+      "seed": 44,
+      "macro_f1": 0.7949,
+      "lesion_sum": 1.0321,
+      "benign_fpr": 0.0237,
+      "fit_seconds": 1314.0
+    }
+  ]
+}

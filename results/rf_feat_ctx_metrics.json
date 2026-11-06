@@ -1,0 +1,125 @@
+{
+  "model": "RandomForest",
+  "features": "ctx",
+  "npz": "results/feats_p2_convfeat.npz",
+  "split": "results/temporal",
+  "seeds": [
+    42
+  ],
+  "n_train": 1509557,
+  "n_test": 627315,
+  "n_features": 128,
+  "n_estimators": 100,
+  "class_weight": null,
+  "timestamp": "2026-10-24T15:15:38",
+  "summary": {
+    "macro_f1": {
+      "mean": 0.7946218818163922,
+      "std": 0.0
+    },
+    "lesion_sum": {
+      "mean": 1.0237241129834505,
+      "std": 0.0
+    },
+    "benign_fpr": {
+      "mean": 0.0005477185416131736,
+      "std": 0.0
+    }
+  },
+  "per_class_summary": {
+    "BENIGN": {
+      "f1": {
+        "mean": 0.9974398889949629,
+        "std": 0.0
+      }
+    },
+    "DoS Hulk": {
+      "f1": {
+        "mean": 0.9731096244887251,
+        "std": 0.0
+      }
+    },
+    "DDoS": {
+      "f1": {
+        "mean": 0.9988826815642459,
+        "std": 0.0
+      }
+    },
+    "PortScan": {
+      "f1": {
+        "mean": 0.9597998694800957,
+        "std": 0.0
+      }
+    },
+    "DoS GoldenEye": {
+      "f1": {
+        "mean": 0.9523019493985899,
+        "std": 0.0
+      }
+    },
+    "FTP-Patator": {
+      "f1": {
+        "mean": 0.9907578558225507,
+        "std": 0.0
+      }
+    },
+    "DoS slowloris": {
+      "f1": {
+        "mean": 0.7568103021297672,
+        "std": 0.0
+      }
+    },
+    "DoS Slowhttptest": {
+      "f1": {
+        "mean": 0.9086993970714901,
+        "std": 0.0
+      }
+    },
+    "SSH-Patator": {
+      "f1": {
+        "mean": 0.9739368998628257,
+        "std": 0.0
+      }
+    },
+    "Bot": {
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    "Web Attack-Brute Force": {
+      "f1": {
+        "mean": 0.6971935007385525,
+        "std": 0.0
+      }
+    },
+    "Web Attack-XSS": {
+      "f1": {
+        "mean": 0.32653061224489793,
+        "std": 0.0
+      }
+    }
+  },
+  "per_seed": [
+    {
+      "seed": 42,
+      "macro_f1": 0.7946218818163922,
+      "lesion_sum": 1.0237241129834505,
+      "benign_fpr": 0.0005477185416131736,
+      "per_class_f1": {
+        "BENIGN": 0.9974398889949629,
+        "DoS Hulk": 0.9731096244887251,
+        "DDoS": 0.9988826815642459,
+        "PortScan": 0.9597998694800957,
+        "DoS GoldenEye": 0.9523019493985899,
+        "FTP-Patator": 0.9907578558225507,
+        "DoS slowloris": 0.7568103021297672,
+        "DoS Slowhttptest": 0.9086993970714901,
+        "SSH-Patator": 0.9739368998628257,
+        "Bot": 0.0,
+        "Web Attack-Brute Force": 0.6971935007385525,
+        "Web Attack-XSS": 0.32653061224489793
+      }
+    }
+  ]
+}

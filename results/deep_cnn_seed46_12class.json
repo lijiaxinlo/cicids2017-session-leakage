@@ -1,0 +1,389 @@
+{
+  "model": "cnn",
+  "class_scheme": "12class",
+  "command": "python src/train_deep.py --model cnn --seed 46 --epochs 30 --batch-size 256 --norm gn --patience 5 --save-proba --save-ckpt",
+  "seed": 46,
+  "device": "cuda",
+  "n_params": {
+    "total": 83916,
+    "trainable": 83916
+  },
+  "config": {
+    "epochs": 30,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "dropout": 0.3,
+    "norm": "gn",
+    "norm_note": "三个深度 baseline 统一使用 GroupNorm（无 running stats），BatchNorm 在预实验中存在间歇性 loss 背离，仅作诊断对照",
+    "patience": 5,
+    "val_frac": 0.1,
+    "loss": "CrossEntropyLoss",
+    "optimizer": "Adam",
+    "input_shape": "(B, 1, 78)",
+    "sample_train": null
+  },
+  "leakage_checks": {
+    "val_in_test": 0,
+    "fit_in_test": 0,
+    "val_outside_train_pool": 0,
+    "fit_val_overlap": 0,
+    "passed": true
+  },
+  "n_fit": 1588059,
+  "n_val": 176452,
+  "n_test": 756219,
+  "n_features": 78,
+  "split_protocol": "固定划分 results/splits/；验证集从训练池内切 10%（seed=种子）",
+  "scaler_path": "results\\cache\\scaler.npz",
+  "scaler_fit_on": "仅训练集（fit_idx）",
+  "best_epoch": 14,
+  "best_val_macro_f1": 0.774671,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.130388,
+      "val_loss": 0.061049,
+      "gap_val_minus_train": -0.069338,
+      "val_macro_f1": 0.67944,
+      "val_macro_recall": 0.650673,
+      "train_sec": 34.7,
+      "val_sec": 1.6,
+      "peak_gpu_mb": 94.2,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.05888,
+      "val_loss": 0.040002,
+      "gap_val_minus_train": -0.018878,
+      "val_macro_f1": 0.71317,
+      "val_macro_recall": 0.705409,
+      "train_sec": 34.2,
+      "val_sec": 1.6,
+      "peak_gpu_mb": 94.5,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.045727,
+      "val_loss": 0.044038,
+      "gap_val_minus_train": -0.001689,
+      "val_macro_f1": 0.690315,
+      "val_macro_recall": 0.66185,
+      "train_sec": 33.6,
+      "val_sec": 1.6,
+      "peak_gpu_mb": 94.5,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.042314,
+      "val_loss": 0.037534,
+      "gap_val_minus_train": -0.004779,
+      "val_macro_f1": 0.712805,
+      "val_macro_recall": 0.710918,
+      "train_sec": 33.6,
+      "val_sec": 1.6,
+      "peak_gpu_mb": 94.5,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.040769,
+      "val_loss": 0.033529,
+      "gap_val_minus_train": -0.007241,
+      "val_macro_f1": 0.711543,
+      "val_macro_recall": 0.706611,
+      "train_sec": 33.9,
+      "val_sec": 1.6,
+      "peak_gpu_mb": 94.5,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.040011,
+      "val_loss": 0.033593,
+      "gap_val_minus_train": -0.006419,
+      "val_macro_f1": 0.718782,
+      "val_macro_recall": 0.72659,
+      "train_sec": 34.9,
+      "val_sec": 2.2,
+      "peak_gpu_mb": 94.5,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.039053,
+      "val_loss": 0.032693,
+      "gap_val_minus_train": -0.00636,
+      "val_macro_f1": 0.763846,
+      "val_macro_recall": 0.747296,
+      "train_sec": 38.6,
+      "val_sec": 1.7,
+      "peak_gpu_mb": 94.5,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.038852,
+      "val_loss": 0.031441,
+      "gap_val_minus_train": -0.007411,
+      "val_macro_f1": 0.760913,
+      "val_macro_recall": 0.742398,
+      "train_sec": 39.9,
+      "val_sec": 1.9,
+      "peak_gpu_mb": 94.5,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.038447,
+      "val_loss": 0.032145,
+      "gap_val_minus_train": -0.006303,
+      "val_macro_f1": 0.724118,
+      "val_macro_recall": 0.722884,
+      "train_sec": 38.4,
+      "val_sec": 1.7,
+      "peak_gpu_mb": 94.5,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.037891,
+      "val_loss": 0.030016,
+      "gap_val_minus_train": -0.007875,
+      "val_macro_f1": 0.769669,
+      "val_macro_recall": 0.75384,
+      "train_sec": 38.0,
+      "val_sec": 1.7,
+      "peak_gpu_mb": 94.5,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.037468,
+      "val_loss": 0.03351,
+      "gap_val_minus_train": -0.003958,
+      "val_macro_f1": 0.769705,
+      "val_macro_recall": 0.76831,
+      "train_sec": 38.0,
+      "val_sec": 1.7,
+      "peak_gpu_mb": 94.5,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.037108,
+      "val_loss": 0.029435,
+      "gap_val_minus_train": -0.007673,
+      "val_macro_f1": 0.768763,
+      "val_macro_recall": 0.756743,
+      "train_sec": 37.9,
+      "val_sec": 1.8,
+      "peak_gpu_mb": 94.5,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.037285,
+      "val_loss": 0.031541,
+      "gap_val_minus_train": -0.005743,
+      "val_macro_f1": 0.760194,
+      "val_macro_recall": 0.748086,
+      "train_sec": 40.0,
+      "val_sec": 1.9,
+      "peak_gpu_mb": 94.5,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.036688,
+      "val_loss": 0.030589,
+      "gap_val_minus_train": -0.0061,
+      "val_macro_f1": 0.774671,
+      "val_macro_recall": 0.762958,
+      "train_sec": 38.0,
+      "val_sec": 1.7,
+      "peak_gpu_mb": 94.5,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.036522,
+      "val_loss": 0.03062,
+      "gap_val_minus_train": -0.005902,
+      "val_macro_f1": 0.719082,
+      "val_macro_recall": 0.718956,
+      "train_sec": 38.1,
+      "val_sec": 1.9,
+      "peak_gpu_mb": 94.5,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.036374,
+      "val_loss": 0.031251,
+      "gap_val_minus_train": -0.005123,
+      "val_macro_f1": 0.76761,
+      "val_macro_recall": 0.748193,
+      "train_sec": 38.3,
+      "val_sec": 1.8,
+      "peak_gpu_mb": 94.5,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.036328,
+      "val_loss": 0.031081,
+      "gap_val_minus_train": -0.005247,
+      "val_macro_f1": 0.765845,
+      "val_macro_recall": 0.765294,
+      "train_sec": 52.9,
+      "val_sec": 2.0,
+      "peak_gpu_mb": 94.5,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 18,
+      "train_loss": 0.036321,
+      "val_loss": 0.030317,
+      "gap_val_minus_train": -0.006004,
+      "val_macro_f1": 0.762146,
+      "val_macro_recall": 0.738071,
+      "train_sec": 42.8,
+      "val_sec": 1.8,
+      "peak_gpu_mb": 94.5,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 19,
+      "train_loss": 0.036456,
+      "val_loss": 0.031724,
+      "gap_val_minus_train": -0.004732,
+      "val_macro_f1": 0.71796,
+      "val_macro_recall": 0.711167,
+      "train_sec": 37.9,
+      "val_sec": 1.7,
+      "peak_gpu_mb": 94.5,
+      "timing_anomaly": false
+    }
+  ],
+  "test_metrics": {
+    "accuracy": 0.9866665608772062,
+    "macro_precision": 0.8863779269580808,
+    "macro_recall": 0.7557962798571228,
+    "macro_f1": 0.7694787294432285,
+    "fpr": 0.003287732370182022
+  },
+  "test_per_class": {
+    "BENIGN": {
+      "precision": 0.993677866467474,
+      "recall": 0.990534862223297,
+      "f1": 0.9921038750770887,
+      "fpr": 0.03101752517579991,
+      "support": 628517
+    },
+    "DoS Hulk": {
+      "precision": 0.9793714837756435,
+      "recall": 0.9970686928684384,
+      "f1": 0.9881408571838121,
+      "fpr": 0.0015460734136420748,
+      "support": 51854
+    },
+    "DDoS": {
+      "precision": 0.9990011565555672,
+      "recall": 0.9896364961983126,
+      "f1": 0.9942967768940979,
+      "fpr": 5.293843121138455e-05,
+      "support": 38404
+    },
+    "PortScan": {
+      "precision": 0.842502113271344,
+      "recall": 0.9157968244633932,
+      "f1": 0.8776218234330697,
+      "fpr": 0.006389478348063335,
+      "support": 27208
+    },
+    "DoS GoldenEye": {
+      "precision": 0.9768488745980708,
+      "recall": 0.9844458846403111,
+      "f1": 0.9806326662362814,
+      "fpr": 9.560064424211925e-05,
+      "support": 3086
+    },
+    "FTP-Patator": {
+      "precision": 0.9784530386740331,
+      "recall": 0.9955030916245081,
+      "f1": 0.9869044302033994,
+      "fpr": 5.169397168760935e-05,
+      "support": 1779
+    },
+    "DoS slowloris": {
+      "precision": 0.9825129533678757,
+      "recall": 0.9387376237623762,
+      "f1": 0.9601265822784811,
+      "fpr": 3.578040373547415e-05,
+      "support": 1616
+    },
+    "DoS Slowhttptest": {
+      "precision": 0.8841676367869615,
+      "recall": 0.96875,
+      "f1": 0.9245283018867924,
+      "fpr": 0.00026369805380235367,
+      "support": 1568
+    },
+    "SSH-Patator": {
+      "precision": 1.0,
+      "recall": 0.917184265010352,
+      "f1": 0.9568034557235421,
+      "fpr": 0.0,
+      "support": 966
+    },
+    "Bot": {
+      "precision": 1.0,
+      "recall": 0.3356164383561644,
+      "f1": 0.5025641025641026,
+      "fpr": 0.0,
+      "support": 584
+    },
+    "Web Attack-Brute Force": {
+      "precision": 1.0,
+      "recall": 0.036281179138321996,
+      "f1": 0.0700218818380744,
+      "fpr": 0.0,
+      "support": 441
+    },
+    "Web Attack-XSS": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 0.0,
+      "support": 196
+    }
+  },
+  "timing": {
+    "epoch_train_sec_avg": 38.1,
+    "epoch_train_sec_median": 38.0,
+    "total_sec": 774.3,
+    "test_eval_sec": 8.5,
+    "timing_anomalies": [],
+    "anomaly_rule": "单轮训练耗时 > 前几轮中位数 x1.5 即记为异常，不用于排期"
+  },
+  "peak_gpu_mb": 94.5,
+  "env": {
+    "python": "3.13.14",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit_learn": "1.9.1",
+    "torch": "2.6.0+cu124",
+    "cuda_available": true,
+    "device": "NVIDIA GeForce RTX 4050 Laptop GPU"
+  },
+  "timestamp": "2026-10-17T15:33:41",
+  "artifacts": {
+    "test_proba": "results\\deep_cnn_seed46_12class_test_proba.npy",
+    "test_ytrue": "results\\deep_cnn_seed46_12class_test_ytrue.npy",
+    "best_ckpt": "results\\deep_cnn_seed46_12class_best.pt"
+  }
+}

@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this code or the audit protocol, please cite the paper below."
+title: "Resampling Buys What the Classifier Cannot Carve Out: Minority-Class Detection on CIC-IDS2017 under a Purged Temporal Split"
+abstract: >-
+  A 70/30 flow-level split of CIC-IDS2017 leaks at capture-session level:
+  99.75% of benign test flows have a same-class training flow within ten rows
+  of the same capture file. Re-cutting each (session, class) group into
+  contiguous 60/15/25% blocks with a boundary purge removes the leak, and
+  holding groups and cut points fixed while shuffling only the order isolates
+  its cost at 0.083 macro-F1 and 0.614 lesion-group F1 sum. The loss is one
+  class: Bot falls from 0.605 to 0.000 while Brute Force and XSS stay flat.
+  Resampling is not a leakage artifact; what it is worth is a property of the
+  classifier, not of the features.
+authors:
+  - family-names: "Li"
+    given-names: "Jiaxin"
+    affiliation: "School of Big Data and Intelligent Engineering, Hebei University of Economics and Business"
+    email: "2970048300@qq.com"
+year: 2026
+type: conference-paper
+preferred-citation:
+  type: conference-paper
+  title: "Resampling Buys What the Classifier Cannot Carve Out: Minority-Class Detection on CIC-IDS2017 under a Purged Temporal Split"
+  authors:
+    - family-names: "Li"
+      given-names: "Jiaxin"
+  year: 2026
+  collection-title: "2026 IEEE International Conference on Artificial Intelligence, Robotics and Control (ICAIRC)"
+keywords:
+  - intrusion detection
+  - CIC-IDS2017
+  - data leakage
+  - class imbalance
+  - temporal split
+  - reproducibility
+license: MIT

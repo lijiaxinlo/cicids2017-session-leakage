@@ -1,0 +1,463 @@
+{
+  "model": "cnn_bilstm_attn",
+  "class_scheme": "12class",
+  "command": "python src/train_main.py --model cnn_bilstm_attn --seed 42 --epochs 30 --batch-size 256 --lr 0.001 --loss focal --sampler smote --gamma 1.0 --alpha-mode uniform --benign-target full --minority-target 12000 --patience 5 --tag T_trt_g1",
+  "seed": 42,
+  "device": "cuda",
+  "n_params": {
+    "total": 142029,
+    "trainable": 142029
+  },
+  "config": {
+    "epochs": 30,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "dropout": 0.3,
+    "patience": 5,
+    "val_frac": 0.1,
+    "norm": "gn",
+    "loss": "focal",
+    "gamma": 1.0,
+    "alpha_mode": "uniform",
+    "sampler": "smote",
+    "benign_target": "full",
+    "minority_target": 12000,
+    "smote_k": 5,
+    "optimizer": "Adam",
+    "input_shape": "(B, 1, 78)",
+    "fpr_gate": {
+      "audit_macro": 1.0,
+      "audit_benign": 1.0,
+      "gate_semantics": "v4.3_audit_pathological",
+      "diverged_ma3_benign": 1.0,
+      "diverged_ma3_macro": 1.0,
+      "rule": "gate_flag 仅逐 epoch 审计；唯一中止条件 = 3-epoch 滑动平均 val benign FPR > 0.05 或 val macro FPR > 0.02（fpr_diverged）"
+    },
+    "sample_train": null,
+    "tier": null,
+    "pool": "attn",
+    "model_name": "cnn_bilstm_attn"
+  },
+  "leakage_checks": {
+    "val_in_test": 0,
+    "fit_in_test": 0,
+    "val_outside_train_pool": 372366,
+    "fit_val_overlap": 0,
+    "passed": true
+  },
+  "resampling_audit": {
+    "seed": 42,
+    "benign_class_id": 0,
+    "benign_before": 1255431,
+    "benign_after": 1255431,
+    "benign_undersampled": false,
+    "benign_target": null,
+    "minority_class_ids": [
+      9,
+      10,
+      11
+    ],
+    "smote_k_effective": 5,
+    "minority": {
+      "9": {
+        "before": 1130,
+        "after": 12000,
+        "synthetic": 10870
+      },
+      "10": {
+        "before": 853,
+        "after": 12000,
+        "synthetic": 11147
+      },
+      "11": {
+        "before": 378,
+        "after": 12000,
+        "synthetic": 11622
+      }
+    },
+    "n_fit_before": 1509557,
+    "n_fit_after": 1543196,
+    "n_synthetic": 33639,
+    "n_real_used": 1509557,
+    "counts_after": {
+      "0": 1255431,
+      "1": 103507,
+      "2": 76608,
+      "3": 54216,
+      "4": 5971,
+      "5": 3440,
+      "6": 3124,
+      "7": 3032,
+      "8": 1867,
+      "9": 12000,
+      "10": 12000,
+      "11": 12000
+    },
+    "smote_sampling_strategy": {
+      "9": 12000,
+      "10": 12000,
+      "11": 12000
+    },
+    "asserts": {
+      "L5_count_selfconsistent": true,
+      "L5_real_subset_of_fit": true
+    },
+    "val_untouched": true,
+    "test_untouched": true,
+    "leakage_assert_passed": true
+  },
+  "n_fit_real": 1509557,
+  "n_fit_used": 1543196,
+  "n_val": 372366,
+  "n_test": 627315,
+  "n_features": 78,
+  "best_epoch": 4,
+  "epochs_run": 9,
+  "early_stopped": true,
+  "best_val_macro_f1": 0.794987,
+  "val_per_class_at_best": {
+    "BENIGN": {
+      "precision": 0.9975257473824318,
+      "recall": 0.973365267151032,
+      "f1": 0.9852974197264501,
+      "fpr": 0.0122500244674257,
+      "support": 311060
+    },
+    "DoS Hulk": {
+      "precision": 0.9997622632538236,
+      "recall": 0.9884436087280135,
+      "f1": 0.99407071801438,
+      "fpr": 1.7299092662589846e-05,
+      "support": 25527
+    },
+    "DDoS": {
+      "precision": 0.9997836434443964,
+      "recall": 0.9830869056483352,
+      "f1": 0.9913649772056852,
+      "fpr": 1.1313369008156938e-05,
+      "support": 18802
+    },
+    "PortScan": {
+      "precision": 0.6461387594998774,
+      "recall": 0.9980308997273554,
+      "f1": 0.7844281079794042,
+      "fpr": 0.020093996580930053,
+      "support": 13204
+    },
+    "DoS GoldenEye": {
+      "precision": 0.9702633814783348,
+      "recall": 0.9991251093613298,
+      "f1": 0.9844827586206897,
+      "fpr": 9.428295121800104e-05,
+      "support": 1143
+    },
+    "FTP-Patator": {
+      "precision": 0.9984639016897081,
+      "recall": 0.9938837920489296,
+      "f1": 0.9961685823754789,
+      "fpr": 2.690254820936639e-06,
+      "support": 654
+    },
+    "DoS slowloris": {
+      "precision": 0.8824404761904762,
+      "recall": 1.0,
+      "f1": 0.9375494071146244,
+      "fpr": 0.00021249525920386903,
+      "support": 593
+    },
+    "DoS Slowhttptest": {
+      "precision": 0.7941605839416058,
+      "recall": 0.9428076256499134,
+      "f1": 0.8621236133122028,
+      "fpr": 0.00037924736880327284,
+      "support": 577
+    },
+    "SSH-Patator": {
+      "precision": 0.9912023460410557,
+      "recall": 0.952112676056338,
+      "f1": 0.9712643678160919,
+      "fpr": 8.064277669208706e-06,
+      "support": 355
+    },
+    "Bot": {
+      "precision": 0.990909090909091,
+      "recall": 0.5023041474654378,
+      "f1": 0.6666666666666666,
+      "fpr": 2.6870957600316e-06,
+      "support": 217
+    },
+    "Web Attack-Brute Force": {
+      "precision": 0.6486486486486487,
+      "recall": 0.14814814814814814,
+      "f1": 0.24120603015075376,
+      "fpr": 3.4927082997495994e-05,
+      "support": 162
+    },
+    "Web Attack-XSS": {
+      "precision": 0.06692160611854685,
+      "recall": 0.9722222222222222,
+      "f1": 0.12522361359570663,
+      "fpr": 0.002621584016932854,
+      "support": 72
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.076181,
+      "val_loss": 0.076766,
+      "gap_val_minus_train": 0.000585,
+      "val_macro_f1": 0.774091,
+      "val_macro_recall": 0.855231,
+      "val_fpr": 0.005313,
+      "val_benign_fpr": 0.051106,
+      "gate_flag": false,
+      "train_sec": 63.2,
+      "val_sec": 4.5,
+      "peak_gpu_mb": 133.0,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.042362,
+      "val_loss": 0.075205,
+      "gap_val_minus_train": 0.032843,
+      "val_macro_f1": 0.773195,
+      "val_macro_recall": 0.854893,
+      "val_fpr": 0.005232,
+      "val_benign_fpr": 0.051254,
+      "gate_flag": false,
+      "train_sec": 52.1,
+      "val_sec": 5.0,
+      "peak_gpu_mb": 133.6,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.038894,
+      "val_loss": 0.072886,
+      "gap_val_minus_train": 0.033992,
+      "val_macro_f1": 0.782381,
+      "val_macro_recall": 0.868268,
+      "val_fpr": 0.004697,
+      "val_benign_fpr": 0.050791,
+      "gate_flag": false,
+      "train_sec": 60.6,
+      "val_sec": 4.7,
+      "peak_gpu_mb": 133.6,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.037162,
+      "val_loss": 0.050349,
+      "gap_val_minus_train": 0.013187,
+      "val_macro_f1": 0.794987,
+      "val_macro_recall": 0.871128,
+      "val_fpr": 0.002977,
+      "val_benign_fpr": 0.026635,
+      "gate_flag": false,
+      "train_sec": 48.9,
+      "val_sec": 4.5,
+      "peak_gpu_mb": 133.6,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.036004,
+      "val_loss": 0.065261,
+      "gap_val_minus_train": 0.029257,
+      "val_macro_f1": 0.757163,
+      "val_macro_recall": 0.844545,
+      "val_fpr": 0.004381,
+      "val_benign_fpr": 0.052684,
+      "gate_flag": false,
+      "train_sec": 47.8,
+      "val_sec": 4.5,
+      "peak_gpu_mb": 133.6,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.035533,
+      "val_loss": 0.06169,
+      "gap_val_minus_train": 0.026158,
+      "val_macro_f1": 0.782554,
+      "val_macro_recall": 0.864721,
+      "val_fpr": 0.00468,
+      "val_benign_fpr": 0.05071,
+      "gate_flag": false,
+      "train_sec": 47.5,
+      "val_sec": 4.4,
+      "peak_gpu_mb": 133.6,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.035081,
+      "val_loss": 0.071676,
+      "gap_val_minus_train": 0.036596,
+      "val_macro_f1": 0.786658,
+      "val_macro_recall": 0.876751,
+      "val_fpr": 0.004664,
+      "val_benign_fpr": 0.050881,
+      "gate_flag": false,
+      "train_sec": 47.7,
+      "val_sec": 4.3,
+      "peak_gpu_mb": 133.6,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.034676,
+      "val_loss": 0.071099,
+      "gap_val_minus_train": 0.036423,
+      "val_macro_f1": 0.773502,
+      "val_macro_recall": 0.875941,
+      "val_fpr": 0.004656,
+      "val_benign_fpr": 0.052379,
+      "gate_flag": false,
+      "train_sec": 44.5,
+      "val_sec": 4.1,
+      "peak_gpu_mb": 133.6,
+      "timing_anomaly": false
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.034383,
+      "val_loss": 0.062035,
+      "gap_val_minus_train": 0.027652,
+      "val_macro_f1": 0.783653,
+      "val_macro_recall": 0.875799,
+      "val_fpr": 0.004446,
+      "val_benign_fpr": 0.051119,
+      "gate_flag": false,
+      "train_sec": 44.1,
+      "val_sec": 4.5,
+      "peak_gpu_mb": 133.6,
+      "timing_anomaly": false
+    }
+  ],
+  "main_metrics": {
+    "macro_f1_12class": 0.71581,
+    "lesion_group_f1_sum": 0.432941,
+    "lesion_group_f1": {
+      "Bot": 0.0,
+      "Web Attack-Brute Force": 0.240741,
+      "Web Attack-XSS": 0.192201
+    }
+  },
+  "test_metrics": {
+    "accuracy": 0.9716171301499247,
+    "macro_precision": 0.7515735311477852,
+    "macro_recall": 0.758988571418473,
+    "macro_f1": 0.7158101486751737,
+    "fpr": 0.012421762470727777,
+    "benign_fpr": 0.0036
+  },
+  "test_per_class": {
+    "BENIGN": {
+      "precision": 0.9715419979608834,
+      "recall": 0.9963996123838014,
+      "f1": 0.9838138134731095,
+      "fpr": 0.14493718437645628,
+      "support": 522166
+    },
+    "DoS Hulk": {
+      "precision": 0.9998081902752469,
+      "recall": 0.7271226634427601,
+      "f1": 0.8419366562125636,
+      "fpr": 1.02686448640517e-05,
+      "support": 43012
+    },
+    "DDoS": {
+      "precision": 0.9999030851235665,
+      "recall": 0.9732109168658031,
+      "f1": 0.9863764559664749,
+      "fpr": 5.037690319742204e-06,
+      "support": 31804
+    },
+    "PortScan": {
+      "precision": 0.975480950584685,
+      "recall": 0.9205303906736674,
+      "f1": 0.9472093768600339,
+      "fpr": 0.0008597300778221053,
+      "support": 22474
+    },
+    "DoS GoldenEye": {
+      "precision": 0.9591292758773878,
+      "recall": 0.9102023608768971,
+      "f1": 0.9340255245511572,
+      "fpr": 0.00014721342586443883,
+      "support": 2372
+    },
+    "FTP-Patator": {
+      "precision": 0.9954163483575248,
+      "recall": 0.9545787545787546,
+      "f1": 0.9745699326851159,
+      "fpr": 9.58543014617781e-06,
+      "support": 1365
+    },
+    "DoS slowloris": {
+      "precision": 0.7321274763135228,
+      "recall": 0.6854838709677419,
+      "f1": 0.7080383173677633,
+      "fpr": 0.0004967455975721758,
+      "support": 1240
+    },
+    "DoS Slowhttptest": {
+      "precision": 0.7218586387434555,
+      "recall": 0.9168744804655029,
+      "f1": 0.8077627242768216,
+      "fpr": 0.0006787922927527344,
+      "support": 1203
+    },
+    "SSH-Patator": {
+      "precision": 0.9971671388101983,
+      "recall": 0.9500674763832658,
+      "f1": 0.9730476848652384,
+      "fpr": 3.191961364499644e-06,
+      "support": 741
+    },
+    "Bot": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 1.7547609856013884e-05,
+      "support": 449
+    },
+    "Web Attack-Brute Force": {
+      "precision": 0.5591397849462365,
+      "recall": 0.15339233038348082,
+      "f1": 0.24074074074074076,
+      "fpr": 6.539325269228806e-05,
+      "support": 339
+    },
+    "Web Attack-XSS": {
+      "precision": 0.10730948678071539,
+      "recall": 0.92,
+      "f1": 0.19220055710306405,
+      "fpr": 0.001830459289022825,
+      "support": 150
+    }
+  },
+  "timing": {
+    "epoch_train_sec_median": 47.8,
+    "total_sec": 518.9,
+    "test_eval_sec": 9.8,
+    "timing_anomalies": []
+  },
+  "peak_gpu_mb": 133.6,
+  "env": {
+    "python": "3.13.14",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit_learn": "1.9.1",
+    "imbalanced_learn": "0.14.2",
+    "torch": "2.6.0+cu124",
+    "cuda_available": true,
+    "device": "NVIDIA GeForce RTX 4050 Laptop GPU"
+  },
+  "timestamp": "2026-10-23T17:00:43"
+}

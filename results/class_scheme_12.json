@@ -1,0 +1,83 @@
+{
+  "scheme": "v2-12class",
+  "created_at": "2026-10-17T13:45:03",
+  "command": "src/data_pipeline.py --build",
+  "n_classes": 12,
+  "class_order": [
+    "BENIGN",
+    "DoS Hulk",
+    "DDoS",
+    "PortScan",
+    "DoS GoldenEye",
+    "FTP-Patator",
+    "DoS slowloris",
+    "DoS Slowhttptest",
+    "SSH-Patator",
+    "Bot",
+    "Web Attack-Brute Force",
+    "Web Attack-XSS"
+  ],
+  "label_map": {
+    "BENIGN": "BENIGN",
+    "DoS Hulk": "DoS Hulk",
+    "DDoS": "DDoS",
+    "PortScan": "PortScan",
+    "DoS GoldenEye": "DoS GoldenEye",
+    "FTP-Patator": "FTP-Patator",
+    "DoS slowloris": "DoS slowloris",
+    "DoS Slowhttptest": "DoS Slowhttptest",
+    "SSH-Patator": "SSH-Patator",
+    "Bot": "Bot",
+    "Web Attack-Brute Force": "Web Attack-Brute Force",
+    "Web Attack-XSS": "Web Attack-XSS",
+    "Web Attack-Sql Injection": null,
+    "Infiltration": null,
+    "Heartbleed": null
+  },
+  "design_rationale": "保留 Web Attack-Brute Force 与 Web Attack-XSS 为两个独立类别：二者的互相混淆（15 类口径下 XSS 召回仅 29.6%，127 条被判为 Brute Force）正是本文的立项问题，合并会消解研究动机。仅剔除样本量不足以支撑统计评估的三个类。",
+  "drop": {
+    "labels": [
+      "Web Attack-Sql Injection",
+      "Infiltration",
+      "Heartbleed"
+    ],
+    "counts": {
+      "Web Attack-Sql Injection": 21,
+      "Infiltration": 36,
+      "Heartbleed": 11
+    },
+    "reasons": {
+      "Web Attack-Sql Injection": "仅 21 条（测试集 6 条），一条误判即令该类召回变动 16.7 个百分点",
+      "Infiltration": "仅 36 条（测试集 11 条），无统计意义",
+      "Heartbleed": "仅 11 条（测试集 3 条），无统计意义"
+    },
+    "mode": "按标签剔除，不按文件剔除；两个源 CSV 中的 BENIGN 行全部保留"
+  },
+  "keep": {
+    "labels": [
+      "Web Attack-Brute Force",
+      "Web Attack-XSS"
+    ],
+    "counts": {
+      "Web Attack-Brute Force": 1470,
+      "Web Attack-XSS": 652
+    },
+    "reasons": {
+      "Web Attack-Brute Force": "1,470 条（测试集 441 条），足以支撑逐类召回评估",
+      "Web Attack-XSS": "652 条（测试集 196 条）；与 Brute Force 的混淆正是本文的立项问题，必须保留"
+    }
+  },
+  "superseded_scheme": {
+    "name": "v1-11class",
+    "archive": "results/archive/11class/",
+    "why_abandoned": "三合一使 macro-F1 从 0.8550 升至 0.9763，但混淆消失等于把待解决问题定义掉了，且几乎不给主方法留提升空间"
+  },
+  "cleaning": {
+    "n_raw_rows": 2830743,
+    "n_after_dedup_minus_inf_nan": 2520798,
+    "n_after_class_scheme": 2520730,
+    "n_dropped_by_class_scheme": 68,
+    "n_features": 78,
+    "dtype": "float32"
+  }
+}

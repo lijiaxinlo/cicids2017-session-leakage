@@ -1,0 +1,13 @@
+class,count,ratio_pct
+BENIGN,2095057,83.1131
+DoS Hulk,172846,6.857
+DDoS,128014,5.0784
+PortScan,90694,3.5979
+DoS GoldenEye,10286,0.4081
+FTP-Patator,5931,0.2353
+DoS slowloris,5385,0.2136
+DoS Slowhttptest,5228,0.2074
+SSH-Patator,3219,0.1277
+Bot,1948,0.0773
+Web Attack-Brute Force,1470,0.0583
+Web Attack-XSS,652,0.0259

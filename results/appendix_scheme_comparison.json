@@ -1,0 +1,88 @@
+{
+  "note": "论文附录 A：15/12/11 类口径对照，全部为实测值",
+  "rows": [
+    {
+      "scheme": "15-class (raw labels)",
+      "n_classes": 15,
+      "n_rows": 2520798,
+      "dropped": "none",
+      "seeds": 1,
+      "macro_f1": {
+        "mean": 0.8550195898890137,
+        "std": null
+      },
+      "macro_recall": {
+        "mean": 0.8248571364075278,
+        "std": null
+      },
+      "macro_precision": {
+        "mean": 0.9350709276094401,
+        "std": null
+      },
+      "fpr": {
+        "mean": 0.0004160343775740709,
+        "std": null
+      },
+      "accuracy": {
+        "mean": 0.9981897281286364,
+        "std": null
+      }
+    },
+    {
+      "scheme": "12-class (adopted)",
+      "n_classes": 12,
+      "n_rows": 2520730,
+      "dropped": "Web Attack-Sql Injection 21 / Infiltration 36 / Heartbleed 11",
+      "seeds": 5,
+      "macro_f1": {
+        "mean": 0.9090749534098844,
+        "std": 0.0008964227411294127
+      },
+      "macro_recall": {
+        "mean": 0.9034281648180335,
+        "std": 0.0009033365832992068
+      },
+      "macro_precision": {
+        "mean": 0.9180663759342511,
+        "std": 0.0012945928133293956
+      },
+      "fpr": {
+        "mean": 0.00047689074999905065,
+        "std": 3.3588064546994136e-06
+      },
+      "accuracy": {
+        "mean": 0.9982899133716556,
+        "std": 1.4467699855848229e-05
+      }
+    },
+    {
+      "scheme": "11-class (rejected)",
+      "n_classes": 11,
+      "n_rows": 2520751,
+      "dropped": "Sql Injection + Infiltration + Heartbleed, and merged Brute Force / XSS / Sql Injection into a single Web Attack class",
+      "seeds": 5,
+      "macro_f1": {
+        "mean": 0.9762673046087199,
+        "std": 0.00041904181885481077
+      },
+      "macro_recall": {
+        "mean": 0.9696826555267727,
+        "std": 0.0007975772843438879
+      },
+      "macro_precision": {
+        "mean": 0.9836283913048687,
+        "std": 0.0004834883330740062
+      },
+      "fpr": {
+        "mean": 0.0005080203960543884,
+        "std": 6.201396384564359e-06
+      },
+      "accuracy": {
+        "mean": 0.9985305979958372,
+        "std": 1.0718427628327983e-05
+      }
+    }
+  ],
+  "adopted": "12-class",
+  "rejected": "11-class（合并 Web Attack 子类会消除研究问题）"
+}

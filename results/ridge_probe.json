@@ -1,0 +1,271 @@
+{
+  "note": "w_XSS scaled from the val-best joint vector; all other weights fixed",
+  "factors": [
+    1.0,
+    2.0,
+    5.0,
+    10.0,
+    20.0,
+    50.0,
+    100.0
+  ],
+  "per_seed": [
+    {
+      "seed": 42,
+      "opt_seed": 0,
+      "base_xss_f1": 0.0,
+      "base_bf_f1": 0.2257,
+      "base_LFS": 0.8035,
+      "sweep": [
+        {
+          "factor": 1.0,
+          "w_XSS": 5.4447,
+          "xss_f1": 0.0,
+          "bf_f1": 0.2257,
+          "bot_f1": 0.5778,
+          "LFS": 0.8035,
+          "dLFS": 0.0,
+          "benign_fpr": 0.006437
+        },
+        {
+          "factor": 2.0,
+          "w_XSS": 10.0,
+          "xss_f1": 0.0,
+          "bf_f1": 0.2257,
+          "bot_f1": 0.5778,
+          "LFS": 0.8035,
+          "dLFS": 0.0,
+          "benign_fpr": 0.006437
+        },
+        {
+          "factor": 5.0,
+          "w_XSS": 10.0,
+          "xss_f1": 0.0,
+          "bf_f1": 0.2257,
+          "bot_f1": 0.5778,
+          "LFS": 0.8035,
+          "dLFS": 0.0,
+          "benign_fpr": 0.006437
+        },
+        {
+          "factor": 10.0,
+          "w_XSS": 10.0,
+          "xss_f1": 0.0,
+          "bf_f1": 0.2257,
+          "bot_f1": 0.5778,
+          "LFS": 0.8035,
+          "dLFS": 0.0,
+          "benign_fpr": 0.006437
+        },
+        {
+          "factor": 20.0,
+          "w_XSS": 10.0,
+          "xss_f1": 0.0,
+          "bf_f1": 0.2257,
+          "bot_f1": 0.5778,
+          "LFS": 0.8035,
+          "dLFS": 0.0,
+          "benign_fpr": 0.006437
+        },
+        {
+          "factor": 50.0,
+          "w_XSS": 10.0,
+          "xss_f1": 0.0,
+          "bf_f1": 0.2257,
+          "bot_f1": 0.5778,
+          "LFS": 0.8035,
+          "dLFS": 0.0,
+          "benign_fpr": 0.006437
+        },
+        {
+          "factor": 100.0,
+          "w_XSS": 10.0,
+          "xss_f1": 0.0,
+          "bf_f1": 0.2257,
+          "bot_f1": 0.5778,
+          "LFS": 0.8035,
+          "dLFS": 0.0,
+          "benign_fpr": 0.006437
+        }
+      ]
+    },
+    {
+      "seed": 44,
+      "opt_seed": 1,
+      "base_xss_f1": 0.0,
+      "base_bf_f1": 0.2337,
+      "base_LFS": 0.8133,
+      "sweep": [
+        {
+          "factor": 1.0,
+          "w_XSS": 3.3978,
+          "xss_f1": 0.0,
+          "bf_f1": 0.2337,
+          "bot_f1": 0.5796,
+          "LFS": 0.8133,
+          "dLFS": 0.0,
+          "benign_fpr": 0.005137
+        },
+        {
+          "factor": 2.0,
+          "w_XSS": 6.7956,
+          "xss_f1": 0.0,
+          "bf_f1": 0.2337,
+          "bot_f1": 0.5796,
+          "LFS": 0.8133,
+          "dLFS": 0.0,
+          "benign_fpr": 0.005137
+        },
+        {
+          "factor": 5.0,
+          "w_XSS": 10.0,
+          "xss_f1": 0.0,
+          "bf_f1": 0.2337,
+          "bot_f1": 0.5796,
+          "LFS": 0.8133,
+          "dLFS": 0.0,
+          "benign_fpr": 0.005137
+        },
+        {
+          "factor": 10.0,
+          "w_XSS": 10.0,
+          "xss_f1": 0.0,
+          "bf_f1": 0.2337,
+          "bot_f1": 0.5796,
+          "LFS": 0.8133,
+          "dLFS": 0.0,
+          "benign_fpr": 0.005137
+        },
+        {
+          "factor": 20.0,
+          "w_XSS": 10.0,
+          "xss_f1": 0.0,
+          "bf_f1": 0.2337,
+          "bot_f1": 0.5796,
+          "LFS": 0.8133,
+          "dLFS": 0.0,
+          "benign_fpr": 0.005137
+        },
+        {
+          "factor": 50.0,
+          "w_XSS": 10.0,
+          "xss_f1": 0.0,
+          "bf_f1": 0.2337,
+          "bot_f1": 0.5796,
+          "LFS": 0.8133,
+          "dLFS": 0.0,
+          "benign_fpr": 0.005137
+        },
+        {
+          "factor": 100.0,
+          "w_XSS": 10.0,
+          "xss_f1": 0.0,
+          "bf_f1": 0.2337,
+          "bot_f1": 0.5796,
+          "LFS": 0.8133,
+          "dLFS": 0.0,
+          "benign_fpr": 0.005137
+        }
+      ]
+    },
+    {
+      "seed": 46,
+      "opt_seed": 0,
+      "base_xss_f1": 0.0,
+      "base_bf_f1": 0.53,
+      "base_LFS": 1.1106,
+      "sweep": [
+        {
+          "factor": 1.0,
+          "w_XSS": 8.2275,
+          "xss_f1": 0.0,
+          "bf_f1": 0.53,
+          "bot_f1": 0.5806,
+          "LFS": 1.1106,
+          "dLFS": 0.0,
+          "benign_fpr": 0.006113
+        },
+        {
+          "factor": 2.0,
+          "w_XSS": 10.0,
+          "xss_f1": 0.0,
+          "bf_f1": 0.53,
+          "bot_f1": 0.5806,
+          "LFS": 1.1106,
+          "dLFS": 0.0,
+          "benign_fpr": 0.006113
+        },
+        {
+          "factor": 5.0,
+          "w_XSS": 10.0,
+          "xss_f1": 0.0,
+          "bf_f1": 0.53,
+          "bot_f1": 0.5806,
+          "LFS": 1.1106,
+          "dLFS": 0.0,
+          "benign_fpr": 0.006113
+        },
+        {
+          "factor": 10.0,
+          "w_XSS": 10.0,
+          "xss_f1": 0.0,
+          "bf_f1": 0.53,
+          "bot_f1": 0.5806,
+          "LFS": 1.1106,
+          "dLFS": 0.0,
+          "benign_fpr": 0.006113
+        },
+        {
+          "factor": 20.0,
+          "w_XSS": 10.0,
+          "xss_f1": 0.0,
+          "bf_f1": 0.53,
+          "bot_f1": 0.5806,
+          "LFS": 1.1106,
+          "dLFS": 0.0,
+          "benign_fpr": 0.006113
+        },
+        {
+          "factor": 50.0,
+          "w_XSS": 10.0,
+          "xss_f1": 0.0,
+          "bf_f1": 0.53,
+          "bot_f1": 0.5806,
+          "LFS": 1.1106,
+          "dLFS": 0.0,
+          "benign_fpr": 0.006113
+        },
+        {
+          "factor": 100.0,
+          "w_XSS": 10.0,
+          "xss_f1": 0.0,
+          "bf_f1": 0.53,
+          "bot_f1": 0.5806,
+          "LFS": 1.1106,
+          "dLFS": 0.0,
+          "benign_fpr": 0.006113
+        }
+      ]
+    }
+  ],
+  "aggregate": [
+    {
+      "seed": 42,
+      "dXSS": 0.0,
+      "dBF": 0.0,
+      "dLFS": 0.0
+    },
+    {
+      "seed": 44,
+      "dXSS": 0.0,
+      "dBF": 0.0,
+      "dLFS": 0.0
+    },
+    {
+      "seed": 46,
+      "dXSS": 0.0,
+      "dBF": 0.0,
+      "dLFS": 0.0
+    }
+  ]
+}

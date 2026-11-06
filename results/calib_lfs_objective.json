@@ -1,0 +1,456 @@
+{
+ "protocol": "objective = lesion-group F1 sum (LFS); grid/rounds/constraint identical to E17",
+ "cap": 0.008,
+ "objective": "LFS",
+ "arms": [
+  {
+   "arm": "T-val_seed42",
+   "cap": 0.008,
+   "fit_on": "val",
+   "seed": 42,
+   "argmax_test": {
+    "benign_fpr": 0.020267,
+    "macro_f1": 0.794649,
+    "LFS": 0.945186
+   },
+   "calibrated_test": {
+    "benign_fpr": 0.007438,
+    "macro_f1": 0.790333,
+    "LFS": 0.92837
+   },
+   "delta_LFS": -0.016816,
+   "delta_macro": -0.004316,
+   "fit": {
+    "rounds": 2,
+    "infeasible_classes": [],
+    "final_val_benign_fpr": 0.007576,
+    "final_val_LFS": 0.944967,
+    "final_val_macro_f1": 0.790497,
+    "n_nonunit_w": 2,
+    "w": [
+     1.9953,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     7.9433,
+     1.0,
+     1.0,
+     1.0
+    ]
+   }
+  },
+  {
+   "arm": "T-val_seed44",
+   "cap": 0.008,
+   "fit_on": "val",
+   "seed": 44,
+   "argmax_test": {
+    "benign_fpr": 0.006668,
+    "macro_f1": 0.802946,
+    "LFS": 1.015052
+   },
+   "calibrated_test": {
+    "benign_fpr": 0.004927,
+    "macro_f1": 0.799019,
+    "LFS": 1.025522
+   },
+   "delta_LFS": 0.01047,
+   "delta_macro": -0.003927,
+   "fit": {
+    "rounds": 2,
+    "infeasible_classes": [],
+    "final_val_benign_fpr": 0.005155,
+    "final_val_LFS": 1.05618,
+    "final_val_macro_f1": 0.801099,
+    "n_nonunit_w": 2,
+    "w": [
+     1.9953,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     2.5119,
+     1.0,
+     1.0,
+     1.0
+    ]
+   }
+  },
+  {
+   "arm": "T-val_seed46",
+   "cap": 0.008,
+   "fit_on": "val",
+   "seed": 46,
+   "argmax_test": {
+    "benign_fpr": 0.010024,
+    "macro_f1": 0.798427,
+    "LFS": 0.970828
+   },
+   "calibrated_test": {
+    "benign_fpr": 0.005432,
+    "macro_f1": 0.797834,
+    "LFS": 0.977498
+   },
+   "delta_LFS": 0.00667,
+   "delta_macro": -0.000593,
+   "fit": {
+    "rounds": 1,
+    "infeasible_classes": [
+     {
+      "class": 2,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 3,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 4,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 5,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 6,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 7,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 8,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 9,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 10,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 11,
+      "tier_cap": 0.008
+     }
+    ],
+    "enforced_w0": 1.26,
+    "final_val_benign_fpr": 0.005148,
+    "final_val_LFS": 0.952135,
+    "final_val_macro_f1": 0.801049,
+    "n_nonunit_w": 1,
+    "w": [
+     1.2589,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   }
+  },
+  {
+   "arm": "T-oracle_seed42",
+   "cap": 0.008,
+   "fit_on": "test",
+   "seed": 42,
+   "argmax_test": {
+    "benign_fpr": 0.020267,
+    "macro_f1": 0.794649,
+    "LFS": 0.945186
+   },
+   "calibrated_test": {
+    "benign_fpr": 0.007424,
+    "macro_f1": 0.790455,
+    "LFS": 0.926769
+   },
+   "delta_LFS": -0.018417,
+   "delta_macro": -0.004194,
+   "fit": {
+    "rounds": 1,
+    "infeasible_classes": [
+     {
+      "class": 1,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 2,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 4,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 5,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 6,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 7,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 8,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 9,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 10,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 11,
+      "tier_cap": 0.008
+     }
+    ],
+    "enforced_w0": 2.0,
+    "final_val_benign_fpr": 0.007424,
+    "final_val_LFS": 0.926769,
+    "final_val_macro_f1": 0.790455,
+    "n_nonunit_w": 1,
+    "w": [
+     1.9953,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   }
+  },
+  {
+   "arm": "U-val_seed42",
+   "cap": 0.008,
+   "fit_on": "val",
+   "seed": 42,
+   "argmax_test": {
+    "benign_fpr": 0.012232,
+    "macro_f1": 0.764765,
+    "LFS": 0.579084
+   },
+   "calibrated_test": {
+    "benign_fpr": 0.004329,
+    "macro_f1": 0.763014,
+    "LFS": 0.579084
+   },
+   "delta_LFS": 0.0,
+   "delta_macro": -0.001751,
+   "fit": {
+    "rounds": 1,
+    "infeasible_classes": [
+     {
+      "class": 1,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 2,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 4,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 5,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 6,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 7,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 8,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 9,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 10,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 11,
+      "tier_cap": 0.008
+     }
+    ],
+    "enforced_w0": 1.26,
+    "final_val_benign_fpr": 0.00448,
+    "final_val_LFS": 0.602941,
+    "final_val_macro_f1": 0.763964,
+    "n_nonunit_w": 1,
+    "w": [
+     1.2589,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   }
+  },
+  {
+   "arm": "U-oracle_seed42",
+   "cap": 0.008,
+   "fit_on": "test",
+   "seed": 42,
+   "argmax_test": {
+    "benign_fpr": 0.012232,
+    "macro_f1": 0.764765,
+    "LFS": 0.579084
+   },
+   "calibrated_test": {
+    "benign_fpr": 0.004329,
+    "macro_f1": 0.763014,
+    "LFS": 0.579084
+   },
+   "delta_LFS": 0.0,
+   "delta_macro": -0.001751,
+   "fit": {
+    "rounds": 1,
+    "infeasible_classes": [
+     {
+      "class": 1,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 2,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 4,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 5,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 6,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 7,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 8,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 9,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 10,
+      "tier_cap": 0.008
+     },
+     {
+      "class": 11,
+      "tier_cap": 0.008
+     }
+    ],
+    "enforced_w0": 1.26,
+    "final_val_benign_fpr": 0.004329,
+    "final_val_LFS": 0.579084,
+    "final_val_macro_f1": 0.763014,
+    "n_nonunit_w": 1,
+    "w": [
+     1.2589,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   }
+  },
+  {
+   "arm": "U-free_seed42",
+   "cap": null,
+   "fit_on": "val",
+   "seed": 42,
+   "argmax_test": {
+    "benign_fpr": 0.012232,
+    "macro_f1": 0.764765,
+    "LFS": 0.579084
+   },
+   "calibrated_test": {
+    "benign_fpr": 0.028916,
+    "macro_f1": 0.766751,
+    "LFS": 0.803815
+   },
+   "delta_LFS": 0.224731,
+   "delta_macro": 0.001986,
+   "fit": {
+    "rounds": 3,
+    "infeasible_classes": [],
+    "final_val_benign_fpr": 0.028898,
+    "final_val_LFS": 0.829486,
+    "final_val_macro_f1": 0.768957,
+    "n_nonunit_w": 5,
+    "w": [
+     0.1585,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     10.0,
+     1.0,
+     1.0,
+     0.1259,
+     6.3096,
+     10.0
+    ]
+   }
+  }
+ ],
+ "elapsed_sec": 55.8
+}

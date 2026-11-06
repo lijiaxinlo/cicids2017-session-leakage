@@ -1,0 +1,652 @@
+{
+  "protocol": "E7 四臂（v4.4）：每档 RF / RF+cal / C3 / C4；校准一律 val 搜、test 冻结后报",
+  "tiers": {
+    "10": [
+      {
+        "seed": 42,
+        "R": 10,
+        "0.008": {
+          "main": {
+            "argmax": {
+              "test_macro_f1": 0.7946485256360081,
+              "test_lesion_sum": 0.9451864285830129,
+              "test_benign_fpr": 0.020266754916732563
+            },
+            "cal": {
+              "test_benign_fpr": 0.007424,
+              "test_macro_f1": 0.790455,
+              "test_lesion_sum": 0.926769,
+              "val_benign_fpr": 0.007528,
+              "val_macro_f1": 0.790533
+            }
+          },
+          "rf": {
+            "argmax": {
+              "test_macro_f1": 0.9083131287085634,
+              "test_lesion_sum": 1.936363143465083,
+              "test_benign_fpr": 0.0006936964314409953
+            },
+            "cal": {
+              "test_benign_fpr": 0.000749,
+              "test_macro_f1": 0.907307,
+              "test_lesion_sum": 1.917908,
+              "val_benign_fpr": 0.000675,
+              "val_macro_f1": 0.916005
+            }
+          }
+        }
+      },
+      {
+        "seed": 43,
+        "R": 10,
+        "0.008": {
+          "main": {
+            "argmax": {
+              "test_macro_f1": 0.8048044696432726,
+              "test_lesion_sum": 0.9882936726062046,
+              "test_benign_fpr": 0.01416509020440179
+            },
+            "cal": {
+              "test_benign_fpr": 0.005955,
+              "test_macro_f1": 0.800294,
+              "test_lesion_sum": 0.989846,
+              "val_benign_fpr": 0.006191,
+              "val_macro_f1": 0.7957
+            }
+          },
+          "rf": {
+            "argmax": {
+              "test_macro_f1": 0.9065372844799078,
+              "test_lesion_sum": 1.9163148835945285,
+              "test_benign_fpr": 0.0006793770096910664
+            },
+            "cal": {
+              "test_benign_fpr": 0.000956,
+              "test_macro_f1": 0.911101,
+              "test_lesion_sum": 1.965789,
+              "val_benign_fpr": 0.000907,
+              "val_macro_f1": 0.927183
+            }
+          }
+        }
+      },
+      {
+        "seed": 44,
+        "R": 10,
+        "0.008": {
+          "main": {
+            "argmax": {
+              "test_macro_f1": 0.8029462269964646,
+              "test_lesion_sum": 1.0150518459754334,
+              "test_benign_fpr": 0.006668077394883512
+            },
+            "cal": {
+              "test_benign_fpr": 0.0067,
+              "test_macro_f1": 0.804662,
+              "test_lesion_sum": 1.01795,
+              "val_benign_fpr": 0.007016,
+              "val_macro_f1": 0.805169
+            }
+          },
+          "rf": {
+            "argmax": {
+              "test_macro_f1": 0.906229177772846,
+              "test_lesion_sum": 1.911899458699243,
+              "test_benign_fpr": 0.0006952874783020984
+            },
+            "cal": {
+              "test_benign_fpr": 0.000764,
+              "test_macro_f1": 0.909089,
+              "test_lesion_sum": 1.950059,
+              "val_benign_fpr": 0.000675,
+              "val_macro_f1": 0.917451
+            }
+          }
+        }
+      },
+      {
+        "seed": 45,
+        "R": 10,
+        "0.008": {
+          "main": {
+            "argmax": {
+              "test_macro_f1": 0.7976414253369034,
+              "test_lesion_sum": 0.9426991016134078,
+              "test_benign_fpr": 0.007789765431961268
+            },
+            "cal": {
+              "test_benign_fpr": 0.007993,
+              "test_macro_f1": 0.798821,
+              "test_lesion_sum": 0.939047,
+              "val_benign_fpr": 0.00793,
+              "val_macro_f1": 0.811667
+            }
+          },
+          "rf": {
+            "argmax": {
+              "test_macro_f1": 0.9063878054031379,
+              "test_lesion_sum": 1.9146759804328755,
+              "test_benign_fpr": 0.0006936964314409953
+            },
+            "cal": {
+              "test_benign_fpr": 0.000916,
+              "test_macro_f1": 0.90539,
+              "test_lesion_sum": 1.893826,
+              "val_benign_fpr": 0.000811,
+              "val_macro_f1": 0.909116
+            }
+          }
+        }
+      },
+      {
+        "seed": 46,
+        "R": 10,
+        "0.008": {
+          "main": {
+            "argmax": {
+              "test_macro_f1": 0.7984265538581489,
+              "test_lesion_sum": 0.9708275275197353,
+              "test_benign_fpr": 0.01002359522495016
+            },
+            "cal": {
+              "test_benign_fpr": 0.005432,
+              "test_macro_f1": 0.797834,
+              "test_lesion_sum": 0.977498,
+              "val_benign_fpr": 0.005148,
+              "val_macro_f1": 0.801049
+            }
+          },
+          "rf": {
+            "argmax": {
+              "test_macro_f1": 0.9033605260536594,
+              "test_lesion_sum": 1.8774247448558867,
+              "test_benign_fpr": 0.0007111979469131305
+            },
+            "cal": {
+              "test_benign_fpr": 0.001125,
+              "test_macro_f1": 0.913139,
+              "test_lesion_sum": 1.989692,
+              "val_benign_fpr": 0.000961,
+              "val_macro_f1": 0.915146
+            }
+          }
+        }
+      }
+    ],
+    "100": [
+      {
+        "seed": 42,
+        "R": 100,
+        "0.008": {
+          "main": {
+            "argmax": {
+              "test_macro_f1": 0.7905183620287463,
+              "test_lesion_sum": 0.974584075669985,
+              "test_benign_fpr": 0.005535252029778033
+            },
+            "cal": {
+              "test_benign_fpr": 0.0076,
+              "test_macro_f1": 0.793435,
+              "test_lesion_sum": 0.954023,
+              "val_benign_fpr": 0.007732,
+              "val_macro_f1": 0.795735
+            }
+          },
+          "rf": {
+            "argmax": {
+              "test_macro_f1": 0.9058603488118152,
+              "test_lesion_sum": 1.9258610559734504,
+              "test_benign_fpr": 0.0005075439486919209
+            },
+            "cal": {
+              "test_benign_fpr": 0.000964,
+              "test_macro_f1": 0.91157,
+              "test_lesion_sum": 1.972582,
+              "val_benign_fpr": 0.000771,
+              "val_macro_f1": 0.917407
+            }
+          }
+        }
+      },
+      {
+        "seed": 43,
+        "R": 100,
+        "0.008": {
+          "main": {
+            "argmax": {
+              "test_macro_f1": 0.7888904595993566,
+              "test_lesion_sum": 0.9928630262286502,
+              "test_benign_fpr": 0.004935427363142127
+            },
+            "cal": {
+              "test_benign_fpr": 0.006208,
+              "test_macro_f1": 0.7975,
+              "test_lesion_sum": 0.985852,
+              "val_benign_fpr": 0.006491,
+              "val_macro_f1": 0.794373
+            }
+          },
+          "rf": {
+            "argmax": {
+              "test_macro_f1": 0.9033912024361626,
+              "test_lesion_sum": 1.8966132860952924,
+              "test_benign_fpr": 0.0005202723235807464
+            },
+            "cal": {
+              "test_benign_fpr": 0.001087,
+              "test_macro_f1": 0.911408,
+              "test_lesion_sum": 1.971622,
+              "val_benign_fpr": 0.00105,
+              "val_macro_f1": 0.923591
+            }
+          }
+        }
+      },
+      {
+        "seed": 44,
+        "R": 100,
+        "0.008": {
+          "main": {
+            "argmax": {
+              "test_macro_f1": 0.7875404969431546,
+              "test_lesion_sum": 0.941976661883564,
+              "test_benign_fpr": 0.004680859865365615
+            },
+            "cal": {
+              "test_benign_fpr": 0.0067,
+              "test_macro_f1": 0.79451,
+              "test_lesion_sum": 0.943209,
+              "val_benign_fpr": 0.006873,
+              "val_macro_f1": 0.803817
+            }
+          },
+          "rf": {
+            "argmax": {
+              "test_macro_f1": 0.9047366316991133,
+              "test_lesion_sum": 1.9126716798742522,
+              "test_benign_fpr": 0.0005234544173029528
+            },
+            "cal": {
+              "test_benign_fpr": 0.000745,
+              "test_macro_f1": 0.910177,
+              "test_lesion_sum": 1.957372,
+              "val_benign_fpr": 0.000696,
+              "val_macro_f1": 0.91866
+            }
+          }
+        }
+      },
+      {
+        "seed": 45,
+        "R": 100,
+        "0.008": {
+          "main": {
+            "argmax": {
+              "test_macro_f1": 0.7881697512559745,
+              "test_lesion_sum": 0.9142769396846775,
+              "test_benign_fpr": 0.00473813755236533
+            },
+            "cal": {
+              "test_benign_fpr": 0.007795,
+              "test_macro_f1": 0.802646,
+              "test_lesion_sum": 0.990362,
+              "val_benign_fpr": 0.007473,
+              "val_macro_f1": 0.808724
+            }
+          },
+          "rf": {
+            "argmax": {
+              "test_macro_f1": 0.9074736664453958,
+              "test_lesion_sum": 1.9466777620138966,
+              "test_benign_fpr": 0.0005298186047473656
+            },
+            "cal": {
+              "test_benign_fpr": 0.000905,
+              "test_macro_f1": 0.911061,
+              "test_lesion_sum": 1.968227,
+              "val_benign_fpr": 0.000825,
+              "val_macro_f1": 0.908318
+            }
+          }
+        }
+      },
+      {
+        "seed": 46,
+        "R": 100,
+        "0.008": {
+          "main": {
+            "argmax": {
+              "test_macro_f1": 0.7962447041698977,
+              "test_lesion_sum": 0.9793792507593904,
+              "test_benign_fpr": 0.005549571451527962
+            },
+            "cal": {
+              "test_benign_fpr": 0.007394,
+              "test_macro_f1": 0.800168,
+              "test_lesion_sum": 0.978805,
+              "val_benign_fpr": 0.00733,
+              "val_macro_f1": 0.801274
+            }
+          },
+          "rf": {
+            "argmax": {
+              "test_macro_f1": 0.900227182005215,
+              "test_lesion_sum": 1.8575994377580134,
+              "test_benign_fpr": 0.0005282275578862624
+            },
+            "cal": {
+              "test_benign_fpr": 0.000861,
+              "test_macro_f1": 0.909577,
+              "test_lesion_sum": 1.948888,
+              "val_benign_fpr": 0.000702,
+              "val_macro_f1": 0.915797
+            }
+          }
+        }
+      }
+    ],
+    "1000": [
+      {
+        "seed": 42,
+        "R": 1000,
+        "0.008": {
+          "main": {
+            "argmax": {
+              "test_macro_f1": 0.7622086251728651,
+              "test_lesion_sum": 0.959518235099212,
+              "test_benign_fpr": 0.004598125428588248
+            },
+            "cal": {
+              "test_benign_fpr": 0.004827,
+              "test_macro_f1": 0.779445,
+              "test_lesion_sum": 0.986395,
+              "val_benign_fpr": 0.005025,
+              "val_macro_f1": 0.777561
+            }
+          },
+          "rf": {
+            "argmax": {
+              "test_macro_f1": 0.8940355863898386,
+              "test_lesion_sum": 1.8911002215289252,
+              "test_benign_fpr": 0.0003086630910540208
+            },
+            "cal": {
+              "test_benign_fpr": 0.000668,
+              "test_macro_f1": 0.90664,
+              "test_lesion_sum": 1.940136,
+              "val_benign_fpr": 0.000545,
+              "val_macro_f1": 0.919648
+            }
+          }
+        }
+      },
+      {
+        "seed": 43,
+        "R": 1000,
+        "0.008": {
+          "main": {
+            "argmax": {
+              "test_macro_f1": 0.7700092928726071,
+              "test_lesion_sum": 1.0274870460506926,
+              "test_benign_fpr": 0.0047858689581984255
+            },
+            "cal": {
+              "test_benign_fpr": 0.007266,
+              "test_macro_f1": 0.790823,
+              "test_lesion_sum": 1.0479,
+              "val_benign_fpr": 0.007569,
+              "val_macro_f1": 0.78862
+            }
+          },
+          "rf": {
+            "argmax": {
+              "test_macro_f1": 0.8982966344608497,
+              "test_lesion_sum": 1.9462199241960005,
+              "test_benign_fpr": 0.0002927526224429888
+            },
+            "cal": {
+              "test_benign_fpr": 0.000761,
+              "test_macro_f1": 0.910312,
+              "test_lesion_sum": 1.996753,
+              "val_benign_fpr": 0.00075,
+              "val_macro_f1": 0.922543
+            }
+          }
+        }
+      },
+      {
+        "seed": 44,
+        "R": 1000,
+        "0.008": {
+          "main": {
+            "argmax": {
+              "test_macro_f1": 0.7437163747191434,
+              "test_lesion_sum": 0.962022350725154,
+              "test_benign_fpr": 0.005003842378169564
+            },
+            "cal": {
+              "test_benign_fpr": 0.00565,
+              "test_macro_f1": 0.76186,
+              "test_lesion_sum": 0.900104,
+              "val_benign_fpr": 0.005891,
+              "val_macro_f1": 0.767615
+            }
+          },
+          "rf": {
+            "argmax": {
+              "test_macro_f1": 0.8937723332430716,
+              "test_lesion_sum": 1.8807578360842172,
+              "test_benign_fpr": 0.00031820937222064
+            },
+            "cal": {
+              "test_benign_fpr": 0.000622,
+              "test_macro_f1": 0.907358,
+              "test_lesion_sum": 1.949729,
+              "val_benign_fpr": 0.000586,
+              "val_macro_f1": 0.910668
+            }
+          }
+        }
+      },
+      {
+        "seed": 45,
+        "R": 1000,
+        "0.008": {
+          "main": {
+            "argmax": {
+              "test_macro_f1": 0.7646481433070401,
+              "test_lesion_sum": 0.9750433866349785,
+              "test_benign_fpr": 0.004695179287115543
+            },
+            "cal": {
+              "test_benign_fpr": 0.003184,
+              "test_macro_f1": 0.770794,
+              "test_lesion_sum": 0.860751,
+              "val_benign_fpr": 0.003109,
+              "val_macro_f1": 0.789665
+            }
+          },
+          "rf": {
+            "argmax": {
+              "test_macro_f1": 0.8965879929109554,
+              "test_lesion_sum": 1.9218254542119346,
+              "test_benign_fpr": 0.0002991168098874016
+            },
+            "cal": {
+              "test_benign_fpr": 0.000713,
+              "test_macro_f1": 0.909935,
+              "test_lesion_sum": 1.97047,
+              "val_benign_fpr": 0.000648,
+              "val_macro_f1": 0.906246
+            }
+          }
+        }
+      },
+      {
+        "seed": 46,
+        "R": 1000,
+        "0.008": {
+          "main": {
+            "argmax": {
+              "test_macro_f1": 0.7616756468795168,
+              "test_lesion_sum": 0.9350422357557087,
+              "test_benign_fpr": 0.004047623214646541
+            },
+            "cal": {
+              "test_benign_fpr": 0.005675,
+              "test_macro_f1": 0.773309,
+              "test_lesion_sum": 0.996885,
+              "val_benign_fpr": 0.00551,
+              "val_macro_f1": 0.775153
+            }
+          },
+          "rf": {
+            "argmax": {
+              "test_macro_f1": 0.8972252914315028,
+              "test_lesion_sum": 1.9166371123757784,
+              "test_benign_fpr": 0.000334119840831672
+            },
+            "cal": {
+              "test_benign_fpr": 0.000691,
+              "test_macro_f1": 0.906398,
+              "test_lesion_sum": 1.938169,
+              "val_benign_fpr": 0.000607,
+              "val_macro_f1": 0.912066
+            }
+          }
+        }
+      }
+    ]
+  },
+  "caps": [
+    0.008
+  ],
+  "summary_cap0008": {
+    "10": {
+      "C3_macro": [
+        0.7997,
+        0.0041
+      ],
+      "C4_macro": [
+        0.7984,
+        0.0052
+      ],
+      "C3_lesion": [
+        0.9724,
+        0.0304
+      ],
+      "C4_lesion": [
+        0.9702,
+        0.0373
+      ],
+      "C4_bfpr": [
+        0.0067,
+        0.001
+      ],
+      "RF_macro": [
+        0.9062,
+        0.0018
+      ],
+      "RFcal_macro": [
+        0.9092,
+        0.0031
+      ],
+      "RF_lesion": [
+        1.9113,
+        0.0213
+      ],
+      "RFcal_lesion": [
+        1.9435,
+        0.0381
+      ],
+      "RFcal_bfpr": [
+        0.0009,
+        0.0002
+      ]
+    },
+    "100": {
+      "C3_macro": [
+        0.7903,
+        0.0035
+      ],
+      "C4_macro": [
+        0.7977,
+        0.0038
+      ],
+      "C3_lesion": [
+        0.9606,
+        0.0319
+      ],
+      "C4_lesion": [
+        0.9705,
+        0.0207
+      ],
+      "C4_bfpr": [
+        0.0071,
+        0.0007
+      ],
+      "RF_macro": [
+        0.9043,
+        0.0027
+      ],
+      "RFcal_macro": [
+        0.9108,
+        0.0009
+      ],
+      "RF_lesion": [
+        1.9079,
+        0.0336
+      ],
+      "RFcal_lesion": [
+        1.9637,
+        0.0103
+      ],
+      "RFcal_bfpr": [
+        0.0009,
+        0.0001
+      ]
+    },
+    "1000": {
+      "C3_macro": [
+        0.7605,
+        0.0099
+      ],
+      "C4_macro": [
+        0.7752,
+        0.0108
+      ],
+      "C3_lesion": [
+        0.9718,
+        0.0343
+      ],
+      "C4_lesion": [
+        0.9584,
+        0.0762
+      ],
+      "C4_bfpr": [
+        0.0053,
+        0.0015
+      ],
+      "RF_macro": [
+        0.896,
+        0.002
+      ],
+      "RFcal_macro": [
+        0.9081,
+        0.0019
+      ],
+      "RF_lesion": [
+        1.9113,
+        0.026
+      ],
+      "RFcal_lesion": [
+        1.9591,
+        0.0247
+      ],
+      "RFcal_bfpr": [
+        0.0007,
+        0.0001
+      ]
+    }
+  }
+}
